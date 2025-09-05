@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="CasosDeUso\" />
+    <Folder Include="DTOs\" />
+    <Folder Include="InterfacesCU\" />
+    <Folder Include="Mappers\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\LaEmpresa.LogicaNegocio\LaEmpresa.LogicaNegocio.csproj" />
+  </ItemGroup>
+
+</Project>

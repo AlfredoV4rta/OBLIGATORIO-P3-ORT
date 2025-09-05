@@ -1,0 +1,245 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\P3\\Obligatorio\\LaEmpresa.LogicaNegocio\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\p3\\obligatorio\\laempresa.logicanegocio\\laempresa.logicanegocio\\entidades\\equipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|solutionrelative:laempresa.logicanegocio\\entidades\\equipo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\p3\\obligatorio\\laempresa.logicanegocio\\laempresa.logicanegocio\\entidades\\metodopago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|solutionrelative:laempresa.logicanegocio\\entidades\\metodopago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\p3\\obligatorio\\laempresa.logicanegocio\\laempresa.logicanegocio\\entidades\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|solutionrelative:laempresa.logicanegocio\\entidades\\pago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\p3\\obligatorio\\laempresa.logicanegocio\\laempresa.logicanegocio\\entidades\\recurrente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|solutionrelative:laempresa.logicanegocio\\entidades\\recurrente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\p3\\obligatorio\\laempresa.logicanegocio\\laempresa.logicanegocio\\entidades\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|solutionrelative:laempresa.logicanegocio\\entidades\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\p3\\obligatorio\\laempresa.logicanegocio\\laempresa.logicanegocio\\entidades\\tipodegasto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|solutionrelative:laempresa.logicanegocio\\entidades\\tipodegasto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\p3\\obligatorio\\laempresa.logicanegocio\\laempresa.logicanegocio\\entidades\\unico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|solutionrelative:laempresa.logicanegocio\\entidades\\unico.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\p3\\obligatorio\\laempresa.logicanegocio\\laempresa.logicanegocio\\entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|solutionrelative:laempresa.logicanegocio\\entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\p3\\obligatorio\\laempresa.logicanegocio\\laempresa.logicanegocio\\interfacesrepositorio\\irepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|solutionrelative:laempresa.logicanegocio\\interfacesrepositorio\\irepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\p3\\obligatorio\\laempresa.logicanegocio\\laempresa.logicanegocio\\interfaces\\ivalidable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|solutionrelative:laempresa.logicanegocio\\interfaces\\ivalidable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\p3\\obligatorio\\laempresa.logicanegocio\\laempresa.logicanegocio\\valueobjects\\nombrecompleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|solutionrelative:laempresa.logicanegocio\\valueobjects\\nombrecompleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2546BC92-4A37-4976-8B60-10990E736CBA}|LaEmpresa.AccesoDatos\\LaEmpresa.AccesoDatos.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\p3\\obligatorio\\laempresa.logicanegocio\\laempresa.accesodatos\\laempresa.accesodatos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{2546BC92-4A37-4976-8B60-10990E736CBA}|LaEmpresa.AccesoDatos\\LaEmpresa.AccesoDatos.csproj|solutionrelative:laempresa.accesodatos\\laempresa.accesodatos.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\p3\\obligatorio\\laempresa.logicanegocio\\laempresa.logicanegocio\\laempresa.logicanegocio.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|solutionrelative:laempresa.logicanegocio\\laempresa.logicanegocio.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "IValidable.cs",
+              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\P3\\Obligatorio\\LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio\\Interfaces\\IValidable.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.LogicaNegocio\\Interfaces\\IValidable.cs",
+              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\P3\\Obligatorio\\LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio\\Interfaces\\IValidable.cs",
+              "RelativeToolTip": "LaEmpresa.LogicaNegocio\\Interfaces\\IValidable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T13:32:47.295Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\P3\\Obligatorio\\LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio\\InterfacesRepositorio\\IRepositorio.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.LogicaNegocio\\InterfacesRepositorio\\IRepositorio.cs",
+              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\P3\\Obligatorio\\LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio\\InterfacesRepositorio\\IRepositorio.cs",
+              "RelativeToolTip": "LaEmpresa.LogicaNegocio\\InterfacesRepositorio\\IRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T13:31:38.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "LaEmpresa.AccesoDatos",
+              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\P3\\Obligatorio\\LaEmpresa.LogicaNegocio\\LaEmpresa.AccesoDatos\\LaEmpresa.AccesoDatos.csproj",
+              "RelativeDocumentMoniker": "LaEmpresa.AccesoDatos\\LaEmpresa.AccesoDatos.csproj",
+              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\P3\\Obligatorio\\LaEmpresa.LogicaNegocio\\LaEmpresa.AccesoDatos\\LaEmpresa.AccesoDatos.csproj",
+              "RelativeToolTip": "LaEmpresa.AccesoDatos\\LaEmpresa.AccesoDatos.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-05T13:22:59.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "NombreCompleto.cs",
+              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\P3\\Obligatorio\\LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio\\ValueObjects\\NombreCompleto.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.LogicaNegocio\\ValueObjects\\NombreCompleto.cs",
+              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\P3\\Obligatorio\\LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio\\ValueObjects\\NombreCompleto.cs",
+              "RelativeToolTip": "LaEmpresa.LogicaNegocio\\ValueObjects\\NombreCompleto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T13:14:53.879Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Unico.cs",
+              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\P3\\Obligatorio\\LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio\\Entidades\\Unico.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.LogicaNegocio\\Entidades\\Unico.cs",
+              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\P3\\Obligatorio\\LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio\\Entidades\\Unico.cs",
+              "RelativeToolTip": "LaEmpresa.LogicaNegocio\\Entidades\\Unico.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T13:14:20.77Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Recurrente.cs",
+              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\P3\\Obligatorio\\LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio\\Entidades\\Recurrente.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.LogicaNegocio\\Entidades\\Recurrente.cs",
+              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\P3\\Obligatorio\\LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio\\Entidades\\Recurrente.cs",
+              "RelativeToolTip": "LaEmpresa.LogicaNegocio\\Entidades\\Recurrente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T13:14:08.85Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MetodoPago.cs",
+              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\P3\\Obligatorio\\LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio\\Entidades\\MetodoPago.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.LogicaNegocio\\Entidades\\MetodoPago.cs",
+              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\P3\\Obligatorio\\LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio\\Entidades\\MetodoPago.cs",
+              "RelativeToolTip": "LaEmpresa.LogicaNegocio\\Entidades\\MetodoPago.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T13:13:55.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Pago.cs",
+              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\P3\\Obligatorio\\LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio\\Entidades\\Pago.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.LogicaNegocio\\Entidades\\Pago.cs",
+              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\P3\\Obligatorio\\LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio\\Entidades\\Pago.cs",
+              "RelativeToolTip": "LaEmpresa.LogicaNegocio\\Entidades\\Pago.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T13:13:38.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Rol.cs",
+              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\P3\\Obligatorio\\LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio\\Entidades\\Rol.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.LogicaNegocio\\Entidades\\Rol.cs",
+              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\P3\\Obligatorio\\LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio\\Entidades\\Rol.cs",
+              "RelativeToolTip": "LaEmpresa.LogicaNegocio\\Entidades\\Rol.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T13:13:26.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "LaEmpresa.LogicaNegocio",
+              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\P3\\Obligatorio\\LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj",
+              "RelativeDocumentMoniker": "LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj",
+              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\P3\\Obligatorio\\LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj",
+              "RelativeToolTip": "LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-09-05T13:12:34.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TipoDeGasto.cs",
+              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\P3\\Obligatorio\\LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio\\Entidades\\TipoDeGasto.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.LogicaNegocio\\Entidades\\TipoDeGasto.cs",
+              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\P3\\Obligatorio\\LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio\\Entidades\\TipoDeGasto.cs",
+              "RelativeToolTip": "LaEmpresa.LogicaNegocio\\Entidades\\TipoDeGasto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T13:12:31.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\P3\\Obligatorio\\LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio\\Entidades\\Usuario.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.LogicaNegocio\\Entidades\\Usuario.cs",
+              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\P3\\Obligatorio\\LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio\\Entidades\\Usuario.cs",
+              "RelativeToolTip": "LaEmpresa.LogicaNegocio\\Entidades\\Usuario.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T13:12:11.184Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Equipo.cs",
+              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\P3\\Obligatorio\\LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio\\Entidades\\Equipo.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.LogicaNegocio\\Entidades\\Equipo.cs",
+              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\P3\\Obligatorio\\LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio\\Entidades\\Equipo.cs",
+              "RelativeToolTip": "LaEmpresa.LogicaNegocio\\Entidades\\Equipo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-05T13:11:49.92Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
