@@ -7,7 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="EnMemoria\" />
+    <ProjectReference Include="..\LaEmpresa.LogicaNegocio\LaEmpresa.LogicaNegocio.csproj" />
   </ItemGroup>
 
 </Project>

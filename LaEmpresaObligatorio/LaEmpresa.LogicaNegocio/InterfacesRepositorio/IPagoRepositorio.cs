@@ -1,0 +1,16 @@
+﻿using LaEmpresa.LogicaNegocio.Entidades;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using LaEmpresa.LogicaNegocio.Entidades;
+
+namespace LaEmpresa.LogicaNegocio.InterfacesRepositorio
+{
+    public interface IPagoRepositorio : IRepositorio<Pago>
+    {
+        Pago FindByUser(Usuario usuario);
+        
+    }
+}

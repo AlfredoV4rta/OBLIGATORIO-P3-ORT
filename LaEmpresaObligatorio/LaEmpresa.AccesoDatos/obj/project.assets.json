@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "LaEmpresa.LogicaNegocio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/LaEmpresa.LogicaNegocio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LaEmpresa.LogicaNegocio.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "LaEmpresa.LogicaNegocio/1.0.0": {
+      "type": "project",
+      "path": "../LaEmpresa.LogicaNegocio/LaEmpresa.LogicaNegocio.csproj",
+      "msbuildProject": "../LaEmpresa.LogicaNegocio/LaEmpresa.LogicaNegocio.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "LaEmpresa.LogicaNegocio >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Lenovo\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj": {
+              "projectPath": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
