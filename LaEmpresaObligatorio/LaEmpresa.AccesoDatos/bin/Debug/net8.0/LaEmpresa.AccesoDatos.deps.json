@@ -569,6 +569,9 @@
         }
       },
       "LaEmpresa.LogicaNegocio/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Abstractions": "8.0.19"
+        },
         "runtime": {
           "LaEmpresa.LogicaNegocio.dll": {
             "assemblyVersion": "1.0.0.0",

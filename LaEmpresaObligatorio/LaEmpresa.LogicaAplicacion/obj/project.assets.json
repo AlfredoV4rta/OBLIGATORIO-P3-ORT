@@ -1003,6 +1003,9 @@
       "LaEmpresa.LogicaNegocio/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.Abstractions": "8.0.19"
+        },
         "compile": {
           "bin/placeholder/LaEmpresa.LogicaNegocio.dll": {}
         },

@@ -10,3 +10,4 @@ C:\Users\alumnoFI\Desktop\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.Logi
 C:\Users\alumnoFI\Desktop\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.LogicaNegocio\obj\Debug\net8.0\refint\LaEmpresa.LogicaNegocio.dll
 C:\Users\alumnoFI\Desktop\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.LogicaNegocio\obj\Debug\net8.0\LaEmpresa.LogicaNegocio.pdb
 C:\Users\alumnoFI\Desktop\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.LogicaNegocio\obj\Debug\net8.0\ref\LaEmpresa.LogicaNegocio.dll
+C:\Users\alumnoFI\Desktop\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.LogicaNegocio\obj\Debug\net8.0\LaEmpresa.LogicaNegocio.csproj.AssemblyReference.cache

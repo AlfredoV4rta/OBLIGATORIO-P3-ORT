@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2546BC92-4A37-4976-8B60-10990E736CBA}|LaEmpresa.AccesoDatos\\LaEmpresa.AccesoDatos.csproj|c:\\users\\alumnofi\\desktop\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.accesodatos\\migrations\\20250908130943_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2546BC92-4A37-4976-8B60-10990E736CBA}|LaEmpresa.AccesoDatos\\LaEmpresa.AccesoDatos.csproj|solutionrelative:laempresa.accesodatos\\migrations\\20250908130943_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|c:\\users\\alumnofi\\desktop\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.logicanegocio\\valueobjects\\nombrecompleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|solutionrelative:laempresa.logicanegocio\\valueobjects\\nombrecompleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|c:\\users\\alumnofi\\desktop\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.logicanegocio\\valueobjects\\emailcompleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|solutionrelative:laempresa.logicanegocio\\valueobjects\\emailcompleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2546BC92-4A37-4976-8B60-10990E736CBA}|LaEmpresa.AccesoDatos\\LaEmpresa.AccesoDatos.csproj|c:\\users\\alumnofi\\desktop\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.accesodatos\\ef\\libreriacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2546BC92-4A37-4976-8B60-10990E736CBA}|LaEmpresa.AccesoDatos\\LaEmpresa.AccesoDatos.csproj|solutionrelative:laempresa.accesodatos\\ef\\libreriacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|c:\\users\\alumnofi\\desktop\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.logicanegocio\\interfacesrepositorio\\itipodegastorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|solutionrelative:laempresa.logicanegocio\\interfacesrepositorio\\itipodegastorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -42,11 +58,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "20250908130943_InitialMigration.cs",
+              "DocumentMoniker": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.AccesoDatos\\Migrations\\20250908130943_InitialMigration.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.AccesoDatos\\Migrations\\20250908130943_InitialMigration.cs",
+              "ToolTip": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.AccesoDatos\\Migrations\\20250908130943_InitialMigration.cs",
+              "RelativeToolTip": "LaEmpresa.AccesoDatos\\Migrations\\20250908130943_InitialMigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T13:09:44.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "NombreCompleto.cs",
+              "DocumentMoniker": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaNegocio\\ValueObjects\\NombreCompleto.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.LogicaNegocio\\ValueObjects\\NombreCompleto.cs",
+              "ToolTip": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaNegocio\\ValueObjects\\NombreCompleto.cs",
+              "RelativeToolTip": "LaEmpresa.LogicaNegocio\\ValueObjects\\NombreCompleto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T13:09:10.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmailCompleto.cs",
+              "DocumentMoniker": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaNegocio\\ValueObjects\\EmailCompleto.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.LogicaNegocio\\ValueObjects\\EmailCompleto.cs",
+              "ToolTip": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaNegocio\\ValueObjects\\EmailCompleto.cs",
+              "RelativeToolTip": "LaEmpresa.LogicaNegocio\\ValueObjects\\EmailCompleto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T13:08:52.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LibreriaContext.cs",
+              "DocumentMoniker": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.AccesoDatos\\EF\\LibreriaContext.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.AccesoDatos\\EF\\LibreriaContext.cs",
+              "ToolTip": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.AccesoDatos\\EF\\LibreriaContext.cs",
+              "RelativeToolTip": "LaEmpresa.AccesoDatos\\EF\\LibreriaContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-08T12:52:22.411Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\Views\\TipoDeGasto\\Index.cshtml",
               "RelativeDocumentMoniker": "LaEmpresa.WebApp\\Views\\TipoDeGasto\\Index.cshtml",
@@ -59,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Equipo.cs",
               "DocumentMoniker": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaNegocio\\Entidades\\Equipo.cs",
               "RelativeDocumentMoniker": "LaEmpresa.LogicaNegocio\\Entidades\\Equipo.cs",
@@ -72,7 +140,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\Program.cs",
               "RelativeDocumentMoniker": "LaEmpresa.WebApp\\Program.cs",
@@ -85,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "TipoDeGastoController.cs",
               "DocumentMoniker": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\Controllers\\TipoDeGastoController.cs",
               "RelativeDocumentMoniker": "LaEmpresa.WebApp\\Controllers\\TipoDeGastoController.cs",
@@ -98,7 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 10,
               "Title": "IObtenerTipoDeGasto.cs",
               "DocumentMoniker": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\InterfacesCU\\CasosTipoDeGasto\\IObtenerTipoDeGasto.cs",
               "RelativeDocumentMoniker": "LaEmpresa.LogicaAplicacion\\InterfacesCU\\CasosTipoDeGasto\\IObtenerTipoDeGasto.cs",
@@ -111,7 +179,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 9,
               "Title": "ObtenerTipoDeGastoCU.cs",
               "DocumentMoniker": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\CasosDeUso\\TipoDeGastoCU\\ObtenerTipoDeGastoCU.cs",
               "RelativeDocumentMoniker": "LaEmpresa.LogicaAplicacion\\CasosDeUso\\TipoDeGastoCU\\ObtenerTipoDeGastoCU.cs",
@@ -124,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "IPagoRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaNegocio\\InterfacesRepositorio\\IPagoRepositorio.cs",
               "RelativeDocumentMoniker": "LaEmpresa.LogicaNegocio\\InterfacesRepositorio\\IPagoRepositorio.cs",
@@ -137,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "ITipoDeGastoRepositorio.cs",
               "DocumentMoniker": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaNegocio\\InterfacesRepositorio\\ITipoDeGastoRepositorio.cs",
               "RelativeDocumentMoniker": "LaEmpresa.LogicaNegocio\\InterfacesRepositorio\\ITipoDeGastoRepositorio.cs",
