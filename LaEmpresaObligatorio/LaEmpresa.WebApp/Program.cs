@@ -1,3 +1,10 @@
+using LaEmpresa.LogicaNegocio.InterfacesRepositorio;
+using LaEmpresa.AccesoDatos.EnMemoria;
+using LaEmpresa.LogicaAplicacion.InterfacesCU.CasosTipoDeGasto;
+using LaEmpresa.LogicaNegocio.Entidades;
+using LaEmpresa.LogicaAplicacion.CasosDeUso;
+using LaEmpresa.LogicaAplicacion.CasosDeUso.TipoDeGastoCU;
+
 namespace LaEmpresa.WebApp
 {
     public class Program
@@ -8,6 +15,12 @@ namespace LaEmpresa.WebApp
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+
+            // Inicalizar Repositorios
+            builder.Services.AddSingleton<ITipoDeGastoRepositorio, RepositorioTipoDeGasto>();
+
+            //
+            builder.Services.AddScoped<IObtenerTipoDeGasto, ObtenerTipoDeGastoCU>();
 
             var app = builder.Build();
 
@@ -28,7 +41,7 @@ namespace LaEmpresa.WebApp
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Home}/{action=Index}/{id?}");
+                pattern: "{controller=TipoDeGasto}/{action=Index}/{id?}");
 
             app.Run();
         }

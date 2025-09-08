@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LaEmpresa.LogicaAplicacion.InterfacesCU.CasosPago
 {
-    internal class IAltaPago
+    public interface IAltaPago
     {
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace LaEmpresa.LogicaNegocio.ValueObject
+namespace LaEmpresa.LogicaNegocio.ValueObjects
 {
     public class NombreCompleto
     {

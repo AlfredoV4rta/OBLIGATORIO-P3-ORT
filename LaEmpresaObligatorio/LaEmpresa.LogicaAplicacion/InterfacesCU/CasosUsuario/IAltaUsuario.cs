@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace LaEmpresa.LogicaAplicacion.InterfacesCU.CasosUsuario
 {
-    internal class IAltaUsuario
+    public interface IAltaUsuario
     {
     }
 }

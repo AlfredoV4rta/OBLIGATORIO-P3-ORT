@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using LaEmpresa.LogicaNegocio.ValueObject;
+using LaEmpresa.LogicaNegocio.ValueObjects;
 
 namespace LaEmpresa.LogicaNegocio.Entidades
 {

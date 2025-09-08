@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace LaEmpresa.LogicaNegocio.Exceptions
 {
-    public class UsuarioException
+    public class UsuarioException: Exception
     {
+        public UsuarioException() { }
+
+        public UsuarioException(string message) : base(message) { }
+
+        public UsuarioException(string message, Exception ex) : base(message, ex) { }
     }
 }
