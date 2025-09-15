@@ -1930,6 +1930,7 @@
       },
       "LaEmpresa.LogicaNegocio/1.0.0": {
         "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.19",
           "Microsoft.EntityFrameworkCore.Abstractions": "8.0.19"
         },
         "runtime": {

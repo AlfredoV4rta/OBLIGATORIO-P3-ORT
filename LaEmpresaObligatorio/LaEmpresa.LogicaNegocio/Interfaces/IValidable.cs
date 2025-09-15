@@ -8,6 +8,6 @@ namespace LaEmpresa.LogicaNegocio.Interfaces
 {
     public interface IValidable
     {
-        public static void Validar() { }
+        public void Validar() { }
     }
 }

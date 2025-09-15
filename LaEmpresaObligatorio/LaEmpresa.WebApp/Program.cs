@@ -1,9 +1,12 @@
 using LaEmpresa.LogicaNegocio.InterfacesRepositorio;
-using LaEmpresa.AccesoDatos.EnMemoria;
 using LaEmpresa.LogicaAplicacion.InterfacesCU.CasosTipoDeGasto;
 using LaEmpresa.LogicaNegocio.Entidades;
 using LaEmpresa.LogicaAplicacion.CasosDeUso;
 using LaEmpresa.LogicaAplicacion.CasosDeUso.TipoDeGastoCU;
+using LaEmpresa.AccesoDatos.EF;
+using Microsoft.EntityFrameworkCore;
+using LaEmpresa.AccesoDatos.EF.RepositoriosEF;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace LaEmpresa.WebApp
 {
@@ -16,11 +19,18 @@ namespace LaEmpresa.WebApp
             // Add services to the container.
             builder.Services.AddControllersWithViews();
 
-            // Inicalizar Repositorios
-            builder.Services.AddSingleton<ITipoDeGastoRepositorio, RepositorioTipoDeGasto>();
+            //Inicializar DBContext
+            builder.Services.AddDbContext<LaEmpresaContext>(
+                options => options.UseSqlServer(builder.Configuration.GetConnectionString("LaEmpresa"))    
+            );
 
-            //
+            // Inicalizar Repositorios
+            builder.Services.AddScoped<ITipoDeGastoRepositorio, RepositorioTipoDeGastoEF>();
+
+
+            //Inicializar CU
             builder.Services.AddScoped<IObtenerTipoDeGasto, ObtenerTipoDeGastoCU>();
+            builder.Services.AddScoped<IAltaTipoDeGasto, AltaTipoDeGastoCU>();
 
             var app = builder.Build();
 
