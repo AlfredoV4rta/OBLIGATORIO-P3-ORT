@@ -31,6 +31,8 @@ namespace LaEmpresa.WebApp
             //Inicializar CU
             builder.Services.AddScoped<IObtenerTipoDeGasto, ObtenerTipoDeGastoCU>();
             builder.Services.AddScoped<IAltaTipoDeGasto, AltaTipoDeGastoCU>();
+            builder.Services.AddScoped<IBorrarTipoDeGasto, BorrarTipoDeGastoCU>();
+            builder.Services.AddScoped<IObtenerTipoDeGastoPorId, ObtenerTipoDeGastoPorIdCU>();
 
             var app = builder.Build();
 

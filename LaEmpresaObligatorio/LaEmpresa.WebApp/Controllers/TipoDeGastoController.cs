@@ -9,11 +9,19 @@ namespace LaEmpresa.WebApp.Controllers
     {
         private IObtenerTipoDeGasto _obtenerTipoDeGastoCU;
         private IAltaTipoDeGasto _altaTipoDeGasto;
+        private IBorrarTipoDeGasto _borrarTipoDeGasto;
+        private IObtenerTipoDeGastoPorId _obtenerTipoDeGastoPorId;
         
-        public TipoDeGastoController (IObtenerTipoDeGasto obtenerTipoCU, IAltaTipoDeGasto altaTipoDeGasto)
+        public TipoDeGastoController (
+            IObtenerTipoDeGasto obtenerTipoCU, 
+            IAltaTipoDeGasto altaTipoDeGasto, 
+            IBorrarTipoDeGasto borrarTipoDeGasto,
+            IObtenerTipoDeGastoPorId obtenerTipoDeGastoPorId)
         {
             _obtenerTipoDeGastoCU = obtenerTipoCU;
             _altaTipoDeGasto = altaTipoDeGasto;
+            _borrarTipoDeGasto = borrarTipoDeGasto;
+            _obtenerTipoDeGastoPorId = obtenerTipoDeGastoPorId;
         }
 
         public ActionResult Index()
@@ -70,7 +78,7 @@ namespace LaEmpresa.WebApp.Controllers
 
         public ActionResult Delete(int id)
         {
-            return View();
+            return View(_obtenerTipoDeGastoPorId.ObtenerTipoDeGastoPorId(id));
         }
 
        
@@ -80,9 +88,10 @@ namespace LaEmpresa.WebApp.Controllers
         {
             try
             {
+                _borrarTipoDeGasto.BorrarTipoDeGasto(id);
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch(Exception ex)
             {
                 return View();
             }

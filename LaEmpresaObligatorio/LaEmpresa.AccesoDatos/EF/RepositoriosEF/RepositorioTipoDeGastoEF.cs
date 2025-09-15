@@ -1,4 +1,5 @@
 ﻿using LaEmpresa.LogicaNegocio.Entidades;
+using LaEmpresa.LogicaNegocio.Exceptions;
 using LaEmpresa.LogicaNegocio.InterfacesRepositorio;
 using System;
 using System.Collections.Generic;
@@ -31,17 +32,28 @@ namespace LaEmpresa.AccesoDatos.EF.RepositoriosEF
 
         public TipoDeGasto FindById(int id)
         {
-            throw new NotImplementedException();
+            foreach (TipoDeGasto tdg in _context.TipoDeGastos)
+            {
+                if (tdg.Id == id)
+                {
+                    return tdg;
+                }
+            }
+
+            throw new TipoDeGastoException("Id no encontrado");
         }
 
         public void Remove(int id)
         {
-            throw new NotImplementedException();
+            TipoDeGasto aBorrar = new TipoDeGasto { Id = id};
+            _context.TipoDeGastos.Remove(aBorrar);
+            _context.SaveChanges();
         }
 
         public void Update(TipoDeGasto obj)
         {
-            throw new NotImplementedException();
+            _context.TipoDeGastos.Update(obj);
+            _context.SaveChanges();
         }
     }
 }
