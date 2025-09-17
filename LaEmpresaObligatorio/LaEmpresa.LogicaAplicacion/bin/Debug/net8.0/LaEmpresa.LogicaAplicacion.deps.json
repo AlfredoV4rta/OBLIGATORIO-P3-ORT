@@ -442,7 +442,14 @@
           }
         }
       },
-      "System.Formats.Asn1/8.0.2": {},
+      "System.Formats.Asn1/8.0.2": {
+        "runtime": {
+          "lib/net8.0/System.Formats.Asn1.dll": {
+            "assemblyVersion": "8.0.0.0",
+            "fileVersion": "8.0.1325.6609"
+          }
+        }
+      },
       "System.IdentityModel.Tokens.Jwt/6.35.0": {
         "dependencies": {
           "Microsoft.IdentityModel.JsonWebTokens": "6.35.0",
@@ -574,10 +581,7 @@
           "Microsoft.EntityFrameworkCore.SqlServer": "8.0.19"
         },
         "runtime": {
-          "LaEmpresa.AccesoDatos.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "LaEmpresa.AccesoDatos.dll": {}
         }
       },
       "LaEmpresa.LogicaNegocio/1.0.0": {
@@ -585,10 +589,7 @@
           "Microsoft.EntityFrameworkCore.Abstractions": "8.0.19"
         },
         "runtime": {
-          "LaEmpresa.LogicaNegocio.dll": {
-            "assemblyVersion": "1.0.0.0",
-            "fileVersion": "1.0.0.0"
-          }
+          "LaEmpresa.LogicaNegocio.dll": {}
         }
       }
     }
