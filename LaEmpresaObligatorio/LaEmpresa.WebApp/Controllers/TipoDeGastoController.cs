@@ -91,7 +91,7 @@ namespace LaEmpresa.WebApp.Controllers
                 _borrarTipoDeGasto.BorrarTipoDeGasto(id);
                 return RedirectToAction(nameof(Index));
             }
-            catch(Exception ex)
+            catch
             {
                 return View();
             }
