@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace LaEmpresa.AccesoDatos.Migrations
 {
-    [DbContext(typeof(LibreriaContext))]
+    [DbContext(typeof(LaEmpresaContext))]
     [Migration("20250908130943_InitialMigration")]
     partial class InitialMigration
     {

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LaEmpresa.AccesoDatos.EF
 {
-    public class LibreriaContext : DbContext
+    public class LaEmpresaContext : DbContext
     {
         public DbSet<TipoDeGasto> TipoDeGastos { get; set; }
 
@@ -18,13 +18,7 @@ namespace LaEmpresa.AccesoDatos.EF
 
         public DbSet<Pago> Pagos { get; set; }
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        {
-            optionsBuilder.UseSqlServer(
-                @"SERVER = (localdb)\MsSqlLocalDb;" +
-                "DATABASE = LaEmpresaDB;" +
-                "Integrated Security = true;"
-            );
-        } 
+
+        public LaEmpresaContext(DbContextOptions options) : base(options) { }
     }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "EjNG6Va00+mMauWJg79zJLtJ37H5znWINZ1IzIas6PGHTQXtSOJP2MK7BxV0M2l0cLvgvZU6XSkUcgk8MSaVcA==",
+  "dgSpecHash": "tigyGphaywN9lZhw+Pw+d/oXUIUpqgR8kl6CH5ilzPWYP5xnymUxYWHsxtmhptHban0qkX6ZyHRsyootnI2cUQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj",
   "expectedPackageFiles": [
@@ -163,5 +163,12 @@
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

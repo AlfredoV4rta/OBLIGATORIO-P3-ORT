@@ -9,7 +9,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace LaEmpresa.AccesoDatos.Migrations
 {
-    [DbContext(typeof(LibreriaContext))]
+    [DbContext(typeof(LaEmpresaContext))]
     partial class LibreriaContextModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)

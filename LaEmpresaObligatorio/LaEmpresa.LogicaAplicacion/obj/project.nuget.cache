@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DPCordIZ8WKVzAocgUh8Gfn5K2J1M1DkMWYVA6EuJfS0+2Hn3xQ+FFeb7P/BYH9rSvcEiDvxRtkCE+BGaH25JA==",
+  "dgSpecHash": "pkNRd6THuYT6ZTX+eK5SiJoBxp9DZ1TX7AeyaqXQQ+V3vHYjSn4Xe38dakE5pxDpCtfMqtcZTcnqlYwCpvpUEA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj",
   "expectedPackageFiles": [
@@ -60,5 +60,12 @@
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.4\\system.threading.tasks.extensions.4.5.4.nupkg.sha512",
     "C:\\Users\\Lenovo\\.nuget\\packages\\system.windows.extensions\\6.0.0\\system.windows.extensions.6.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
