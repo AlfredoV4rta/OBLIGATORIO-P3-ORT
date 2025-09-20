@@ -32,7 +32,7 @@ namespace LaEmpresa.WebApp.Controllers
  
         public ActionResult Details(int id)
         {
-            return View();
+            return View(_obtenerTipoDeGastoPorId.ObtenerTipoDeGastoPorId(id));
         }
 
         public ActionResult Create()

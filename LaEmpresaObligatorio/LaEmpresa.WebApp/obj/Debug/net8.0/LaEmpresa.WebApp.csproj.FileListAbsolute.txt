@@ -265,3 +265,12 @@ C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmp
 C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\obj\Debug\net8.0\LaEmpresa.WebApp.pdb
 C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\obj\Debug\net8.0\LaEmpresa.WebApp.genruntimeconfig.cache
 C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\obj\Debug\net8.0\ref\LaEmpresa.WebApp.dll
+C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.dll
+C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter.dll
+C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\bin\Debug\net8.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\bin\Debug\net8.0\Microsoft.JSInterop.dll
