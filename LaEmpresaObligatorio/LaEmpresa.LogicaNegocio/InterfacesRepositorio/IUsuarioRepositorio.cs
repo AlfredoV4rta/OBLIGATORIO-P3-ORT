@@ -10,5 +10,7 @@ namespace LaEmpresa.LogicaNegocio.InterfacesRepositorio
     public interface IUsuarioRepositorio : IRepositorio<Usuario>
     {
         Usuario FindbyEmail(string email);
+
+        public Usuario Login(string email, string password);
     }
 }

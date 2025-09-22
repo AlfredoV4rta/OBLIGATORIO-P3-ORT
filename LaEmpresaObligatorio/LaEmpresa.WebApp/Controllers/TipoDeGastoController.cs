@@ -7,21 +7,24 @@ namespace LaEmpresa.WebApp.Controllers
 {
     public class TipoDeGastoController : Controller
     {
-        private IObtenerTipoDeGasto _obtenerTipoDeGastoCU;
         private IAltaTipoDeGasto _altaTipoDeGasto;
         private IBorrarTipoDeGasto _borrarTipoDeGasto;
+        private IObtenerTipoDeGasto _obtenerTipoDeGastoCU;
         private IObtenerTipoDeGastoPorId _obtenerTipoDeGastoPorId;
+        private IEditarTipoDeGasto _editarTipoDeGasto;
         
         public TipoDeGastoController (
             IObtenerTipoDeGasto obtenerTipoCU, 
             IAltaTipoDeGasto altaTipoDeGasto, 
             IBorrarTipoDeGasto borrarTipoDeGasto,
-            IObtenerTipoDeGastoPorId obtenerTipoDeGastoPorId)
+            IObtenerTipoDeGastoPorId obtenerTipoDeGastoPorId,
+            IEditarTipoDeGasto editarTipoDeGasto)
         {
             _obtenerTipoDeGastoCU = obtenerTipoCU;
             _altaTipoDeGasto = altaTipoDeGasto;
             _borrarTipoDeGasto = borrarTipoDeGasto;
             _obtenerTipoDeGastoPorId = obtenerTipoDeGastoPorId;
+            _editarTipoDeGasto = editarTipoDeGasto;
         }
 
         public ActionResult Index()
@@ -56,17 +59,18 @@ namespace LaEmpresa.WebApp.Controllers
             }
         }
 
-        public ActionResult Edit(int id)
+        public ActionResult Edit(TipoDeGastoDTO aEditar)
         {
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit(TipoDeGastoDTO aEditar, IFormCollection collection)
         {
             try
             {
+                _editarTipoDeGasto.EditarTipoDeGasto(aEditar);
                 return RedirectToAction(nameof(Index));
             }
             catch

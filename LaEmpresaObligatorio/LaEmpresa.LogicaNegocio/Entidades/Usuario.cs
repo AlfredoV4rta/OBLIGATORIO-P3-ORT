@@ -15,7 +15,7 @@ namespace LaEmpresa.LogicaNegocio.Entidades
         }
 
         public int Id { get; set; }
-        public Equipo Equipo { get; set; }
+        public int IdEquipo { get; set; }
         public NombreCompleto NombreCompleto { get; set; }
         public string Contrasenia { get; set; }
         public EmailCompleto Email { get; set; }

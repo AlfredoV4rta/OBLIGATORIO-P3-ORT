@@ -101,15 +101,13 @@ namespace LaEmpresa.AccesoDatos.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("EquipoId")
+                    b.Property<int>("IdEquipo")
                         .HasColumnType("int");
 
                     b.Property<int>("Rol")
                         .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("EquipoId");
 
                     b.ToTable("Usuarios");
                 });
@@ -135,16 +133,14 @@ namespace LaEmpresa.AccesoDatos.Migrations
 
             modelBuilder.Entity("LaEmpresa.LogicaNegocio.Entidades.Usuario", b =>
                 {
-                    b.HasOne("LaEmpresa.LogicaNegocio.Entidades.Equipo", "Equipo")
-                        .WithMany()
-                        .HasForeignKey("EquipoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.OwnsOne("LaEmpresa.LogicaNegocio.ValueObjects.EmailCompleto", "Email", b1 =>
                         {
                             b1.Property<int>("UsuarioId")
                                 .HasColumnType("int");
+
+                            b1.Property<string>("Email")
+                                .IsRequired()
+                                .HasColumnType("nvarchar(max)");
 
                             b1.Property<string>("SiglaApellido")
                                 .IsRequired()
@@ -185,8 +181,6 @@ namespace LaEmpresa.AccesoDatos.Migrations
 
                     b.Navigation("Email")
                         .IsRequired();
-
-                    b.Navigation("Equipo");
 
                     b.Navigation("NombreCompleto")
                         .IsRequired();

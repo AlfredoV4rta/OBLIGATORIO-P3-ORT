@@ -7,6 +7,8 @@ using LaEmpresa.AccesoDatos.EF;
 using Microsoft.EntityFrameworkCore;
 using LaEmpresa.AccesoDatos.EF.RepositoriosEF;
 using Microsoft.Extensions.DependencyInjection;
+using LaEmpresa.LogicaAplicacion.InterfacesCU.CasosUsuario;
+using LaEmpresa.LogicaAplicacion.CasosDeUso.UsuarioCU;
 
 namespace LaEmpresa.WebApp
 {
@@ -26,6 +28,7 @@ namespace LaEmpresa.WebApp
 
             // Inicalizar Repositorios
             builder.Services.AddScoped<ITipoDeGastoRepositorio, RepositorioTipoDeGastoEF>();
+            builder.Services.AddScoped<IUsuarioRepositorio, RepositorioUsuarioEF>();
 
 
             //Inicializar CU
@@ -33,6 +36,12 @@ namespace LaEmpresa.WebApp
             builder.Services.AddScoped<IAltaTipoDeGasto, AltaTipoDeGastoCU>();
             builder.Services.AddScoped<IBorrarTipoDeGasto, BorrarTipoDeGastoCU>();
             builder.Services.AddScoped<IObtenerTipoDeGastoPorId, ObtenerTipoDeGastoPorIdCU>();
+            builder.Services.AddScoped<IEditarTipoDeGasto, EditarTipoDeGastoCU>();
+            builder.Services.AddScoped<ILogin, LoginCU>();
+            builder.Services.AddScoped<IObtenerUsuarios, ObtenerUsuariosCU>();
+
+            //Sesion
+            builder.Services.AddSession();
 
             var app = builder.Build();
 
@@ -48,12 +57,12 @@ namespace LaEmpresa.WebApp
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseSession();
             app.UseAuthorization();
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=TipoDeGasto}/{action=Index}/{id?}");
+                pattern: "{controller=Home}/{action=Login}/{id?}");
 
             app.Run();
         }

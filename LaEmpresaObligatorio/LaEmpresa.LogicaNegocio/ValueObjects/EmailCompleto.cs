@@ -10,6 +10,13 @@ namespace LaEmpresa.LogicaNegocio.ValueObjects
     [Owned]
     public class EmailCompleto
     {
+        public string Email { get; set; }
+
+        public EmailCompleto(string email)
+        {
+            this.Email = email;
+        }
+
         public string SiglaNombre { get; set; }
         
         public string SiglaApellido { get; set; }
