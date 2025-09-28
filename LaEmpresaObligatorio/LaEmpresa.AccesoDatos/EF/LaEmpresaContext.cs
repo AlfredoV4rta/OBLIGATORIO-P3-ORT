@@ -18,7 +18,7 @@ namespace LaEmpresa.AccesoDatos.EF
 
         public DbSet<Pago> Pagos { get; set; }
 
-
+        public DbSet<Auditoria> Auditorias { get; set; }
         public LaEmpresaContext(DbContextOptions options) : base(options) { }
     }
 }

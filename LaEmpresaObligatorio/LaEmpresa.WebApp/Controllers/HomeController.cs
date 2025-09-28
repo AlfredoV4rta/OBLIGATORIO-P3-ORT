@@ -36,6 +36,7 @@ namespace LaEmpresa.WebApp.Controllers
             {
                 UsuarioDTO usuarioLogueado = _loginCU.Login(email, contrasenia);
                 HttpContext.Session.SetString("usuario", usuarioLogueado.Nombre);
+                HttpContext.Session.SetString("email", usuarioLogueado.Email);
                 HttpContext.Session.SetInt32("idUsuario", usuarioLogueado.Id);
                 return RedirectToAction("Index");
             }
