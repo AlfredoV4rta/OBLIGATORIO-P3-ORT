@@ -1,15 +1,31 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿using System;
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
 namespace LaEmpresa.AccesoDatos.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialMigration : Migration
+    public partial class InitialCreate : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.CreateTable(
+                name: "Auditorias",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Fecha = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    Accion = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Auditorias", x => x.Id);
+                });
+
             migrationBuilder.CreateTable(
                 name: "Equipos",
                 columns: table => new
@@ -43,10 +59,11 @@ namespace LaEmpresa.AccesoDatos.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    EquipoId = table.Column<int>(type: "int", nullable: false),
+                    IdEquipo = table.Column<int>(type: "int", nullable: false),
                     NombreCompleto_Nombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     NombreCompleto_Apellido = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Contrasenia = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Email_Email = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email_SiglaNombre = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Email_SiglaApellido = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Rol = table.Column<int>(type: "int", nullable: false)
@@ -54,12 +71,6 @@ namespace LaEmpresa.AccesoDatos.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Usuarios", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Usuarios_Equipos_EquipoId",
-                        column: x => x.EquipoId,
-                        principalTable: "Equipos",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -99,16 +110,17 @@ namespace LaEmpresa.AccesoDatos.Migrations
                 name: "IX_Pagos_UsuarioId",
                 table: "Pagos",
                 column: "UsuarioId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Usuarios_EquipoId",
-                table: "Usuarios",
-                column: "EquipoId");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Auditorias");
+
+            migrationBuilder.DropTable(
+                name: "Equipos");
+
             migrationBuilder.DropTable(
                 name: "Pagos");
 
@@ -117,9 +129,6 @@ namespace LaEmpresa.AccesoDatos.Migrations
 
             migrationBuilder.DropTable(
                 name: "Usuarios");
-
-            migrationBuilder.DropTable(
-                name: "Equipos");
         }
     }
 }

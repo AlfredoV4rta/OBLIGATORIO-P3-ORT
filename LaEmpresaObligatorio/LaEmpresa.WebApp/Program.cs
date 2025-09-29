@@ -29,6 +29,7 @@ namespace LaEmpresa.WebApp
             // Inicalizar Repositorios
             builder.Services.AddScoped<ITipoDeGastoRepositorio, RepositorioTipoDeGastoEF>();
             builder.Services.AddScoped<IUsuarioRepositorio, RepositorioUsuarioEF>();
+            builder.Services.AddScoped<IAuditoriaRepositorio, RepositorioAuditoriaEF>();
 
 
             //Inicializar CU
@@ -39,6 +40,7 @@ namespace LaEmpresa.WebApp
             builder.Services.AddScoped<IEditarTipoDeGasto, EditarTipoDeGastoCU>();
             builder.Services.AddScoped<ILogin, LoginCU>();
             builder.Services.AddScoped<IObtenerUsuarios, ObtenerUsuariosCU>();
+     
 
             //Sesion
             builder.Services.AddSession();

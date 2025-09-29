@@ -9,6 +9,6 @@ namespace LaEmpresa.LogicaAplicacion.InterfacesCU.CasosTipoDeGasto
 {
     public interface IEditarTipoDeGasto
     {
-        public void EditarTipoDeGasto(TipoDeGastoDTO tipoDeGastoDTO);
+        public void EditarTipoDeGasto(TipoDeGastoDTO tipoDeGastoDTO, string email);
     }
 }

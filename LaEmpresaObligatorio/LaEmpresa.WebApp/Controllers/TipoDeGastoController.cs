@@ -50,7 +50,8 @@ namespace LaEmpresa.WebApp.Controllers
         {
             try
             {
-                _altaTipoDeGasto.AgregarTipoDeGasto(tipoDeGastoDTO);
+                string email = HttpContext.Session.GetString("email");
+                _altaTipoDeGasto.AgregarTipoDeGasto(tipoDeGastoDTO, email);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -70,7 +71,8 @@ namespace LaEmpresa.WebApp.Controllers
         {
             try
             {
-                _editarTipoDeGasto.EditarTipoDeGasto(aEditar);
+                string email = HttpContext.Session.GetString("email");
+                _editarTipoDeGasto.EditarTipoDeGasto(aEditar, email);
                 return RedirectToAction(nameof(Index));
             }
             catch
@@ -92,7 +94,8 @@ namespace LaEmpresa.WebApp.Controllers
         {
             try
             {
-                _borrarTipoDeGasto.BorrarTipoDeGasto(id);
+                string email = HttpContext.Session.GetString("email");
+                _borrarTipoDeGasto.BorrarTipoDeGasto(id, email);
                 return RedirectToAction(nameof(Index));
             }
             catch

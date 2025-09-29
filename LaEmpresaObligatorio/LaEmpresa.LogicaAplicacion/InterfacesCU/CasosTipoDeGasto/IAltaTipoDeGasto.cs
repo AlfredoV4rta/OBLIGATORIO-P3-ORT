@@ -9,6 +9,6 @@ namespace LaEmpresa.LogicaAplicacion.InterfacesCU.CasosTipoDeGasto
 {
     public interface IAltaTipoDeGasto
     {
-        public void AgregarTipoDeGasto(TipoDeGastoDTO nuevoTipoGasto);
+        public void AgregarTipoDeGasto(TipoDeGastoDTO nuevoTipoGasto, string email);
     }
 }

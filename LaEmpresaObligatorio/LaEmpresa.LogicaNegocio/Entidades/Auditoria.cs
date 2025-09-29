@@ -1,4 +1,5 @@
-﻿using System;
+﻿using LaEmpresa.LogicaNegocio.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace LaEmpresa.LogicaNegocio.Entidades
 {
-    public class Auditoria
+    public class Auditoria :IValidable
     {
-        public string Id { get; set; }
+        public int Id { get; set; }
 
         public string Email { get; set; }
 
@@ -16,13 +17,16 @@ namespace LaEmpresa.LogicaNegocio.Entidades
 
         public string Accion {  get; set; }
 
-        public Auditoria(string id, string email, string accion)
+        public Auditoria(string email, string accion)
         {
-            Id = id;
+
+            Fecha = DateTime.Now;
             Email = email;
             Accion = accion;
         }
 
         public Auditoria() { }
+
+        public void Validar() { }
     }
 }
