@@ -10,5 +10,7 @@ namespace LaEmpresa.LogicaNegocio.Entidades
     {
         public DateTime FechaDePago { get; set; }
         public string NroRecibo { get; set; }
+
+        public Unico() { }
     }
 }

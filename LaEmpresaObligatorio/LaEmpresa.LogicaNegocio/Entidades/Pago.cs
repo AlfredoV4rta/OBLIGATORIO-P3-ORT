@@ -1,17 +1,73 @@
-﻿using System;
+﻿using LaEmpresa.LogicaNegocio.Exceptions;
+using LaEmpresa.LogicaNegocio.Interfaces;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace LaEmpresa.LogicaNegocio.Entidades
 {
-    public class Pago
+    public abstract class Pago: IValidable, IEquatable<Pago>
     {
         public int Id { get; set; }
         public MetodoPago MetodoDePago { get; set; }
+        [ForeignKey(nameof(TipoGasto))] public int IdTipoGasto { get; set; }
         public TipoDeGasto TipoGasto { get; set; }
+        [ForeignKey(nameof(Usuario))] public int IdUsuario { get; set; }
         public Usuario Usuario { get; set; }
         public string Descripcion { get; set; }
+
+        public Pago() { }
+
+        public Pago(MetodoPago metodoDePago, int idTipoGasto, int idUsuario, string descripcion)
+        {
+            MetodoDePago = metodoDePago;
+            IdTipoGasto = idTipoGasto;
+            IdUsuario = idUsuario;
+            Descripcion = descripcion;
+        }
+
+        public void Validar()
+        {
+            this.ValidarMetodoPago();
+            this.ValidarDescripcion();
+            this.ValidarTipoGasto();
+        }
+
+        public void ValidarMetodoPago()
+        {
+            if (this.MetodoDePago == null)
+            {
+                throw new PagoException("Metodo de pago no ingresado");
+            }
+        }
+
+        public void ValidarUsuario()
+        {
+            Usuario.Validar();
+        }
+
+        public void ValidarTipoGasto()
+        {
+            if (this.TipoGasto == null)
+            {
+                throw new PagoException("Tipo de gasto no ingresado");
+            }
+        }
+
+        public void ValidarDescripcion()
+        {
+            if (string.IsNullOrEmpty(Descripcion))
+            {
+                throw new PagoException("La descripcion no puede ser vacia");
+            }
+        }
+
+        public bool Equals(Pago? other)
+        {
+            return this.Id.Equals(other.Id);
+        }
     }
 }

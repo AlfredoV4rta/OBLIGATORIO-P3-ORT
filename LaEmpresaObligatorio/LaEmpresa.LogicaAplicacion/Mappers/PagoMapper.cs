@@ -1,4 +1,7 @@
-﻿using System;
+﻿using LaEmpresa.AccesoDatos.Migrations;
+using LaEmpresa.LogicaAplicacion.DTOs;
+using LaEmpresa.LogicaNegocio.Entidades;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,5 +11,44 @@ namespace LaEmpresa.LogicaAplicacion.Mappers
 {
     public class PagoMapper
     {
+        public static Unico toUnico(PagoDTO dto)
+        {
+            return new Unico
+            {
+                Id = dto.Id,
+                MetodoDePago = dto.MetodoPago,
+                IdTipoGasto = dto.IdTipoDeGasto,
+                IdUsuario = dto.IdUsuario,
+                Descripcion = dto.Descripcion,
+                NroRecibo = dto.NroRecibo,
+                FechaDePago = dto.FechaDePago
+            };
+        }
+
+        public static Recurrente toRecurrente(PagoDTO dto)
+        {
+            return new Recurrente
+            {
+                Id = dto.Id,
+                MetodoDePago = dto.MetodoPago,
+                IdTipoGasto = dto.IdTipoDeGasto,
+                IdUsuario = dto.IdUsuario,
+                Descripcion = dto.Descripcion,
+                FechaDesde = dto.FechaDesde,
+                FechaHasta = dto.FechaHasta
+            };
+        }
+
+        public static PagoDTO ToDTO(Pago toDto)
+        {
+            return new PagoDTO
+            {
+                Id = toDto.Id,
+                MetodoPago = toDto.MetodoDePago,
+                IdTipoDeGasto = toDto.IdTipoGasto,
+                IdUsuario = toDto.IdUsuario,
+                Descripcion = toDto.Descripcion
+            };
+        }
     }
 }

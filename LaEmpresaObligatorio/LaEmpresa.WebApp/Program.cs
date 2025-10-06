@@ -9,6 +9,8 @@ using LaEmpresa.AccesoDatos.EF.RepositoriosEF;
 using Microsoft.Extensions.DependencyInjection;
 using LaEmpresa.LogicaAplicacion.InterfacesCU.CasosUsuario;
 using LaEmpresa.LogicaAplicacion.CasosDeUso.UsuarioCU;
+using LaEmpresa.LogicaAplicacion.InterfacesCU.CasosPago;
+using LaEmpresa.LogicaAplicacion.CasosDeUso.PagoCU;
 
 namespace LaEmpresa.WebApp
 {
@@ -30,6 +32,7 @@ namespace LaEmpresa.WebApp
             builder.Services.AddScoped<ITipoDeGastoRepositorio, RepositorioTipoDeGastoEF>();
             builder.Services.AddScoped<IUsuarioRepositorio, RepositorioUsuarioEF>();
             builder.Services.AddScoped<IAuditoriaRepositorio, RepositorioAuditoriaEF>();
+            builder.Services.AddScoped<IPagoRepositorio, RepositorioPagoEF>();
 
 
             //Inicializar CU
@@ -40,7 +43,8 @@ namespace LaEmpresa.WebApp
             builder.Services.AddScoped<IEditarTipoDeGasto, EditarTipoDeGastoCU>();
             builder.Services.AddScoped<ILogin, LoginCU>();
             builder.Services.AddScoped<IObtenerUsuarios, ObtenerUsuariosCU>();
-     
+            builder.Services.AddScoped<IAltaPago, AltaPagoCU>();
+
 
             //Sesion
             builder.Services.AddSession();
