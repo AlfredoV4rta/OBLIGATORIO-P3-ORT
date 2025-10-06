@@ -10,5 +10,7 @@ namespace LaEmpresa.LogicaNegocio.Entidades
     {
         public DateTime FechaDesde { get; set; }
         public DateTime FechaHasta { get; set; }
+
+        public Recurrente() { }
 }
 }

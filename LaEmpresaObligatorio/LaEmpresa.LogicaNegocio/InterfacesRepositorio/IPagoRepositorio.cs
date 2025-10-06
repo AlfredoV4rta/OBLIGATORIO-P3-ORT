@@ -10,7 +10,6 @@ namespace LaEmpresa.LogicaNegocio.InterfacesRepositorio
 {
     public interface IPagoRepositorio : IRepositorio<Pago>
     {
-        Pago FindByUser(Usuario usuario);
         
     }
 }
