@@ -3,16 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2DD588B1-FDA4-4695-A574-745B777F64A8}|LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.webapp\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2DD588B1-FDA4-4695-A574-745B777F64A8}|LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj|solutionrelative:laempresa.webapp\\views\\home\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DD588B1-FDA4-4695-A574-745B777F64A8}|LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.webapp\\views\\pago\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2DD588B1-FDA4-4695-A574-745B777F64A8}|LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj|solutionrelative:laempresa.webapp\\views\\pago\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DD588B1-FDA4-4695-A574-745B777F64A8}|LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2DD588B1-FDA4-4695-A574-745B777F64A8}|LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj|solutionrelative:laempresa.webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/LaEmpresa/True/SqlTable/dbo.Pagos.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2DD588B1-FDA4-4695-A574-745B777F64A8}|LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.webapp\\views\\pago\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -21,6 +12,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{2DD588B1-FDA4-4695-A574-745B777F64A8}|LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.webapp\\controllers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2DD588B1-FDA4-4695-A574-745B777F64A8}|LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj|solutionrelative:laempresa.webapp\\controllers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2546BC92-4A37-4976-8B60-10990E736CBA}|LaEmpresa.AccesoDatos\\LaEmpresa.AccesoDatos.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.accesodatos\\ef\\laempresacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2546BC92-4A37-4976-8B60-10990E736CBA}|LaEmpresa.AccesoDatos\\LaEmpresa.AccesoDatos.csproj|solutionrelative:laempresa.accesodatos\\ef\\laempresacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2546BC92-4A37-4976-8B60-10990E736CBA}|LaEmpresa.AccesoDatos\\LaEmpresa.AccesoDatos.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.accesodatos\\ef\\repositoriosef\\repositoriopagoef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2546BC92-4A37-4976-8B60-10990E736CBA}|LaEmpresa.AccesoDatos\\LaEmpresa.AccesoDatos.csproj|solutionrelative:laempresa.accesodatos\\ef\\repositoriosef\\repositoriopagoef.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.logicaaplicacion\\casosdeuso\\pagocu\\altapagocu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|solutionrelative:laempresa.logicaaplicacion\\casosdeuso\\pagocu\\altapagocu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.logicaaplicacion\\mappers\\pagomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -59,44 +62,42 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Login.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\Views\\Home\\Login.cshtml",
-              "RelativeDocumentMoniker": "LaEmpresa.WebApp\\Views\\Home\\Login.cshtml",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\Views\\Home\\Login.cshtml",
-              "RelativeToolTip": "LaEmpresa.WebApp\\Views\\Home\\Login.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-06T13:53:05.788Z",
+              "Title": "dbo.Pagos [Datos]",
+              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/LaEmpresa/True/SqlTable/dbo.Pagos.sql",
+              "ToolTip": "dbo.Pagos [Datos]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-10-07T20:37:02.496Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "LaEmpresa.WebApp\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "LaEmpresa.WebApp\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-06T13:51:58.634Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\Views\\Pago\\Index.cshtml",
-              "RelativeDocumentMoniker": "LaEmpresa.WebApp\\Views\\Pago\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\Views\\Pago\\Index.cshtml",
-              "RelativeToolTip": "LaEmpresa.WebApp\\Views\\Pago\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-06T13:51:09.517Z",
+              "DocumentIndex": 3,
+              "Title": "LaEmpresaContext.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.AccesoDatos\\EF\\LaEmpresaContext.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.AccesoDatos\\EF\\LaEmpresaContext.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.AccesoDatos\\EF\\LaEmpresaContext.cs",
+              "RelativeToolTip": "LaEmpresa.AccesoDatos\\EF\\LaEmpresaContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T20:31:55.909Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 5,
+              "Title": "AltaPagoCU.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\CasosDeUso\\PagoCU\\AltaPagoCU.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.LogicaAplicacion\\CasosDeUso\\PagoCU\\AltaPagoCU.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\CasosDeUso\\PagoCU\\AltaPagoCU.cs",
+              "RelativeToolTip": "LaEmpresa.LogicaAplicacion\\CasosDeUso\\PagoCU\\AltaPagoCU.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T16:20:38.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Unico.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaNegocio\\Entidades\\Unico.cs",
               "RelativeDocumentMoniker": "LaEmpresa.LogicaNegocio\\Entidades\\Unico.cs",
@@ -104,11 +105,12 @@
               "RelativeToolTip": "LaEmpresa.LogicaNegocio\\Entidades\\Unico.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T13:48:12.225Z"
+              "WhenOpened": "2025-10-06T13:48:12.225Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Usuario.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaNegocio\\Entidades\\Usuario.cs",
               "RelativeDocumentMoniker": "LaEmpresa.LogicaNegocio\\Entidades\\Usuario.cs",
@@ -116,11 +118,12 @@
               "RelativeToolTip": "LaEmpresa.LogicaNegocio\\Entidades\\Usuario.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T13:48:08.968Z"
+              "WhenOpened": "2025-10-06T13:48:08.968Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "Pago.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaNegocio\\Entidades\\Pago.cs",
               "RelativeDocumentMoniker": "LaEmpresa.LogicaNegocio\\Entidades\\Pago.cs",
@@ -128,11 +131,12 @@
               "RelativeToolTip": "LaEmpresa.LogicaNegocio\\Entidades\\Pago.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T13:46:48.024Z"
+              "WhenOpened": "2025-10-06T13:46:48.024Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "PagoDTO.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\DTOs\\PagoDTO.cs",
               "RelativeDocumentMoniker": "LaEmpresa.LogicaAplicacion\\DTOs\\PagoDTO.cs",
@@ -140,11 +144,51 @@
               "RelativeToolTip": "LaEmpresa.LogicaAplicacion\\DTOs\\PagoDTO.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T13:44:58.358Z"
+              "WhenOpened": "2025-10-06T13:44:58.358Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\Views\\Pago\\Create.cshtml",
+              "RelativeDocumentMoniker": "LaEmpresa.WebApp\\Views\\Pago\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\Views\\Pago\\Create.cshtml",
+              "RelativeToolTip": "LaEmpresa.WebApp\\Views\\Pago\\Create.cshtml",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAACUAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-06T12:49:46.212Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PagoController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\Controllers\\PagoController.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.WebApp\\Controllers\\PagoController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\Controllers\\PagoController.cs",
+              "RelativeToolTip": "LaEmpresa.WebApp\\Controllers\\PagoController.cs",
+              "ViewState": "AgIAABIAAAAAAAAAAAA2wCQAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T12:42:43.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RepositorioPagoEF.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.AccesoDatos\\EF\\RepositoriosEF\\RepositorioPagoEF.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.AccesoDatos\\EF\\RepositoriosEF\\RepositorioPagoEF.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.AccesoDatos\\EF\\RepositoriosEF\\RepositorioPagoEF.cs",
+              "RelativeToolTip": "LaEmpresa.AccesoDatos\\EF\\RepositoriosEF\\RepositorioPagoEF.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-06T20:31:50.095Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "PagoMapper.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\Mappers\\PagoMapper.cs",
               "RelativeDocumentMoniker": "LaEmpresa.LogicaAplicacion\\Mappers\\PagoMapper.cs",
@@ -152,31 +196,8 @@
               "RelativeToolTip": "LaEmpresa.LogicaAplicacion\\Mappers\\PagoMapper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T13:44:56.376Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\Views\\Pago\\Create.cshtml",
-              "RelativeDocumentMoniker": "LaEmpresa.WebApp\\Views\\Pago\\Create.cshtml",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\Views\\Pago\\Create.cshtml",
-              "RelativeToolTip": "LaEmpresa.WebApp\\Views\\Pago\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-06T12:49:46.212Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PagoController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\Controllers\\PagoController.cs",
-              "RelativeDocumentMoniker": "LaEmpresa.WebApp\\Controllers\\PagoController.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\Controllers\\PagoController.cs",
-              "RelativeToolTip": "LaEmpresa.WebApp\\Controllers\\PagoController.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAmwBYAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-06T12:42:43.231Z"
+              "WhenOpened": "2025-10-06T13:44:56.376Z",
+              "EditorCaption": ""
             }
           ]
         },

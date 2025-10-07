@@ -1,4 +1,5 @@
-﻿@using LaEmpresa.LogicaNegocio.Entidades
+﻿@using LaEmpresa.LogicaAplicacion.DTOs
+@using LaEmpresa.LogicaNegocio.Entidades
 @model LaEmpresa.LogicaAplicacion.DTOs.PagoDTO
 
 
@@ -30,11 +31,11 @@
             <div class="form-group">
                 <label asp-for="IdTipoDeGasto" class="control-label"></label>
                 <select>
-                    @foreach (TipoDeGasto tipoDeGasto in ViewBag.TiposDeGasto)
+                    @foreach (TipoDeGastoDTO tipoDeGasto in ViewBag.TiposDeGasto)
                     {
-                        <option value="tipoDeGasto.Id">tipoDeGasto.Nombre</option>
+                        <option value=@tipoDeGasto.Id>@tipoDeGasto.Nombre</option>
                     }
-                    <option value="value">text</option> 
+                   
                 </select>
                 <span asp-validation-for="IdTipoDeGasto" class="text-danger"></span>
             </div>
