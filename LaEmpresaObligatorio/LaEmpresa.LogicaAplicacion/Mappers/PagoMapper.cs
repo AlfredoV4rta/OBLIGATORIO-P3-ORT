@@ -20,6 +20,7 @@ namespace LaEmpresa.LogicaAplicacion.Mappers
                 IdTipoGasto = dto.IdTipoDeGasto,
                 IdUsuario = dto.IdUsuario,
                 Descripcion = dto.Descripcion,
+                Monto = dto.Monto,  
                 NroRecibo = dto.NroRecibo,
                 FechaDePago = dto.FechaDePago
             };
@@ -34,6 +35,7 @@ namespace LaEmpresa.LogicaAplicacion.Mappers
                 IdTipoGasto = dto.IdTipoDeGasto,
                 IdUsuario = dto.IdUsuario,
                 Descripcion = dto.Descripcion,
+                Monto = dto.Monto,
                 FechaDesde = dto.FechaDesde,
                 FechaHasta = dto.FechaHasta
             };
@@ -47,7 +49,8 @@ namespace LaEmpresa.LogicaAplicacion.Mappers
                 MetodoPago = toDto.MetodoDePago,
                 IdTipoDeGasto = toDto.IdTipoGasto,
                 IdUsuario = toDto.IdUsuario,
-                Descripcion = toDto.Descripcion
+                Descripcion = toDto.Descripcion,
+                Monto = toDto.Monto
             };
         }
     }

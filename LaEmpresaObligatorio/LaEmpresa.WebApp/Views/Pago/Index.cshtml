@@ -4,17 +4,11 @@
 @{
     ViewData["Title"] = "Index";
 }
+<h1>Seleccione el tipo de pago a registrar</h1>
+<div class="form-group">
+    <a asp-action="Create" class="btn btn-primary">Pago Recurrente</a>
+    <a asp-action="CreateUnico" class="btn btn-secondary">Pago Único</a>
+</div>
 
-<form asp-action="Create">
-    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-    <div class="form-group">
-        <input type="submit" value="Pago Recurrente" class="btn btn-primary" />
-    </div>
-</form>
 
-<form asp-action="CreateUnico">
-    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-    <div class="form-group">
-        <input type="submit" value="Pago Unico" class="btn btn-primary" />
-    </div>
-</form>
+

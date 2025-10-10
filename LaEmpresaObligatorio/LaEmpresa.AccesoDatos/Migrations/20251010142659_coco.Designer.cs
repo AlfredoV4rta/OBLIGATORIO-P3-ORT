@@ -4,6 +4,7 @@ using LaEmpresa.AccesoDatos.EF;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LaEmpresa.AccesoDatos.Migrations
 {
     [DbContext(typeof(LaEmpresaContext))]
-    partial class LaEmpresaContextModelSnapshot : ModelSnapshot
+    [Migration("20251010142659_coco")]
+    partial class coco
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -88,9 +91,6 @@ namespace LaEmpresa.AccesoDatos.Migrations
 
                     b.Property<int>("MetodoDePago")
                         .HasColumnType("int");
-
-                    b.Property<double>("Monto")
-                        .HasColumnType("float");
 
                     b.HasKey("Id");
 

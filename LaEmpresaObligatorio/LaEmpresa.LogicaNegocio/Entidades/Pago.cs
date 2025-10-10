@@ -19,14 +19,16 @@ namespace LaEmpresa.LogicaNegocio.Entidades
         public Usuario Usuario { get; set; }
         public string Descripcion { get; set; }
 
+        public double Monto { get; set; }
         public Pago() { }
 
-        public Pago(MetodoPago metodoDePago, int idTipoGasto, int idUsuario, string descripcion)
+        public Pago(MetodoPago metodoDePago, int idTipoGasto, int idUsuario, string descripcion, double monto)
         {
             MetodoDePago = metodoDePago;
             IdTipoGasto = idTipoGasto;
             IdUsuario = idUsuario;
             Descripcion = descripcion;
+            Monto = monto;
         }
 
         public void Validar()
@@ -34,6 +36,7 @@ namespace LaEmpresa.LogicaNegocio.Entidades
             this.ValidarMetodoPago();
             this.ValidarDescripcion();
             this.ValidarTipoGasto();
+            this.ValidarMonto();
         }
 
         public void ValidarMetodoPago()
@@ -44,6 +47,14 @@ namespace LaEmpresa.LogicaNegocio.Entidades
             }
         }
 
+        public void ValidarMonto()
+        {
+            if (this.Monto <= 0)
+            {
+                throw new PagoException("El monto debe ser mayor a cero");
+            }
+        } 
+
         public void ValidarUsuario()
         {
             Usuario.Validar();
@@ -51,7 +62,7 @@ namespace LaEmpresa.LogicaNegocio.Entidades
 
         public void ValidarTipoGasto()
         {
-            if (this.TipoGasto == null)
+            if (this.IdTipoGasto < 0)
             {
                 throw new PagoException("Tipo de gasto no ingresado");
             }

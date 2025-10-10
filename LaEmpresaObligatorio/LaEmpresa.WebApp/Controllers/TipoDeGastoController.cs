@@ -1,5 +1,6 @@
 ﻿using LaEmpresa.LogicaAplicacion.DTOs;
 using LaEmpresa.LogicaAplicacion.InterfacesCU.CasosTipoDeGasto;
+using LaEmpresa.LogicaNegocio.Exceptions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -60,9 +61,9 @@ namespace LaEmpresa.WebApp.Controllers
             }
         }
 
-        public ActionResult Edit(TipoDeGastoDTO aEditar)
+        public ActionResult Edit(int id)
         {
-            return View();
+            return View(_obtenerTipoDeGastoPorId.ObtenerTipoDeGastoPorId(id));
         }
 
         [HttpPost]
@@ -98,8 +99,14 @@ namespace LaEmpresa.WebApp.Controllers
                 _borrarTipoDeGasto.BorrarTipoDeGasto(id, email);
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (TipoDeGastoException tg)
             {
+                ViewBag.Error = tg.Message;
+                return View();
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Error = "Error inesperado" + ex;
                 return View();
             }
         }

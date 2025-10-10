@@ -22,14 +22,9 @@ namespace LaEmpresa.LogicaAplicacion.CasosDeUso.TipoDeGastoCU
         
         public IEnumerable<TipoDeGastoDTO> ObtenerTiposDeGasto()
         {
-            List<TipoDeGastoDTO> toReturn = new List<TipoDeGastoDTO>();
+            IEnumerable<TipoDeGasto> toReturn = _repositorioTipoGasto.FindAll();
 
-            foreach (TipoDeGasto tipo in _repositorioTipoGasto.FindAll())
-            {
-                toReturn.Add(TipoDeGastoMapper.ToDTO(tipo));
-            }
-
-            return toReturn;
+            return toReturn.Select(tipoGasto => TipoDeGastoMapper.ToDTO(tipoGasto));
         }
     }
 }

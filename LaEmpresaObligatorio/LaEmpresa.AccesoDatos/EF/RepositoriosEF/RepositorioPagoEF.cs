@@ -25,7 +25,7 @@ namespace LaEmpresa.AccesoDatos.EF.RepositoriosEF
 
         public IEnumerable<Pago> FindAll()
         {
-            throw new NotImplementedException();
+            return _context.Pagos;
         }
 
         public Pago FindById(int id)

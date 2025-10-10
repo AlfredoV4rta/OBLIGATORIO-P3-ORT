@@ -1,5 +1,7 @@
-﻿using LaEmpresa.LogicaAplicacion.InterfacesCU.CasosTipoDeGasto;
+﻿using LaEmpresa.LogicaAplicacion.DTOs;
+using LaEmpresa.LogicaAplicacion.InterfacesCU.CasosTipoDeGasto;
 using LaEmpresa.LogicaNegocio.Entidades;
+using LaEmpresa.LogicaNegocio.Exceptions;
 using LaEmpresa.LogicaNegocio.InterfacesRepositorio;
 using System;
 using System.Collections.Generic;
@@ -13,17 +15,25 @@ namespace LaEmpresa.LogicaAplicacion.CasosDeUso.TipoDeGastoCU
     {
         private ITipoDeGastoRepositorio _repositorio;
         private IAuditoriaRepositorio _auditoriaRepositorio;
+        private IPagoRepositorio _pagoRepositorio;
 
-        public BorrarTipoDeGastoCU(ITipoDeGastoRepositorio repositorio, IAuditoriaRepositorio auditoria)
+        public BorrarTipoDeGastoCU(ITipoDeGastoRepositorio repositorio, IAuditoriaRepositorio auditoria, IPagoRepositorio pagoRepositorio)
         {
             _repositorio = repositorio;
             _auditoriaRepositorio = auditoria;
+            _pagoRepositorio = pagoRepositorio;
         }
 
         public void BorrarTipoDeGasto(int id, string email)
         {
+            if (_pagoRepositorio.FindAll().Any(p => p.IdTipoGasto == id))
+            {
+                throw new TipoDeGastoException("El tipo de gasto esta siendo usado");
+            }
+
             _repositorio.Remove(id);
             _auditoriaRepositorio.Add(new Auditoria(email, "Borrar"));
+
         }
     }
 }

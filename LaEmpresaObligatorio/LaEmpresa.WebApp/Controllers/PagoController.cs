@@ -46,6 +46,7 @@ namespace LaEmpresa.WebApp.Controllers
             try
             {
                 ViewBag.TiposDeGasto = _obtenerTipoDeGasto.ObtenerTiposDeGasto();
+                pagoDto.IdUsuario = (int)HttpContext.Session.GetInt32("idUsuario");
                 _altaPago.AltaPago(pagoDto);
                 return RedirectToAction(nameof(Index));
             }
@@ -59,6 +60,39 @@ namespace LaEmpresa.WebApp.Controllers
                 return View();
             }
         }
+
+        // GET: PagoController/Create
+        public ActionResult CreateUnico()
+        {
+            ViewBag.TiposDeGasto = _obtenerTipoDeGasto.ObtenerTiposDeGasto();
+            return View();
+        }
+
+        // POST: PagoController/Create
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult CreateUnico(IFormCollection collection, PagoDTO pagoDto)
+        {
+            try
+            {
+                ViewBag.TiposDeGasto = _obtenerTipoDeGasto.ObtenerTiposDeGasto();
+                pagoDto.IdUsuario = (int)HttpContext.Session.GetInt32("idUsuario");
+                _altaPago.AltaPago(pagoDto);
+                return RedirectToAction(nameof(Index));
+            }
+            catch (PagoException pe)
+            {
+                ViewBag.Error = pe.Message;
+                return View();
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Error = "Error inesperado" + ex;
+                return View();
+            }
+        }
+
+
 
         // GET: PagoController/Edit/5
         public ActionResult Edit(int id)

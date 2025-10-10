@@ -12,5 +12,6 @@ namespace LaEmpresa.LogicaNegocio.Entidades
         public string NroRecibo { get; set; }
 
         public Unico() { }
+
     }
 }

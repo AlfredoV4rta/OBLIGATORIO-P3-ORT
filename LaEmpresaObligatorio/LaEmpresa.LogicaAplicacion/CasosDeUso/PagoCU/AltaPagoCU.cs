@@ -21,8 +21,15 @@ namespace LaEmpresa.LogicaAplicacion.CasosDeUso.PagoCU
 
         public void AltaPago(PagoDTO pagoDto)
         {
-            _repositorio.Add(PagoMapper.toUnico(pagoDto));
-            _repositorio.Add(PagoMapper.toRecurrente(pagoDto));
+            if (pagoDto.FechaDesde != DateTime.MinValue)
+            {
+                _repositorio.Add(PagoMapper.toRecurrente(pagoDto));
+            }
+            else
+            {
+                _repositorio.Add(PagoMapper.toUnico(pagoDto));
+            }
+            
         }
     }
 }
