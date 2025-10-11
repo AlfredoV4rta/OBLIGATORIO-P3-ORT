@@ -32,7 +32,6 @@ namespace LaEmpresa.AccesoDatos.EF.RepositoriosEF
         {
             throw new NotImplementedException();
         }
-
         public void Remove(int id)
         {
             throw new NotImplementedException();

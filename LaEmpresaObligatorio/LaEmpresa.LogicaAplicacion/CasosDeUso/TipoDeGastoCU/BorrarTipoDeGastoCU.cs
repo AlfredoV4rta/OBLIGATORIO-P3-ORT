@@ -26,7 +26,7 @@ namespace LaEmpresa.LogicaAplicacion.CasosDeUso.TipoDeGastoCU
 
         public void BorrarTipoDeGasto(int id, string email)
         {
-            if (_pagoRepositorio.FindAll().Any(p => p.IdTipoGasto == id))
+            if (_pagoRepositorio.FindAll().Any(pago => pago.IdTipoGasto == id))
             {
                 throw new TipoDeGastoException("El tipo de gasto esta siendo usado");
             }

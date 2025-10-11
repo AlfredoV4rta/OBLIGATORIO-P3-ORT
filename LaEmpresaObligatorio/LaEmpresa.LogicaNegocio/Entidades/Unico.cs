@@ -1,4 +1,6 @@
-﻿using System;
+﻿using LaEmpresa.LogicaNegocio.Exceptions;
+using LaEmpresa.LogicaNegocio.Interfaces;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,12 +8,39 @@ using System.Threading.Tasks;
 
 namespace LaEmpresa.LogicaNegocio.Entidades
 {
-    public class Unico : Pago
+    public class Unico : Pago, IValidable
     {
         public DateTime FechaDePago { get; set; }
         public string NroRecibo { get; set; }
 
         public Unico() { }
 
+        public override double CalcularSaldoPendiente(double monto)
+        {
+            return 0;
+        }
+
+        public void Validar()
+        {
+            this.ValidarFechaDePago();
+            this.ValidarNroRecibo();
+        }
+
+        public void ValidarFechaDePago()
+        {
+            if(this.FechaDePago == DateTime.MinValue)
+            {
+                throw new PagoException("La fecha no puede ser vacia");
+            }
+        }
+
+        public void ValidarNroRecibo()
+        {
+            if (string.IsNullOrEmpty(this.NroRecibo) || this.NroRecibo.Length < 3)
+            {
+                throw new PagoException("Numero de recibo no valido");
+            }
+        }
+        
     }
 }

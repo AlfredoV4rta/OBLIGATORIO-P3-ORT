@@ -12,5 +12,21 @@ namespace LaEmpresa.LogicaNegocio.Entidades
         public DateTime FechaHasta { get; set; }
 
         public Recurrente() { }
-}
+
+        public override double CalcularSaldoPendiente(double monto)
+        {
+            int cantMeses = MesesDeDiferencia(FechaDesde, FechaHasta);
+
+            return monto * cantMeses;
+        }
+
+        public int MesesDeDiferencia(DateTime fechaDesde, DateTime fechaHasta)
+        {
+            int anios = (fechaHasta.Year - fechaDesde.Year) * 12;
+            int totalDiferencia = anios + (fechaHasta.Month - fechaDesde.Month);
+
+            //Le agrego uno para incluir el primer mes
+            return totalDiferencia + 1;
+        }
+    }
 }

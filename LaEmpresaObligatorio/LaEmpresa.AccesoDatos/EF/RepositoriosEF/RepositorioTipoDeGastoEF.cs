@@ -32,15 +32,15 @@ namespace LaEmpresa.AccesoDatos.EF.RepositoriosEF
 
         public TipoDeGasto FindById(int id)
         {
-            foreach (TipoDeGasto tdg in _context.TipoDeGastos)
+            TipoDeGasto tipoDeGasto = _context.TipoDeGastos.Where(
+                tdg => tdg.Id == id).FirstOrDefault();
+
+            if (tipoDeGasto == null)
             {
-                if (tdg.Id == id)
-                {
-                    return tdg;
-                }
+                throw new TipoDeGastoException("Tipo de gasto no encontrado");
             }
 
-            throw new TipoDeGastoException("Id no encontrado");
+            return tipoDeGasto;
         }
 
         public void Remove(int id)

@@ -31,6 +31,8 @@ namespace LaEmpresa.LogicaNegocio.Entidades
             Monto = monto;
         }
 
+        public abstract double CalcularSaldoPendiente(double monto);
+
         public void Validar()
         {
             this.ValidarMetodoPago();
