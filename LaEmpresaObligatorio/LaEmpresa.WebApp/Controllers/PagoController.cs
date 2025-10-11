@@ -12,11 +12,15 @@ namespace LaEmpresa.WebApp.Controllers
     {
         private IAltaPago _altaPago;
         private IObtenerTipoDeGasto _obtenerTipoDeGasto;
+        private IObtenerPagos _obtenerPagos;
+        private IObtenerPagosMensuales _obtenerPagosMensuales;
 
-        public PagoController(IAltaPago altaPago, IObtenerTipoDeGasto obtenerTipoDeGasto)
+        public PagoController(IAltaPago altaPago, IObtenerTipoDeGasto obtenerTipoDeGasto, IObtenerPagos obtenerPagos, IObtenerPagosMensuales obtenerPagosMensuales)
         {
             _altaPago = altaPago;
             _obtenerTipoDeGasto = obtenerTipoDeGasto;
+            _obtenerPagos = obtenerPagos;
+            _obtenerPagosMensuales = obtenerPagosMensuales;
         }
 
         // GET: PagoController
@@ -132,6 +136,33 @@ namespace LaEmpresa.WebApp.Controllers
             }
             catch
             {
+                return View();
+            }
+        }
+
+        public IActionResult ListarPagosMensuales()
+        {
+            return View(_obtenerPagos.ObtenerPagos());
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+
+        public IActionResult ListarPagosMensuales(int mes, int anio)
+        {
+            try
+            {
+                
+                return View(_obtenerPagosMensuales.ObtenerPagosMensuales(mes,anio));
+            }
+            catch (PagoException pe)
+            {
+                ViewBag.Error = pe.Message;
+                return View();
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Error = "Error inesperado" + ex;
                 return View();
             }
         }

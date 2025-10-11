@@ -32,6 +32,22 @@ namespace LaEmpresa.AccesoDatos.EF.RepositoriosEF
         {
             throw new NotImplementedException();
         }
+
+        public IEnumerable<Pago> GetByMonthYear(int month, int year)
+        {
+            DateTime fechaBuscada = new DateTime(year, month, 1);
+
+            return _context.Unicos
+                .Where(u => u.FechaDePago.Month == month && u.FechaDePago.Year == year)
+                .Cast<Pago>()
+                .Concat(
+                    _context.Recurrentes
+                        .Where(r => r.FechaDesde <= fechaBuscada && r.FechaHasta >= fechaBuscada)
+                        .Cast<Pago>()
+                )
+                .ToList();
+        }
+
         public void Remove(int id)
         {
             throw new NotImplementedException();
@@ -41,5 +57,7 @@ namespace LaEmpresa.AccesoDatos.EF.RepositoriosEF
         {
             throw new NotImplementedException();
         }
+
+
     }
 }

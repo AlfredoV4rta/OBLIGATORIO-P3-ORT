@@ -10,6 +10,6 @@ namespace LaEmpresa.LogicaNegocio.InterfacesRepositorio
 {
     public interface IPagoRepositorio : IRepositorio<Pago>
     {
-    
+        public IEnumerable<Pago> GetByMonthYear(int month, int year);
     }
 }

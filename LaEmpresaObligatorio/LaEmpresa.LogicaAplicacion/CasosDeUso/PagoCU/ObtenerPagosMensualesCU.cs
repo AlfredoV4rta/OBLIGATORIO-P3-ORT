@@ -22,7 +22,9 @@ namespace LaEmpresa.LogicaAplicacion.CasosDeUso.PagoCU
 
         public IEnumerable<PagoDTO> ObtenerPagosMensuales(int mes, int anio)
         {
-            
+            IEnumerable<Pago> toReturn = _repositorioPago.GetByMonthYear(mes, anio);
+
+            return toReturn.Select(pago => PagoMapper.ToDTO(pago));
         }
     }
 }
