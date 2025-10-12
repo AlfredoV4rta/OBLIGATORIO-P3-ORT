@@ -11,6 +11,8 @@ using LaEmpresa.LogicaAplicacion.InterfacesCU.CasosUsuario;
 using LaEmpresa.LogicaAplicacion.CasosDeUso.UsuarioCU;
 using LaEmpresa.LogicaAplicacion.InterfacesCU.CasosPago;
 using LaEmpresa.LogicaAplicacion.CasosDeUso.PagoCU;
+using LaEmpresa.LogicaAplicacion.InterfacesCU.CasosEquipo;
+using LaEmpresa.LogicaAplicacion.CasosDeUso.EquipoCU;
 
 namespace LaEmpresa.WebApp
 {
@@ -33,6 +35,7 @@ namespace LaEmpresa.WebApp
             builder.Services.AddScoped<IUsuarioRepositorio, RepositorioUsuarioEF>();
             builder.Services.AddScoped<IAuditoriaRepositorio, RepositorioAuditoriaEF>();
             builder.Services.AddScoped<IPagoRepositorio, RepositorioPagoEF>();
+            builder.Services.AddScoped<IEquipoRepositorio, RepositorioEquipoEF>();
 
 
             //Inicializar CU
@@ -46,6 +49,8 @@ namespace LaEmpresa.WebApp
             builder.Services.AddScoped<IAltaPago, AltaPagoCU>();
             builder.Services.AddScoped<IObtenerPagos, ObtenerPagosCU>();
             builder.Services.AddScoped<IObtenerPagosMensuales, ObtenerPagosMensualesCU>();
+            builder.Services.AddScoped<IAltaUsuario, AltaUsuarioCU>();
+            builder.Services.AddScoped<IObtenerEquipos, ObtenerEquiposCU>();
 
 
             //Sesion
