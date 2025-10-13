@@ -1,5 +1,6 @@
 ﻿using LaEmpresa.LogicaNegocio.Entidades;
 using LaEmpresa.LogicaNegocio.InterfacesRepositorio;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,15 +38,15 @@ namespace LaEmpresa.AccesoDatos.EF.RepositoriosEF
         {
             DateTime fechaBuscada = new DateTime(year, month, 1);
 
-            return _context.Unicos
-                .Where(u => u.FechaDePago.Month == month && u.FechaDePago.Year == year)
-                .Cast<Pago>()
-                .Concat(
-                    _context.Recurrentes
-                        .Where(r => r.FechaDesde <= fechaBuscada && r.FechaHasta >= fechaBuscada)
-                        .Cast<Pago>()
-                )
-                .ToList();
+            IEnumerable<Pago> pagos = _context.Pagos.Include(pago => pago.TipoGasto)
+                                             .Include(pago =>pago.Usuario).ToList();
+            pagos = pagos.Where(p =>
+                (p is Unico && ((Unico)p).FechaDePago.Month == month && ((Unico)p).FechaDePago.Year == year)
+                ||
+                (p is Recurrente && fechaBuscada >= ((Recurrente)p).FechaDesde
+                    && fechaBuscada <= ((Recurrente)p).FechaHasta));
+
+            return pagos;
         }
 
         public void Remove(int id)

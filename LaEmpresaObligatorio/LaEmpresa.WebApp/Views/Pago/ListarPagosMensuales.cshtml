@@ -1,89 +1,101 @@
-﻿@model IEnumerable<LaEmpresa.LogicaAplicacion.DTOs.PagoDTO>
+﻿@using LaEmpresa.LogicaAplicacion.DTOs
+@using LaEmpresa.LogicaNegocio.Entidades
+@model IEnumerable<LaEmpresa.LogicaAplicacion.DTOs.PagoDTO>
 
 @{
-    ViewData["Title"] = "ListarPagosMensuales";
+    ViewData["Title"] = "Listar Pagos Mensuales";
 }
 
 <h1>ListarPagosMensuales</h1>
-
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Id)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.MetodoPago)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdTipoDeGasto)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.IdUsuario)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Descripcion)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FechaDesde)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FechaHasta)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.FechaDePago)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.NroRecibo)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Monto)
-            </th>
-            <th></th>
-        </tr>
-    </thead>
-    <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.MetodoPago)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdTipoDeGasto)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.IdUsuario)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Descripcion)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FechaDesde)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FechaHasta)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.FechaDePago)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.NroRecibo)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Monto)
-            </td>
-            <td>
-                @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>
-        </tr>
+@if (!string.IsNullOrEmpty(ViewBag.Error))
+{
+    <div class="alert alert-danger">
+        @ViewBag.Error
+    </div>
 }
-    </tbody>
-</table>
+<form action="ListarPagosMensuales" method="post">
+    <div class="form-group">
+        <label class="control-label" for="mes">Ingrese un mes:</label>
+        <input type="number" name="mes" class="form-group" min="1" max="12" id="mes" />
+        <br />
+        <label class="control-label" for="anio">Ingrese un año:</label>
+        <input type="number" name="anio" class="form-group" min="1900" max="2100" id="anio" />
+        <br />
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Filtrar" class="btn btn-primary" />
+    </div>
+</form>
+@if(Model != null && Model.Any())
+{
+ <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    MetodoPago
+                </th>
+                <th>
+                    Descripcion
+                </th>
+                <th>
+                    Monto
+                </th>
+                <th>
+                    Saldo Pendiente
+                </th>
+                <th>
+                    Fecha Desde
+                </th>
+                <th>
+                    Fecha Hasta
+                </th>
+                <th>
+                    Fecha De Pago
+                </th>
+                <th>
+                    Nro de Recibo
+                </th>
+            </tr>
+        </thead>
+        <tbody> 
+                @foreach (PagoDTO pago in Model)
+            {
+              <tr>           
+               
+                    <td>
+                        @pago.MetodoPago
+                    </td>
+                    <td>
+                        @pago.Descripcion
+                    </td>
+                    <td>
+                        @pago.Monto
+                    </td>
+                    <td>
+                        @pago.SaldoPendiente
+                    </td>
+                    @if (pago is Unico)
+                    {
+                        <td></td>
+                        <td></td>
+                        <td>
+                            @pago.FechaDePago
+                        </td>
+                        <td>
+                            @pago.NroRecibo
+                        </td>
+                    }
+                    @if (pago is Recurrente)
+                    {
+                        <td>
+                            @pago.FechaDesde
+                        </td>
+                        <td>
+                            @pago.FechaHasta
+                        </td>
+                    }
+                </tr>
+                  }
+        </tbody>
+ </table>
+}

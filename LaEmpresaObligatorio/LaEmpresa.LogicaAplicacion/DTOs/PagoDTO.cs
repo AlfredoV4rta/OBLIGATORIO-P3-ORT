@@ -19,5 +19,6 @@ namespace LaEmpresa.LogicaAplicacion.DTOs
         public DateTime FechaDePago { get; set; }
         public string NroRecibo { get; set; }
         public double Monto { get; set; }
+        public double SaldoPendiente { get; set; }
     }
 }

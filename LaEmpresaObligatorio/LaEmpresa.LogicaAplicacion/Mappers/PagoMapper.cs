@@ -50,7 +50,8 @@ namespace LaEmpresa.LogicaAplicacion.Mappers
                 IdTipoDeGasto = toDto.IdTipoGasto,
                 IdUsuario = toDto.IdUsuario,
                 Descripcion = toDto.Descripcion,
-                Monto = toDto.Monto
+                Monto = toDto.Monto,
+                SaldoPendiente = toDto.CalcularSaldoPendiente(toDto.Monto)
             };
         }
     }

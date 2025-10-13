@@ -142,18 +142,28 @@ namespace LaEmpresa.WebApp.Controllers
 
         public IActionResult ListarPagosMensuales()
         {
-            return View(_obtenerPagos.ObtenerPagos());
+            return View();
         }
 
         [HttpPost]
-        [ValidateAntiForgeryToken]
-
         public IActionResult ListarPagosMensuales(int mes, int anio)
         {
             try
             {
-                
-                return View(_obtenerPagosMensuales.ObtenerPagosMensuales(mes,anio));
+                if (mes == 0 || anio == 0)
+                {
+                    ViewBag.Error = "El mes y el año no deben ser vacios";
+                    return View();
+                }
+
+                IEnumerable<PagoDTO> pagos = _obtenerPagosMensuales.ObtenerPagosMensuales(mes, anio);
+
+                if (pagos == null || pagos.Any() || pagos.Count() == 0)
+                {
+                    ViewBag.Error = "No hay datos filtrados, ingrese mes y año para continuar";
+                    return View();
+                }
+                return View(pagos);
             }
             catch (PagoException pe)
             {
@@ -162,7 +172,7 @@ namespace LaEmpresa.WebApp.Controllers
             }
             catch (Exception ex)
             {
-                ViewBag.Error = "Error inesperado" + ex;
+                ViewBag.Error = "Error inesperado" + ex.Message;
                 return View();
             }
         }
