@@ -51,7 +51,11 @@ namespace LaEmpresa.LogicaAplicacion.Mappers
                 IdUsuario = toDto.IdUsuario,
                 Descripcion = toDto.Descripcion,
                 Monto = toDto.Monto,
-                SaldoPendiente = toDto.CalcularSaldoPendiente(toDto.Monto)
+                SaldoPendiente = toDto.CalcularSaldoPendiente(toDto.Monto),
+                FechaDesde = toDto.ObtenerFechaDesde(),
+                FechaHasta = toDto.ObtenerFechaHasta(),
+                FechaDePago = toDto.ObtenerFechaDePago(),
+                NroRecibo = toDto.ObtenerNroRecibo()
             };
         }
     }

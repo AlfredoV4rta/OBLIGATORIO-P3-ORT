@@ -156,11 +156,11 @@ namespace LaEmpresa.WebApp.Controllers
                     return View();
                 }
 
-                IEnumerable<PagoDTO> pagos = _obtenerPagosMensuales.ObtenerPagosMensuales(mes, anio);
+                IEnumerable<PagoDTO> pagos = _obtenerPagosMensuales.ObtenerPagosMensuales(mes, anio).ToList();
 
-                if (pagos == null || pagos.Any() || pagos.Count() == 0)
+                if (pagos == null || pagos.Count() == 0)
                 {
-                    ViewBag.Error = "No hay datos filtrados, ingrese mes y año para continuar";
+                    ViewBag.Error = "No hay pagos filtrados para esa fecha, ingrese otro mes y año para continuar";
                     return View();
                 }
                 return View(pagos);

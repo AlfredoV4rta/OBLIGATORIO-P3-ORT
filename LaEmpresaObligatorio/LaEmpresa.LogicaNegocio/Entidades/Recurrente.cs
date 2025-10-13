@@ -28,5 +28,25 @@ namespace LaEmpresa.LogicaNegocio.Entidades
             //Le agrego uno para incluir el primer mes
             return totalDiferencia + 1;
         }
+
+        public override DateTime ObtenerFechaHasta()
+        {
+            return this.FechaHasta;
+        }
+
+        public override DateTime ObtenerFechaDesde()
+        {
+            return this.FechaDesde;
+        }
+
+        public override DateTime ObtenerFechaDePago()
+        {
+            return DateTime.MinValue;
+        }
+
+        public override string ObtenerNroRecibo()
+        {
+            return "";
+        }
     }
 }

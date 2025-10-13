@@ -13,19 +13,28 @@
         @ViewBag.Error
     </div>
 }
-<form action="ListarPagosMensuales" method="post">
-    <div class="form-group">
-        <label class="control-label" for="mes">Ingrese un mes:</label>
-        <input type="number" name="mes" class="form-group" min="1" max="12" id="mes" />
-        <br />
-        <label class="control-label" for="anio">Ingrese un año:</label>
-        <input type="number" name="anio" class="form-group" min="1900" max="2100" id="anio" />
-        <br />
+<div class="row">
+    <div class="col-md-4">
+        <form action="ListarPagosMensuales" method="post">
+            <p class="text-muted">*El filtro toma como día el 1ero del mes ingresado*</p>
+
+            <div class="form-group">
+                <label for="mes" class="control-label">Ingrese un mes:</label>
+                <input type="number" name="mes" class="form-control" min="1" max="12" id="mes" />
+         
+
+            <div class="form-group">
+                <label for="anio" class="control-label">Ingrese un año:</label>
+                <input type="number" name="anio" class="form-control" min="1900" max="2100" id="anio" />
+            </div>
+            <br />
+
+            <div class="form-group">
+                <input type="submit" value="Filtrar" class="btn btn-primary" />
+            </div>
+        </form>
     </div>
-    <div class="form-group">
-        <input type="submit" value="Filtrar" class="btn btn-primary" />
-    </div>
-</form>
+</div>
 @if(Model != null && Model.Any())
 {
  <table class="table">
@@ -74,10 +83,10 @@
                     <td>
                         @pago.SaldoPendiente
                     </td>
-                    @if (pago is Unico)
+                    @if (pago.FechaDesde == DateTime.MinValue && pago.FechaHasta == DateTime.MinValue)
                     {
-                        <td></td>
-                        <td></td>
+                        <td> - </td>
+                        <td> - </td>
                         <td>
                             @pago.FechaDePago
                         </td>
@@ -85,7 +94,7 @@
                             @pago.NroRecibo
                         </td>
                     }
-                    @if (pago is Recurrente)
+                    @if (pago.FechaDePago == DateTime.MinValue && pago.NroRecibo == "")
                     {
                         <td>
                             @pago.FechaDesde
@@ -93,6 +102,8 @@
                         <td>
                             @pago.FechaHasta
                         </td>
+                        <td> - </td>
+                        <td> - </td>
                     }
                 </tr>
                   }

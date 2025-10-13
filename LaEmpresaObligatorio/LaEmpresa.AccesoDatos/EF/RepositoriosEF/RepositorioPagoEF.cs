@@ -44,7 +44,7 @@ namespace LaEmpresa.AccesoDatos.EF.RepositoriosEF
                 (p is Unico && ((Unico)p).FechaDePago.Month == month && ((Unico)p).FechaDePago.Year == year)
                 ||
                 (p is Recurrente && fechaBuscada >= ((Recurrente)p).FechaDesde
-                    && fechaBuscada <= ((Recurrente)p).FechaHasta));
+                    && fechaBuscada <= ((Recurrente)p).FechaHasta)).ToList();
 
             return pagos;
         }

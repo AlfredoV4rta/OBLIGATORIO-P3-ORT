@@ -33,6 +33,11 @@ namespace LaEmpresa.LogicaNegocio.Entidades
 
         public abstract double CalcularSaldoPendiente(double monto);
 
+        public abstract DateTime ObtenerFechaHasta();
+        public abstract DateTime ObtenerFechaDesde();
+        public abstract DateTime ObtenerFechaDePago();
+        public abstract string ObtenerNroRecibo();
+
         public void Validar()
         {
             this.ValidarMetodoPago();

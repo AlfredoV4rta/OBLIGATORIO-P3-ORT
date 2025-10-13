@@ -41,6 +41,25 @@ namespace LaEmpresa.LogicaNegocio.Entidades
                 throw new PagoException("Numero de recibo no valido");
             }
         }
-        
+
+        public override DateTime ObtenerFechaHasta()
+        {
+            return DateTime.MinValue;
+        }
+
+        public override DateTime ObtenerFechaDesde()
+        {
+            return DateTime.MinValue;
+        }
+
+        public override DateTime ObtenerFechaDePago()
+        {
+            return this.FechaDePago;
+        }
+
+        public override string ObtenerNroRecibo()
+        {
+            return this.NroRecibo;
+        }
     }
 }
