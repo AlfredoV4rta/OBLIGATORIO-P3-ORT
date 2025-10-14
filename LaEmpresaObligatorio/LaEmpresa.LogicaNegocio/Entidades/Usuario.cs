@@ -22,13 +22,13 @@ namespace LaEmpresa.LogicaNegocio.Entidades
 
         public Usuario() {}
 
-        public Usuario(int id, int idEquipo, NombreCompleto nombreCompleto, string contrasenia, EmailCompleto email, Rol rol)
+        public Usuario(int id, int idEquipo, NombreCompleto nombreCompleto, string contrasenia, Rol rol)
         {
             Id = id;
             IdEquipo = idEquipo;
             NombreCompleto = nombreCompleto;
             Contrasenia = contrasenia;
-            Email = email;
+            Email = new EmailCompleto(nombreCompleto);
             Rol = rol;
         }
 

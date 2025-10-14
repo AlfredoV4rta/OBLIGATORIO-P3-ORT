@@ -10,48 +10,18 @@ using System.Threading.Tasks;
 namespace LaEmpresa.LogicaNegocio.ValueObjects
 {
     [Owned]
-    public class EmailCompleto: IValidable
+    public class EmailCompleto
     {
         public string Email { get; set; }
 
-        public EmailCompleto(string email)
+        public EmailCompleto(NombreCompleto nombreCompleto)
         {
-            this.Email = email;
+            this.Email = Crear(nombreCompleto);
         }
 
-        public string SiglaNombre { get; set; }
-        
-        public string SiglaApellido { get; set; }
-
-        public void Validar()
+        public string Crear(NombreCompleto nc)
         {
-            this.ValidarSiglaNombre();
-            this.ValidarSiglaApellido();
-            this.ValidarEmailCompleto();
-        }
-
-        public void ValidarSiglaNombre()
-        {
-            if (string.IsNullOrEmpty(SiglaNombre))
-            {
-                throw new UsuarioException("El mail no debe ser vacio");
-            }
-        }
-
-        public void ValidarSiglaApellido()
-        {
-            if (string.IsNullOrEmpty(SiglaApellido))
-            {
-                throw new UsuarioException("El mail no debe ser vacio");
-            }
-        }
-
-        public void ValidarEmailCompleto()
-        {
-            if (string.IsNullOrEmpty(Email))
-            {
-                throw new UsuarioException("El mail no debe ser vacio");
-            }
+            return nc.ObtenerPartes() + "@laEmpresa.com";
         }
     }
 }

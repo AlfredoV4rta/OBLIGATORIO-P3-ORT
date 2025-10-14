@@ -17,7 +17,7 @@ namespace LaEmpresa.LogicaAplicacion.Mappers
             {
                 Id = dto.Id,
                 NombreCompleto = new NombreCompleto(dto.Nombre, dto.Apellido),
-                Email = new EmailCompleto(dto.Email),
+                Email = new EmailCompleto(new NombreCompleto(dto.Nombre, dto.Apellido)),
                 Contrasenia = dto.Contrasenia,
                 IdEquipo = dto.IdEquipo,
                 Rol = dto.Rol

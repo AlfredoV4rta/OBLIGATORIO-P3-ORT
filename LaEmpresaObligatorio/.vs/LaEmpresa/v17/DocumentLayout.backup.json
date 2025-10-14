@@ -1,14 +1,34 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\",
+  "WorkspaceRootPath": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2DD588B1-FDA4-4695-A574-745B777F64A8}|LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.webapp\\views\\pago\\listarpagosmensuales.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2DD588B1-FDA4-4695-A574-745B777F64A8}|LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj|solutionrelative:laempresa.webapp\\views\\pago\\listarpagosmensuales.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\obligatorios\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.logicanegocio\\valueobjects\\nombrecompleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|solutionrelative:laempresa.logicanegocio\\valueobjects\\nombrecompleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2DD588B1-FDA4-4695-A574-745B777F64A8}|LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2DD588B1-FDA4-4695-A574-745B777F64A8}|LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj|solutionrelative:laempresa.webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\obligatorios\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.logicanegocio\\valueobjects\\emailcompleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|solutionrelative:laempresa.logicanegocio\\valueobjects\\emailcompleto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\obligatorios\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.logicanegocio\\entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|solutionrelative:laempresa.logicanegocio\\entidades\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD588B1-FDA4-4695-A574-745B777F64A8}|LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\obligatorios\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.webapp\\views\\usuario\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{2DD588B1-FDA4-4695-A574-745B777F64A8}|LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj|solutionrelative:laempresa.webapp\\views\\usuario\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2DD588B1-FDA4-4695-A574-745B777F64A8}|LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\obligatorios\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.webapp\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2DD588B1-FDA4-4695-A574-745B777F64A8}|LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj|solutionrelative:laempresa.webapp\\controllers\\usuariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\obligatorios\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.logicaaplicacion\\casosdeuso\\usuariocu\\altausuariocu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|solutionrelative:laempresa.logicaaplicacion\\casosdeuso\\usuariocu\\altausuariocu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\obligatorios\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.logicaaplicacion\\mappers\\usuariomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|solutionrelative:laempresa.logicaaplicacion\\mappers\\usuariomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,46 +38,102 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UsuarioMapper.cs",
+              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\Mappers\\UsuarioMapper.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.LogicaAplicacion\\Mappers\\UsuarioMapper.cs",
+              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\Mappers\\UsuarioMapper.cs",
+              "RelativeToolTip": "LaEmpresa.LogicaAplicacion\\Mappers\\UsuarioMapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T00:09:07.628Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ListarPagosMensuales.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\Views\\Pago\\ListarPagosMensuales.cshtml",
-              "RelativeDocumentMoniker": "LaEmpresa.WebApp\\Views\\Pago\\ListarPagosMensuales.cshtml",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\Views\\Pago\\ListarPagosMensuales.cshtml",
-              "RelativeToolTip": "LaEmpresa.WebApp\\Views\\Pago\\ListarPagosMensuales.cshtml",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAIwBkAAAAHAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "AltaUsuarioCU.cs",
+              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\CasosDeUso\\UsuarioCU\\AltaUsuarioCU.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.LogicaAplicacion\\CasosDeUso\\UsuarioCU\\AltaUsuarioCU.cs",
+              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\CasosDeUso\\UsuarioCU\\AltaUsuarioCU.cs",
+              "RelativeToolTip": "LaEmpresa.LogicaAplicacion\\CasosDeUso\\UsuarioCU\\AltaUsuarioCU.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T00:09:01.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UsuarioController.cs",
+              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\Controllers\\UsuarioController.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.WebApp\\Controllers\\UsuarioController.cs",
+              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\Controllers\\UsuarioController.cs",
+              "RelativeToolTip": "LaEmpresa.WebApp\\Controllers\\UsuarioController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwC0AAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-14T00:08:47.626Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\Views\\Usuario\\Create.cshtml",
+              "RelativeDocumentMoniker": "LaEmpresa.WebApp\\Views\\Usuario\\Create.cshtml",
+              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\Views\\Usuario\\Create.cshtml",
+              "RelativeToolTip": "LaEmpresa.WebApp\\Views\\Usuario\\Create.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAACYAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-13T17:57:39.714Z",
+              "WhenOpened": "2025-10-14T00:04:48.936Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaNegocio\\Entidades\\Usuario.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.LogicaNegocio\\Entidades\\Usuario.cs",
+              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaNegocio\\Entidades\\Usuario.cs",
+              "RelativeToolTip": "LaEmpresa.LogicaNegocio\\Entidades\\Usuario.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABQAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T23:58:22.396Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "LaEmpresa.WebApp\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "LaEmpresa.WebApp\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACQAAACGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-13T17:40:25.66Z"
-            }
-          ]
-        },
-        {
-          "DockedWidth": 1217,
-          "SelectedChildIndex": -1,
-          "Children": [
+              "Title": "EmailCompleto.cs",
+              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaNegocio\\ValueObjects\\EmailCompleto.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.LogicaNegocio\\ValueObjects\\EmailCompleto.cs",
+              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaNegocio\\ValueObjects\\EmailCompleto.cs",
+              "RelativeToolTip": "LaEmpresa.LogicaNegocio\\ValueObjects\\EmailCompleto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwBAAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T22:35:31.691Z",
+              "EditorCaption": ""
+            },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NombreCompleto.cs",
+              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaNegocio\\ValueObjects\\NombreCompleto.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.LogicaNegocio\\ValueObjects\\NombreCompleto.cs",
+              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaNegocio\\ValueObjects\\NombreCompleto.cs",
+              "RelativeToolTip": "LaEmpresa.LogicaNegocio\\ValueObjects\\NombreCompleto.cs",
+              "ViewState": "AgIAAC4AAAAAAAAAAAA/wEYAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-13T22:35:32.953Z",
+              "EditorCaption": ""
             }
           ]
         }
