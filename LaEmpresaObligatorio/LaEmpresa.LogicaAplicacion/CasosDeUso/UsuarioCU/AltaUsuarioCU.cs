@@ -49,20 +49,22 @@ namespace LaEmpresa.LogicaAplicacion.CasosDeUso.UsuarioCU
         private string GenerarEmailConNumero(string prefijo)
         {
             Random random = new Random();
-            int maxIntentos = 1000;
+            bool emailEncontrado = false;
+            string emailUnico = "";
 
-            for (int i = 0; i < maxIntentos; i++)
+            while (!emailEncontrado)
             {
-                int numero = random.Next(1, 500);
+                int numero = random.Next(1, 999);
                 string emailCandidato = $"{prefijo}{numero}@laEmpresa.com";
 
                 if (!ExisteEmail(emailCandidato))
                 {
-                    return emailCandidato;
+                    emailUnico = emailCandidato;
+                    emailEncontrado = true;
                 }
             }
 
-            throw new UsuarioException("No se pudo generar un email único después de varios intentos");
+            return emailUnico;
         }
 
         private bool ExisteEmail(string email)
