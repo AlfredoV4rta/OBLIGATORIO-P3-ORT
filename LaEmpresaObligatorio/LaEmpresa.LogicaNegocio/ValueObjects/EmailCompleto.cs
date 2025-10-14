@@ -19,6 +19,8 @@ namespace LaEmpresa.LogicaNegocio.ValueObjects
             this.Email = Crear(nombreCompleto);
         }
 
+        public EmailCompleto() { }
+
         public string Crear(NombreCompleto nc)
         {
             return nc.ObtenerPartes() + "@laEmpresa.com";

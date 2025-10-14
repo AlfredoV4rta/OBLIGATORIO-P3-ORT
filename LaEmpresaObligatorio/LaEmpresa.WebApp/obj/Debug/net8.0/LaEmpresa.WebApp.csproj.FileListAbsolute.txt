@@ -556,6 +556,15 @@ C:\Users\59892\OneDrive\Desktop\3er Semestre\Obligatorios\OBLIGATORIO-P3-ORT\LaE
 C:\Users\59892\OneDrive\Desktop\3er Semestre\Obligatorios\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\obj\Debug\net8.0\LaEmpresa.WebApp.pdb
 C:\Users\59892\OneDrive\Desktop\3er Semestre\Obligatorios\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\obj\Debug\net8.0\LaEmpresa.WebApp.genruntimeconfig.cache
 C:\Users\59892\OneDrive\Desktop\3er Semestre\Obligatorios\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\obj\Debug\net8.0\ref\LaEmpresa.WebApp.dll
+C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\obj\Debug\net8.0\LaEmpresa.WebApp.csproj.AssemblyReference.cache
+C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\obj\Debug\net8.0\LaEmpresa.WebApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\obj\Debug\net8.0\LaEmpresa.WebApp.AssemblyInfoInputs.cache
+C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\obj\Debug\net8.0\LaEmpresa.WebApp.AssemblyInfo.cs
+C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\obj\Debug\net8.0\LaEmpresa.WebApp.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\obj\Debug\net8.0\LaEmpresa.WebApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\obj\Debug\net8.0\LaEmpresa.WebApp.RazorAssemblyInfo.cache
+C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\obj\Debug\net8.0\LaEmpresa.WebApp.RazorAssemblyInfo.cs
+C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\obj\Debug\net8.0\LaEmpresa.WebApp.sourcelink.json
 C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\bin\Debug\net8.0\appsettings.Development.json
 C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\bin\Debug\net8.0\appsettings.json
 C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\bin\Debug\net8.0\LaEmpresa.WebApp.staticwebassets.runtime.json
@@ -807,15 +816,6 @@ C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmp
 C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\bin\Debug\net8.0\LaEmpresa.AccesoDatos.pdb
 C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\bin\Debug\net8.0\LaEmpresa.LogicaAplicacion.pdb
 C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\bin\Debug\net8.0\LaEmpresa.LogicaNegocio.pdb
-C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\obj\Debug\net8.0\LaEmpresa.WebApp.csproj.AssemblyReference.cache
-C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\obj\Debug\net8.0\LaEmpresa.WebApp.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\obj\Debug\net8.0\LaEmpresa.WebApp.AssemblyInfoInputs.cache
-C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\obj\Debug\net8.0\LaEmpresa.WebApp.AssemblyInfo.cs
-C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\obj\Debug\net8.0\LaEmpresa.WebApp.csproj.CoreCompileInputs.cache
-C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\obj\Debug\net8.0\LaEmpresa.WebApp.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\obj\Debug\net8.0\LaEmpresa.WebApp.RazorAssemblyInfo.cache
-C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\obj\Debug\net8.0\LaEmpresa.WebApp.RazorAssemblyInfo.cs
-C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\obj\Debug\net8.0\LaEmpresa.WebApp.sourcelink.json
 C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\obj\Debug\net8.0\scopedcss\bundle\LaEmpresa.WebApp.styles.css
 C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.WebApp\obj\Debug\net8.0\scopedcss\projectbundle\LaEmpresa.WebApp.bundle.scp.css

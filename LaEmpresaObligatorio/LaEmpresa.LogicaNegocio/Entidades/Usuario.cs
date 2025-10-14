@@ -38,7 +38,7 @@ namespace LaEmpresa.LogicaNegocio.Entidades
             this.ValidarIdEquipo();
             this.ValidarContrasenia();
             this.ValidarNombreCompleto();
-            this.ValidarEmailCompleto();
+            //this.ValidarEmailCompleto();
         }
 
         public void ValidarIdEquipo()
@@ -52,10 +52,10 @@ namespace LaEmpresa.LogicaNegocio.Entidades
         {
             NombreCompleto.Validar();
         }
-        public void ValidarEmailCompleto()
-        {
-            Email.Validar();
-        }
+        //public void ValidarEmailCompleto()
+        //{
+        //    Email.Validar();
+        //}
 
         public void ValidarContrasenia()
         {

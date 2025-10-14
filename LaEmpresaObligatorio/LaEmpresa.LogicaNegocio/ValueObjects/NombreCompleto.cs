@@ -22,6 +22,8 @@ namespace LaEmpresa.LogicaNegocio.ValueObjects
             Apellido = apellido.Trim().ToLower();
         }
 
+        public NombreCompleto() { }
+
         public void Validar()
         {
             this.ValidarNombre();
