@@ -20,7 +20,9 @@ namespace LaEmpresa.AccesoDatos.EF.RepositoriosEF
 
         public void Add(Usuario obj)
         {
-            throw new NotImplementedException();
+            obj.Validar();
+            _context.Add(obj);
+            _context.SaveChanges();
         }
 
         public IEnumerable<Usuario> FindAll()
@@ -30,7 +32,8 @@ namespace LaEmpresa.AccesoDatos.EF.RepositoriosEF
 
         public Usuario FindbyEmail(string email)
         {
-            throw new NotImplementedException();
+            return _context.Usuarios.Where(user => user.Email.Email == email)
+                .FirstOrDefault();
         }
 
         public Usuario FindById(int id)

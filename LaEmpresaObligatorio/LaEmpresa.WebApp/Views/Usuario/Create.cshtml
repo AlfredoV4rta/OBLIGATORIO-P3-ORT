@@ -1,26 +1,33 @@
-﻿@model LaEmpresa.LogicaAplicacion.DTOs.UsuarioDTO
+﻿@using LaEmpresa.LogicaAplicacion.DTOs
+@model LaEmpresa.LogicaAplicacion.DTOs.UsuarioDTO
 
 @{
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
+<h1>Registrar usuario</h1>
+@if (!string.IsNullOrEmpty(ViewBag.Mensaje))
+{
+    <div class="alert alert-success">
+        @ViewBag.Mensaje
+    </div>
+}
 
-<h4>UsuarioDTO</h4>
+@if (!string.IsNullOrEmpty(ViewBag.Error))
+{
+    <div class="alert alert-danger">
+        @ViewBag.Error
+    </div>
+}
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <div class="form-group">
-                <label asp-for="Id" class="control-label"></label>
-                <input asp-for="Id" class="form-control" type="hidden" />
-                <span asp-validation-for="Id" class="text-danger"></span>
-            </div>
-            <div class="form-group">
                 <label asp-for="IdEquipo" class="control-label">Elige tu equipo</label>
 				<select asp-for="IdEquipo" class="form-control">
-					@foreach (var equipo in ViewBag.Equipos)
+					@foreach (EquipoDTO equipo in ViewBag.Equipos)
 					{
 						<option value="@equipo.Id">@equipo.Nombre</option>
 					}

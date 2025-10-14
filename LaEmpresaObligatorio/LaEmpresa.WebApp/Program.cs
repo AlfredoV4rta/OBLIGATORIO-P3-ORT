@@ -51,6 +51,7 @@ namespace LaEmpresa.WebApp
             builder.Services.AddScoped<IObtenerPagosMensuales, ObtenerPagosMensualesCU>();
             builder.Services.AddScoped<IAltaUsuario, AltaUsuarioCU>();
             builder.Services.AddScoped<IObtenerEquipos, ObtenerEquiposCU>();
+            builder.Services.AddScoped<IObtenerUsuariosMayorMonto, ObtenerUsuariosMayorMontoCU>();
 
 
             //Sesion

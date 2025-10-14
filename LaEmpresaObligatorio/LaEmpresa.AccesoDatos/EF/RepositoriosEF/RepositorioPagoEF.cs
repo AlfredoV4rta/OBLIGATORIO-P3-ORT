@@ -59,6 +59,17 @@ namespace LaEmpresa.AccesoDatos.EF.RepositoriosEF
             throw new NotImplementedException();
         }
 
+        public IEnumerable<Usuario> UsuarioMayorMonto(double monto)
+        {
+            List<Usuario> pagosMonto = _context.Pagos.Where(
+                    pago => pago.Monto > monto)
+                    .Include(pago => pago.Usuario)
+                    .Select(pago => pago.Usuario)
+                    .Distinct()
+                    .ToList();
 
+
+            return pagosMonto;
+        }
     }
 }

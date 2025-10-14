@@ -1,6 +1,7 @@
 ﻿using LaEmpresa.LogicaAplicacion.DTOs;
 using LaEmpresa.LogicaAplicacion.InterfacesCU.CasosEquipo;
 using LaEmpresa.LogicaAplicacion.InterfacesCU.CasosUsuario;
+using LaEmpresa.LogicaNegocio.Exceptions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -43,11 +44,20 @@ namespace LaEmpresa.WebApp.Controllers
         {
             try
             {
+                ViewBag.Equipos = _obtenerEquipos.ObtenerEquipos();
                 _altaUsuario.AltaUsuario(userDto);
-                return RedirectToAction(nameof(Index));
+                ViewBag.Mensaje = "Usuario creado con exito";
+                return View();
+                
             }
-            catch
+            catch (UsuarioException ue)
             {
+                ViewBag.Error = ue.Message;
+                return View();
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Error = "Error inesperado" + ex;
                 return View();
             }
         }

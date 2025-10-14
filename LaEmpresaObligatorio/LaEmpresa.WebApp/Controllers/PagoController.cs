@@ -14,13 +14,20 @@ namespace LaEmpresa.WebApp.Controllers
         private IObtenerTipoDeGasto _obtenerTipoDeGasto;
         private IObtenerPagos _obtenerPagos;
         private IObtenerPagosMensuales _obtenerPagosMensuales;
+        private IObtenerUsuariosMayorMonto _obtenerUsuariosMayorMonto;
 
-        public PagoController(IAltaPago altaPago, IObtenerTipoDeGasto obtenerTipoDeGasto, IObtenerPagos obtenerPagos, IObtenerPagosMensuales obtenerPagosMensuales)
+        public PagoController(
+            IAltaPago altaPago, 
+            IObtenerTipoDeGasto obtenerTipoDeGasto,
+            IObtenerPagos obtenerPagos,
+            IObtenerPagosMensuales obtenerPagosMensuales,
+            IObtenerUsuariosMayorMonto obtenerUsuariosMayorMonto)
         {
             _altaPago = altaPago;
             _obtenerTipoDeGasto = obtenerTipoDeGasto;
             _obtenerPagos = obtenerPagos;
             _obtenerPagosMensuales = obtenerPagosMensuales;
+            _obtenerUsuariosMayorMonto = obtenerUsuariosMayorMonto;
         }
 
         // GET: PagoController
@@ -164,6 +171,45 @@ namespace LaEmpresa.WebApp.Controllers
                     return View();
                 }
                 return View(pagos);
+            }
+            catch (PagoException pe)
+            {
+                ViewBag.Error = pe.Message;
+                return View();
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Error = "Error inesperado" + ex.Message;
+                return View();
+            }
+        }
+
+        public IActionResult ListarUsuariosPagoMonto()
+        {
+            return View();
+        }
+
+        [HttpPost]
+
+        public IActionResult ListarUsuariosPagoMonto(int monto)
+        {
+            try
+            {
+                if (monto <= 0)
+                {
+                    ViewBag.Error = "El monto debe ser mayor a cero";
+                    return View();
+                }
+
+                IEnumerable<UsuarioDTO> usuarios = _obtenerUsuariosMayorMonto.ObtenerUsuariosPagosMayoresMonto(monto);
+
+                if (usuarios == null || usuarios.Count() == 0)
+                {
+                    ViewBag.Error = "No hay usuarios que superen ese monto de pago";
+                    return View();
+                }
+
+                return View(usuarios);
             }
             catch (PagoException pe)
             {

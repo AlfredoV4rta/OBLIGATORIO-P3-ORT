@@ -17,7 +17,6 @@ namespace LaEmpresa.LogicaNegocio.ValueObjects
 
         public NombreCompleto(string nombre, string apellido)
         {
-            Validar();
             Nombre = nombre.Trim().ToLower();
             Apellido = apellido.Trim().ToLower();
         }
