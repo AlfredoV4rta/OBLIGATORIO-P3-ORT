@@ -33,7 +33,24 @@ namespace LaEmpresa.WebApp.Controllers
         // GET: PagoController
         public ActionResult Index()
         {
-            return View();
+            if(HttpContext.Session.GetInt32("rol") != null)
+            {
+                try
+                {
+                    return View();
+                }
+                catch (PagoException pe)
+                {
+                    ViewBag.Error = pe.Message;
+                    return View();
+                }
+                catch (Exception ex)
+                {
+                    ViewBag.Error = "Error inesperado" + ex;
+                    return View();
+                }
+            }
+            return RedirectToAction("Login", "Home");
         }
 
         // GET: PagoController/Details/5
@@ -45,8 +62,25 @@ namespace LaEmpresa.WebApp.Controllers
         // GET: PagoController/Create
         public ActionResult Create()
         {
-            ViewBag.TiposDeGasto = _obtenerTipoDeGasto.ObtenerTiposDeGasto();
-            return View();
+            if (HttpContext.Session.GetInt32("rol") != null)
+            {
+                try
+                {
+                    ViewBag.TiposDeGasto = _obtenerTipoDeGasto.ObtenerTiposDeGasto();
+                    return View();
+                }
+                catch (PagoException pe)
+                {
+                    ViewBag.Error = pe.Message;
+                    return View();
+                }
+                catch (Exception ex)
+                {
+                    ViewBag.Error = "Error inesperado" + ex;
+                    return View();
+                }
+            }
+            return RedirectToAction("Login", "Home");
         }
 
         // POST: PagoController/Create
@@ -75,8 +109,26 @@ namespace LaEmpresa.WebApp.Controllers
         // GET: PagoController/Create
         public ActionResult CreateUnico()
         {
-            ViewBag.TiposDeGasto = _obtenerTipoDeGasto.ObtenerTiposDeGasto();
-            return View();
+
+            if (HttpContext.Session.GetInt32("rol") != null)
+            {
+                try
+                {
+                    ViewBag.TiposDeGasto = _obtenerTipoDeGasto.ObtenerTiposDeGasto();
+                    return View();
+                }
+                catch (PagoException pex)
+                {
+                    ViewBag.Error = pex.Message;
+                    return View();
+                }
+                catch (Exception ex)
+                {
+                    ViewBag.Error = "Error inesperado" + ex;
+                    return View();
+                }
+            }
+            return RedirectToAction("Login", "Home");
         }
 
         // POST: PagoController/Create
@@ -149,7 +201,28 @@ namespace LaEmpresa.WebApp.Controllers
 
         public IActionResult ListarPagosMensuales()
         {
-            return View();
+            if (HttpContext.Session.GetInt32("rol") != null)
+            {
+                if (HttpContext.Session.GetInt32("rol") == 2)
+                {
+                    try
+                    {
+                        return View();
+                    }
+                    catch (PagoException pe)
+                    {
+                        ViewBag.Error = pe.Message;
+                        return View();
+                    }
+                    catch (Exception ex)
+                    {
+                        ViewBag.Error = "Error inesperado" + ex;
+                        return View();
+                    }
+                }
+                return RedirectToAction("Index", "Home");
+            }
+            return RedirectToAction("Login", "Home");
         }
 
         [HttpPost]
@@ -186,7 +259,28 @@ namespace LaEmpresa.WebApp.Controllers
 
         public IActionResult ListarUsuariosPagoMonto()
         {
-            return View();
+            if (HttpContext.Session.GetInt32("rol") != null)
+            {
+                if (HttpContext.Session.GetInt32("rol") == 2)
+                {
+                    try
+                    {
+                        return View();
+                    }
+                    catch (PagoException pe)
+                    {
+                        ViewBag.Error = pe.Message;
+                        return View();
+                    }
+                    catch (Exception ex)
+                    {
+                        ViewBag.Error = "Error inesperado" + ex;
+                        return View();
+                    }
+                }
+                return RedirectToAction("Index", "Home");
+            }
+            return RedirectToAction("Login", "Home");
         }
 
         [HttpPost]

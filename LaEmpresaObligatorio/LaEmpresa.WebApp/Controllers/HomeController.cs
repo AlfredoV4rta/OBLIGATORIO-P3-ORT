@@ -19,7 +19,19 @@ namespace LaEmpresa.WebApp.Controllers
 
         public ActionResult Index()
         {
-            return View(_obtenerUsuariosCU.ObtenerUsuarios());
+            if (HttpContext.Session.GetInt32("rol") != null)
+            {
+                try
+                {
+                    return View();
+                }
+                catch (Exception ex)
+                {
+                    ViewBag.Mensaje = "Error inesperado." + ex;
+                    return View();
+                }
+            }
+            return RedirectToAction("Login", "Home");
         }
 
         public IActionResult Login(string mensaje)

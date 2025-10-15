@@ -1,4 +1,5 @@
-﻿using LaEmpresa.LogicaAplicacion.DTOs;
+﻿using LaEmpresa.LogicaAplicacion.CasosDeUso.TipoDeGastoCU;
+using LaEmpresa.LogicaAplicacion.DTOs;
 using LaEmpresa.LogicaAplicacion.InterfacesCU.CasosEquipo;
 using LaEmpresa.LogicaAplicacion.InterfacesCU.CasosUsuario;
 using LaEmpresa.LogicaNegocio.Exceptions;
@@ -33,9 +34,31 @@ namespace LaEmpresa.WebApp.Controllers
         // GET: UsuarioController/Create
         public ActionResult Create()
         {
-            ViewBag.Equipos = _obtenerEquipos.ObtenerEquipos();
-            return View();
+            if (HttpContext.Session.GetInt32("rol") != null)
+            {
+                if (HttpContext.Session.GetInt32("rol") == 0)
+                {
+                    try
+                    {
+                        ViewBag.Equipos = _obtenerEquipos.ObtenerEquipos();
+                        return View();
+                    }
+                    catch (UsuarioException uex)
+                    {
+                        ViewBag.Mensaje = uex.Message;
+                        return View();
+                    }
+                    catch (Exception ex)
+                    {
+                        ViewBag.Mensaje = ex.Message;
+                        return View();
+                    }
+                }
+                return RedirectToAction("Index", "Home");
+            }
+            return RedirectToAction("Login", "Home");
         }
+
 
         // POST: UsuarioController/Create
         [HttpPost]

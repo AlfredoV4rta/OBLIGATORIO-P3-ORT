@@ -30,13 +30,55 @@ namespace LaEmpresa.WebApp.Controllers
 
         public ActionResult Index()
         {
-            return View(_obtenerTipoDeGastoCU.ObtenerTiposDeGasto());
+            if (HttpContext.Session.GetInt32("rol") != null)
+            {
+                if (HttpContext.Session.GetInt32("rol") == 0)
+                { 
+                    try
+                    {
+                        return View(_obtenerTipoDeGastoCU.ObtenerTiposDeGasto());
+                    }
+                    catch (TipoDeGastoException tg)
+                    {
+                        ViewBag.Mensaje = tg.Message;
+                        return View();
+                    }
+                    catch (Exception ex)
+                    {
+                        ViewBag.Mensaje = ex.Message;
+                        return View();
+                    }
+                }
+                return RedirectToAction("Index", "Home");
+            }
+            return RedirectToAction("Login", "Home");
         }
 
  
         public ActionResult Details(int id)
         {
-            return View(_obtenerTipoDeGastoPorId.ObtenerTipoDeGastoPorId(id));
+            if (HttpContext.Session.GetInt32("rol") != null)
+            {
+                if (HttpContext.Session.GetInt32("rol") == 0)
+                {
+                    try
+                    {
+                        return View(_obtenerTipoDeGastoPorId.ObtenerTipoDeGastoPorId(id));
+                    }
+                    catch (TipoDeGastoException tg)
+                    {
+                        ViewBag.Mensaje = tg.Message;
+                        return View();
+                    }
+                    catch (Exception ex)
+                    {
+                        ViewBag.Mensaje = ex.Message;
+                        return View();
+                    }
+                }
+                return RedirectToAction("Index", "Home");
+            }
+            return RedirectToAction("Login", "Home");
         }
 
         public ActionResult Create()
@@ -63,7 +105,28 @@ namespace LaEmpresa.WebApp.Controllers
 
         public ActionResult Edit(int id)
         {
-            return View(_obtenerTipoDeGastoPorId.ObtenerTipoDeGastoPorId(id));
+            if (HttpContext.Session.GetInt32("rol") != null)
+            {
+                if (HttpContext.Session.GetInt32("rol") == 0)
+                {
+                    try
+                    {
+                        return View(_obtenerTipoDeGastoPorId.ObtenerTipoDeGastoPorId(id));
+                    }
+                    catch (TipoDeGastoException tg)
+                    {
+                        ViewBag.Mensaje = tg.Message;
+                        return View();
+                    }
+                    catch (Exception ex)
+                    {
+                        ViewBag.Mensaje = ex.Message;
+                        return View();
+                    }
+                }
+                return RedirectToAction("Index", "Home");
+            }
+            return RedirectToAction("Login", "Home");
         }
 
         [HttpPost]
@@ -85,10 +148,31 @@ namespace LaEmpresa.WebApp.Controllers
 
         public ActionResult Delete(int id)
         {
-            return View(_obtenerTipoDeGastoPorId.ObtenerTipoDeGastoPorId(id));
+            if (HttpContext.Session.GetInt32("rol") != null)
+            {
+                if (HttpContext.Session.GetInt32("rol") == 0)
+                {
+                    try
+                    {
+                        return View(_obtenerTipoDeGastoPorId.ObtenerTipoDeGastoPorId(id));
+                    }
+                    catch (TipoDeGastoException tg)
+                    {
+                        ViewBag.Mensaje = tg.Message;
+                        return View();
+                    }
+                    catch (Exception ex)
+                    {
+                        ViewBag.Mensaje = ex.Message;
+                        return View();
+                    }
+                }
+                return RedirectToAction("Index", "Home");
+            }
+            return RedirectToAction("Login", "Home");
         }
 
-       
+
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(int id, IFormCollection collection)
