@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35828.75 d17.13
+VisualStudioVersion = 17.13.35828.75
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaEmpresa.LogicaNegocio", "LaEmpresa.LogicaNegocio\LaEmpresa.LogicaNegocio.csproj", "{088A21DC-7B57-4A0C-A129-F3FC1A45B818}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaEmpresa.AccesoDatos", "LaEmpresa.AccesoDatos\LaEmpresa.AccesoDatos.csproj", "{2546BC92-4A37-4976-8B60-10990E736CBA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaEmpresa.WebApp", "LaEmpresa.WebApp\LaEmpresa.WebApp.csproj", "{2DD588B1-FDA4-4695-A574-745B777F64A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaEmpresa.WebApi", "LaEmpresa.WebApi\LaEmpresa.WebApi.csproj", "{C8D3359A-C3D1-4D83-A88F-E828297461F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{2DD588B1-FDA4-4695-A574-745B777F64A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DD588B1-FDA4-4695-A574-745B777F64A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DD588B1-FDA4-4695-A574-745B777F64A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8D3359A-C3D1-4D83-A88F-E828297461F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8D3359A-C3D1-4D83-A88F-E828297461F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8D3359A-C3D1-4D83-A88F-E828297461F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8D3359A-C3D1-4D83-A88F-E828297461F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

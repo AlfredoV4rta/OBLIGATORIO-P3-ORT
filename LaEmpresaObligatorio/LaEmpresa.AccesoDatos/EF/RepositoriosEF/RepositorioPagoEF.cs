@@ -31,7 +31,7 @@ namespace LaEmpresa.AccesoDatos.EF.RepositoriosEF
 
         public Pago FindById(int id)
         {
-            throw new NotImplementedException();
+            return _context.Pagos.Where(pago => pago.Id == id).FirstOrDefault();
         }
 
         public IEnumerable<Pago> GetByMonthYear(int month, int year)
