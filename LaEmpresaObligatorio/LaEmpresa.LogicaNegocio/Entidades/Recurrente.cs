@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LaEmpresa.LogicaNegocio.Interfaces;
 
 namespace LaEmpresa.LogicaNegocio.Entidades
 {
-    public class Recurrente : Pago
+    public class Recurrente : Pago, IValidable
     {
         public DateTime FechaDesde { get; set; }
         public DateTime FechaHasta { get; set; }
@@ -18,6 +19,15 @@ namespace LaEmpresa.LogicaNegocio.Entidades
             int cantMeses = MesesDeDiferencia(FechaDesde, FechaHasta);
 
             return monto * cantMeses;
+        }
+
+        public void Validar()
+        {
+        }
+
+        public void ValidarFechaDesde()
+        {
+
         }
 
         public int MesesDeDiferencia(DateTime fechaDesde, DateTime fechaHasta)

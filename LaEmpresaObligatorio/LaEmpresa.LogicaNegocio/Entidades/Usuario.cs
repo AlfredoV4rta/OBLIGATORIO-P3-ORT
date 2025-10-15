@@ -69,5 +69,10 @@ namespace LaEmpresa.LogicaNegocio.Entidades
                 throw new UsuarioException("El usuario debe tener rol");
             }
         }
+
+        public void ValidarEmial()
+        {
+            Email.Validar();
+        }
     }
 }

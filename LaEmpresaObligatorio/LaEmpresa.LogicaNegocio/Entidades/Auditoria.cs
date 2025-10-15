@@ -28,5 +28,10 @@ namespace LaEmpresa.LogicaNegocio.Entidades
         public Auditoria() { }
 
         public void Validar() { }
+
+        public void ValidarMail()
+        {
+
+        }
     }
 }

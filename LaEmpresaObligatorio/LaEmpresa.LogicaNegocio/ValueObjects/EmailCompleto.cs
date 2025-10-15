@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 namespace LaEmpresa.LogicaNegocio.ValueObjects
 {
     [Owned]
-    public class EmailCompleto
+    public class EmailCompleto: IValidable
     {
         public string Email { get; set; }
 
@@ -29,5 +29,12 @@ namespace LaEmpresa.LogicaNegocio.ValueObjects
            
         }
 
+        public void Validar()
+        {
+            if (string.IsNullOrEmpty(Email))
+            {
+                throw new UsuarioException("El email no puede ser vacio");
+            }
+        }
     }
 }

@@ -19,28 +19,40 @@
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
-                        @if (Context.Session.GetString("usuario") != null)
+                        @if (Context.Session.GetInt32("usuario") != null)
                         {
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="TipoDeGasto" asp-action="Index">Ver tipos de gastos</a>
-                        </li>
 
-                        <li class="nav-item">
-                             <a class="nav-link text-dark" asp-area="" asp-controller="Pago" asp-action="Index">Agregar Pago</a>
-                        </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Pago" asp-action="ListarPagosMensuales">Ver Pagos</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Usuario" asp-action="Create">Agregar usuario</a>
-                        </li>
-
-                         <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Pago" asp-action="ListarUsuariosPagoMonto">Listar usuario</a>
-                         </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Pago" asp-action="Index">Agregar Pago</a>
+                            </li>
                         }
+                        @if (Context.Session.GetInt32("usuario") != null && Context.Session.GetInt32("usuario") == 0)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="TipoDeGasto" asp-action="Index">Ver tipos de gastos</a>
+                            </li>
+                            
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Usuario" asp-action="Create">Agregar usuario</a>
+                            </li>
+                        }
+                        @if (Context.Session.GetInt32("usuario") != null && Context.Session.GetInt32("usuario") == 2)
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Pago" asp-action="ListarPagosMensuales">Ver Pagos</a>
+                            </li>
+
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Pago" asp-action="ListarUsuariosPagoMonto">Listar usuario</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Usuario" asp-action="Create">Agregar usuario</a>
+                            </li>
+                        }
+                        
                     </ul>
                 </div>
             </div>

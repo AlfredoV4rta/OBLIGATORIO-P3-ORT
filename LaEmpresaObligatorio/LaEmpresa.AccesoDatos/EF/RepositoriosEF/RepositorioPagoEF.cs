@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LaEmpresa.LogicaNegocio.Exceptions;
 
 namespace LaEmpresa.AccesoDatos.EF.RepositoriosEF
 {
@@ -31,7 +32,18 @@ namespace LaEmpresa.AccesoDatos.EF.RepositoriosEF
 
         public Pago FindById(int id)
         {
-            return _context.Pagos.Where(pago => pago.Id == id).FirstOrDefault();
+            Pago pagoBuscado = _context.Pagos
+                .Include(pago => pago.TipoGasto)
+                .Include(pago => pago.Usuario)
+                .FirstOrDefault(pago => pago.Id == id);
+
+
+            if (pagoBuscado == null)
+            {
+                throw new PagoException("Pago no encontrado");
+            }
+
+            return pagoBuscado;
         }
 
         public IEnumerable<Pago> GetByMonthYear(int month, int year)
