@@ -17,13 +17,13 @@ GO
 
 --  USUARIOS
 INSERT INTO Usuarios (IdEquipo, NombreCompleto_Nombre, NombreCompleto_Apellido, Contrasenia, Email_Email, Rol) VALUES
-(1, 'Ana', 'Pérez', '1234', 'ana.perez@laempresa.com', 1),
-(2, 'Juan', 'Gómez', 'abcd', 'juan.gomez@laempresa.com', 2),
+(1, 'Ana', 'Pérez', '1234', 'ana.perez@laempresa.com', 0),
+(2, 'Juan', 'Gómez', 'abcd', 'juan.gomez@laempresa.com', 1),
 (3, 'Lucía', 'Rodríguez', 'pass1', 'lucia.rodriguez@laempresa.com', 2),
-(4, 'Martín', 'Fernández', 'pass2', 'martin.fernandez@laempresa.com', 3),
+(4, 'Martín', 'Fernández', 'pass2', 'martin.fernandez@laempresa.com', 0),
 (5, 'Sofía', 'Sosa', 'pass3', 'sofia.sosa@laempresa.com', 2),
 (6, 'Diego', 'Silva', 'pass4', 'diego.silva@laempresa.com', 1),
-(7, 'Laura', 'García', 'pass5', 'laura.garcia@laempresa.com', 3),
+(7, 'Laura', 'García', 'pass5', 'laura.garcia@laempresa.com', 0),
 (8, 'Pedro', 'López', 'pass6', 'pedro.lopez@laempresa.com', 2),
 (9, 'María', 'Torres', 'pass7', 'maria.torres@laempresa.com', 1),
 (10, 'Andrés', 'Ramos', 'pass8', 'andres.ramos@laempresa.com', 2);

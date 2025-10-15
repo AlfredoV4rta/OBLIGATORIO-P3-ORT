@@ -30,9 +30,9 @@ namespace LaEmpresa.WebApp.Controllers
 
         public ActionResult Index()
         {
-            if (HttpContext.Session.GetInt32("rol") != null)
+            if (HttpContext.Session.GetInt32("usuario") != null)
             {
-                if (HttpContext.Session.GetInt32("rol") == 0)
+                if (HttpContext.Session.GetInt32("usuario") == 0)
                 { 
                     try
                     {
@@ -57,9 +57,9 @@ namespace LaEmpresa.WebApp.Controllers
  
         public ActionResult Details(int id)
         {
-            if (HttpContext.Session.GetInt32("rol") != null)
+            if (HttpContext.Session.GetInt32("usuario") != null)
             {
-                if (HttpContext.Session.GetInt32("rol") == 0)
+                if (HttpContext.Session.GetInt32("usuario") == 0)
                 {
                     try
                     {
@@ -83,7 +83,17 @@ namespace LaEmpresa.WebApp.Controllers
 
         public ActionResult Create()
         {
-            return View();
+            if (HttpContext.Session.GetInt32("usuario") != null)
+            {
+                if (HttpContext.Session.GetInt32("usuario") == 0)
+                {
+                    return View();
+                }
+                return RedirectToAction("Index", "Home");
+            }
+            return RedirectToAction("Login", "Home");
+
+            
         }
 
  
@@ -105,9 +115,9 @@ namespace LaEmpresa.WebApp.Controllers
 
         public ActionResult Edit(int id)
         {
-            if (HttpContext.Session.GetInt32("rol") != null)
+            if (HttpContext.Session.GetInt32("usuario") != null)
             {
-                if (HttpContext.Session.GetInt32("rol") == 0)
+                if (HttpContext.Session.GetInt32("usuario") == 0)
                 {
                     try
                     {

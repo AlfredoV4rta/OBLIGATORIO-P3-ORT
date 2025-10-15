@@ -33,7 +33,7 @@ namespace LaEmpresa.WebApp.Controllers
         // GET: PagoController
         public ActionResult Index()
         {
-            if(HttpContext.Session.GetInt32("rol") != null)
+            if(HttpContext.Session.GetInt32("usuario") != null)
             {
                 try
                 {
@@ -62,7 +62,7 @@ namespace LaEmpresa.WebApp.Controllers
         // GET: PagoController/Create
         public ActionResult Create()
         {
-            if (HttpContext.Session.GetInt32("rol") != null)
+            if (HttpContext.Session.GetInt32("usuario") != null)
             {
                 try
                 {
@@ -110,7 +110,7 @@ namespace LaEmpresa.WebApp.Controllers
         public ActionResult CreateUnico()
         {
 
-            if (HttpContext.Session.GetInt32("rol") != null)
+            if (HttpContext.Session.GetInt32("usuario") != null)
             {
                 try
                 {
@@ -201,9 +201,9 @@ namespace LaEmpresa.WebApp.Controllers
 
         public IActionResult ListarPagosMensuales()
         {
-            if (HttpContext.Session.GetInt32("rol") != null)
+            if (HttpContext.Session.GetInt32("usuario") != null)
             {
-                if (HttpContext.Session.GetInt32("rol") == 2)
+                if (HttpContext.Session.GetInt32("usuario") == 2)
                 {
                     try
                     {
@@ -259,9 +259,9 @@ namespace LaEmpresa.WebApp.Controllers
 
         public IActionResult ListarUsuariosPagoMonto()
         {
-            if (HttpContext.Session.GetInt32("rol") != null)
-            {
-                if (HttpContext.Session.GetInt32("rol") == 2)
+            if (HttpContext.Session.GetInt32("usuario") != null)
+            {   
+                if (HttpContext.Session.GetInt32("usuario") == 2)
                 {
                     try
                     {

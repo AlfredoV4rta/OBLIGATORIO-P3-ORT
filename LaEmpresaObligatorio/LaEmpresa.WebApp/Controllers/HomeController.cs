@@ -19,7 +19,7 @@ namespace LaEmpresa.WebApp.Controllers
 
         public ActionResult Index()
         {
-            if (HttpContext.Session.GetInt32("rol") != null)
+            if (HttpContext.Session.GetInt32("usuario") != null)
             {
                 try
                 {
@@ -62,6 +62,20 @@ namespace LaEmpresa.WebApp.Controllers
                 ViewBag.Error = "Error inesperado." + e;
                 return View();
             }
+        }
+
+        public IActionResult Logout()
+        {
+            try
+            {
+                HttpContext.Session.Clear();
+                return RedirectToAction("Login");
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Mensaje = ex.Message;
+            }
+            return View();
         }
 
     }
