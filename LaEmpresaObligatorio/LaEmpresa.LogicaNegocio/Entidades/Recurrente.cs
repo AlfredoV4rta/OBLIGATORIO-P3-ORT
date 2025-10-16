@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LaEmpresa.LogicaNegocio.Exceptions;
 using LaEmpresa.LogicaNegocio.Interfaces;
 
 namespace LaEmpresa.LogicaNegocio.Entidades
@@ -23,11 +24,24 @@ namespace LaEmpresa.LogicaNegocio.Entidades
 
         public void Validar()
         {
+            this.ValidarFechaDesde();
+            this.ValidarFechaHasta();
         }
 
         public void ValidarFechaDesde()
         {
+            if (FechaDesde == DateTime.MinValue)
+            {
+                throw new PagoException("La fecha no puede ser vacia");
+            }
+        }
 
+        public void ValidarFechaHasta()
+        {
+            if (FechaHasta == DateTime.MinValue)
+            {
+                throw new PagoException("La fecha no puede ser vacia");
+            }
         }
 
         public int MesesDeDiferencia(DateTime fechaDesde, DateTime fechaHasta)

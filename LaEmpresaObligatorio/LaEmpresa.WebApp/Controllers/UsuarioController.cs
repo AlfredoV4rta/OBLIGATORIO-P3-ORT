@@ -36,7 +36,7 @@ namespace LaEmpresa.WebApp.Controllers
         {
             if (HttpContext.Session.GetInt32("usuario") != null)
             {
-                if (HttpContext.Session.GetInt32("usuario") == 0)
+                if (HttpContext.Session.GetInt32("usuario") == 0 || HttpContext.Session.GetInt32("usuario") == 2)
                 {
                     try
                     {

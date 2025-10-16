@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace LaEmpresa.LogicaNegocio.Exceptions
 {
-    class EquipoException
+    public class EquipoException: Exception
     {
         public EquipoException() { }
 
-        public EquipoException(string message) { }
+        public EquipoException(string message) : base(message) { }
 
-        public EquipoException(string message, Exception ex) { }
+        public EquipoException(string message, Exception ex) : base(message, ex) { }
     }
 }

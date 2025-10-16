@@ -1,4 +1,5 @@
-﻿using LaEmpresa.LogicaNegocio.Interfaces;
+﻿using LaEmpresa.LogicaNegocio.Exceptions;
+using LaEmpresa.LogicaNegocio.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -27,11 +28,14 @@ namespace LaEmpresa.LogicaNegocio.Entidades
 
         public Auditoria() { }
 
-        public void Validar() { }
+        public void Validar() 
+        { 
+            this.ValidarMail();
+        }
 
         public void ValidarMail()
         {
-
+            throw new TipoDeGastoException("Email no debe estar vacio");
         }
     }
 }

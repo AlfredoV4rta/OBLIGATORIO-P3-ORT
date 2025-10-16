@@ -1,23 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{2DD588B1-FDA4-4695-A574-745B777F64A8}|LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{2DD588B1-FDA4-4695-A574-745B777F64A8}|LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj|solutionrelative:laempresa.webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2DD588B1-FDA4-4695-A574-745B777F64A8}|LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.webapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2DD588B1-FDA4-4695-A574-745B777F64A8}|LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj|solutionrelative:laempresa.webapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/LaEmpresa/True/SqlTable/dbo.Usuarios.sql||{0058A1F7-65F3-4DB9-B3D0-CA7E64DD73CD}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.logicanegocio\\entidades\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|solutionrelative:laempresa.logicanegocio\\entidades\\rol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -25,60 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "LaEmpresa.WebApp\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "LaEmpresa.WebApp\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAwwE4AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T21:36:30.919Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "dbo.Usuarios [Datos]",
-              "DocumentMoniker": "ViewDataWindow_MSSQL__/_localdb__MSSQLLocalDB/LaEmpresa/True/SqlTable/dbo.Usuarios.sql",
-              "ToolTip": "dbo.Usuarios [Datos]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
-              "WhenOpened": "2025-10-15T21:32:05.506Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Rol.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaNegocio\\Entidades\\Rol.cs",
-              "RelativeDocumentMoniker": "LaEmpresa.LogicaNegocio\\Entidades\\Rol.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaNegocio\\Entidades\\Rol.cs",
-              "RelativeToolTip": "LaEmpresa.LogicaNegocio\\Entidades\\Rol.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T21:30:30.952Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "LaEmpresa.WebApp\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.WebApp\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "LaEmpresa.WebApp\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABEAAAAAAAAAAAAwwCEAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-15T21:27:00.104Z",
-              "EditorCaption": ""
             }
           ]
         },

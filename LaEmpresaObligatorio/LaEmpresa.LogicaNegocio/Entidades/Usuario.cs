@@ -38,6 +38,7 @@ namespace LaEmpresa.LogicaNegocio.Entidades
             this.ValidarIdEquipo();
             this.ValidarContrasenia();
             this.ValidarNombreCompleto();
+            this.ValidarEmial();
 
         }
 
