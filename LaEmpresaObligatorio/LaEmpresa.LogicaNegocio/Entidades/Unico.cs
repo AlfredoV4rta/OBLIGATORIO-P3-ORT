@@ -2,6 +2,7 @@
 using LaEmpresa.LogicaNegocio.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +11,10 @@ namespace LaEmpresa.LogicaNegocio.Entidades
 {
     public class Unico : Pago, IValidable
     {
+        [Required]
         public DateTime FechaDePago { get; set; }
+
+        [StringLength(30)]
         public string NroRecibo { get; set; }
 
         public Unico() { }

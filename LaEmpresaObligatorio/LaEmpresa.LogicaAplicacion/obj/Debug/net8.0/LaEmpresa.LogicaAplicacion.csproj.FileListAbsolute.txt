@@ -34,3 +34,21 @@ C:\Users\alumnoFI\Desktop\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.Logi
 C:\Users\alumnoFI\Desktop\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.LogicaAplicacion\obj\Debug\net8.0\refint\LaEmpresa.LogicaAplicacion.dll
 C:\Users\alumnoFI\Desktop\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.LogicaAplicacion\obj\Debug\net8.0\LaEmpresa.LogicaAplicacion.pdb
 C:\Users\alumnoFI\Desktop\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.LogicaAplicacion\obj\Debug\net8.0\ref\LaEmpresa.LogicaAplicacion.dll
+C:\Users\59892\OneDrive\Desktop\3er Semestre\Obligatorios\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.LogicaAplicacion\bin\Debug\net8.0\LaEmpresa.LogicaAplicacion.deps.json
+C:\Users\59892\OneDrive\Desktop\3er Semestre\Obligatorios\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.LogicaAplicacion\bin\Debug\net8.0\LaEmpresa.LogicaAplicacion.dll
+C:\Users\59892\OneDrive\Desktop\3er Semestre\Obligatorios\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.LogicaAplicacion\bin\Debug\net8.0\LaEmpresa.LogicaAplicacion.pdb
+C:\Users\59892\OneDrive\Desktop\3er Semestre\Obligatorios\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.LogicaAplicacion\bin\Debug\net8.0\LaEmpresa.AccesoDatos.dll
+C:\Users\59892\OneDrive\Desktop\3er Semestre\Obligatorios\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.LogicaAplicacion\bin\Debug\net8.0\LaEmpresa.LogicaNegocio.dll
+C:\Users\59892\OneDrive\Desktop\3er Semestre\Obligatorios\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.LogicaAplicacion\bin\Debug\net8.0\LaEmpresa.AccesoDatos.pdb
+C:\Users\59892\OneDrive\Desktop\3er Semestre\Obligatorios\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.LogicaAplicacion\bin\Debug\net8.0\LaEmpresa.LogicaNegocio.pdb
+C:\Users\59892\OneDrive\Desktop\3er Semestre\Obligatorios\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.LogicaAplicacion\obj\Debug\net8.0\LaEmpresa.LogicaAplicacion.csproj.AssemblyReference.cache
+C:\Users\59892\OneDrive\Desktop\3er Semestre\Obligatorios\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.LogicaAplicacion\obj\Debug\net8.0\LaEmpresa.LogicaAplicacion.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\59892\OneDrive\Desktop\3er Semestre\Obligatorios\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.LogicaAplicacion\obj\Debug\net8.0\LaEmpresa.LogicaAplicacion.AssemblyInfoInputs.cache
+C:\Users\59892\OneDrive\Desktop\3er Semestre\Obligatorios\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.LogicaAplicacion\obj\Debug\net8.0\LaEmpresa.LogicaAplicacion.AssemblyInfo.cs
+C:\Users\59892\OneDrive\Desktop\3er Semestre\Obligatorios\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.LogicaAplicacion\obj\Debug\net8.0\LaEmpresa.LogicaAplicacion.csproj.CoreCompileInputs.cache
+C:\Users\59892\OneDrive\Desktop\3er Semestre\Obligatorios\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.LogicaAplicacion\obj\Debug\net8.0\LaEmpresa.LogicaAplicacion.sourcelink.json
+C:\Users\59892\OneDrive\Desktop\3er Semestre\Obligatorios\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.LogicaAplicacion\obj\Debug\net8.0\LaEmpres.7860C25C.Up2Date
+C:\Users\59892\OneDrive\Desktop\3er Semestre\Obligatorios\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.LogicaAplicacion\obj\Debug\net8.0\LaEmpresa.LogicaAplicacion.dll
+C:\Users\59892\OneDrive\Desktop\3er Semestre\Obligatorios\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.LogicaAplicacion\obj\Debug\net8.0\refint\LaEmpresa.LogicaAplicacion.dll
+C:\Users\59892\OneDrive\Desktop\3er Semestre\Obligatorios\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.LogicaAplicacion\obj\Debug\net8.0\LaEmpresa.LogicaAplicacion.pdb
+C:\Users\59892\OneDrive\Desktop\3er Semestre\Obligatorios\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.LogicaAplicacion\obj\Debug\net8.0\ref\LaEmpresa.LogicaAplicacion.dll

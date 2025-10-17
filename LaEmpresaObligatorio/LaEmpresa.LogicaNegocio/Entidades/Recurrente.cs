@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +11,10 @@ namespace LaEmpresa.LogicaNegocio.Entidades
 {
     public class Recurrente : Pago, IValidable
     {
+        [Required]
         public DateTime FechaDesde { get; set; }
+
+        [Required]
         public DateTime FechaHasta { get; set; }
 
         public Recurrente() { }

@@ -2,6 +2,7 @@
 using LaEmpresa.LogicaNegocio.Interfaces;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -9,16 +10,31 @@ using System.Threading.Tasks;
 
 namespace LaEmpresa.LogicaNegocio.Entidades
 {
-    public abstract class Pago: IValidable, IEquatable<Pago>
+    public abstract class Pago : IValidable, IEquatable<Pago>
     {
+        [Key]
         public int Id { get; set; }
+
+        [Required]
         public MetodoPago MetodoDePago { get; set; }
-        [ForeignKey(nameof(TipoGasto))] public int IdTipoGasto { get; set; }
+
+        [ForeignKey(nameof(TipoGasto))]
+        public int IdTipoGasto { get; set; }
+
+        [Required]
         public TipoDeGasto TipoGasto { get; set; }
-        [ForeignKey(nameof(Usuario))] public int IdUsuario { get; set; }
+
+        [ForeignKey(nameof(Usuario))]
+        public int IdUsuario { get; set; }
+
+        [Required]
         public Usuario Usuario { get; set; }
+
+        [Required]
+        [StringLength(200)]
         public string Descripcion { get; set; }
 
+        [Range(0.01, double.MaxValue)]
         public double Monto { get; set; }
         public Pago() { }
 

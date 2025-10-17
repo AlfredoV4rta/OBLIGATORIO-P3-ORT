@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -12,13 +13,28 @@ namespace LaEmpresa.LogicaNegocio.Entidades
 {
     public class Usuario : IValidable
     {
+        [Key]
         public int Id { get; set; }
-        [ForeignKey(nameof(EquipoUsuario))]public int IdEquipo { get; set; }
-        public Equipo EquipoUsuario { get; set; } 
+
+        [ForeignKey(nameof(EquipoUsuario))]
+        public int IdEquipo { get; set; }
+
+        [Required]
+        public Equipo EquipoUsuario { get; set; }
+
+        [Required]
         public NombreCompleto NombreCompleto { get; set; }
+
+        [Required]
+        [StringLength(100)]
         public string Contrasenia { get; set; }
+
+        [Required]
         public EmailCompleto Email { get; set; }
+
+        [Required]
         public Rol Rol { get; set; }
+
 
         public Usuario() {}
 
