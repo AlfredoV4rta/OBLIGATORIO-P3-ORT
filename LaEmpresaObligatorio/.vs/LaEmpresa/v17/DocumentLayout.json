@@ -1,26 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\",
+  "WorkspaceRootPath": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\obligatorios\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.logicaaplicacion\\dtos\\pagodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.logicanegocio\\interfacesrepositorio\\ipagorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|solutionrelative:laempresa.logicanegocio\\interfacesrepositorio\\ipagorepositorio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.logicaaplicacion\\casosdeuso\\pagocu\\altapagocu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|solutionrelative:laempresa.logicaaplicacion\\casosdeuso\\pagocu\\altapagocu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.logicaaplicacion\\dtos\\pagodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|solutionrelative:laempresa.logicaaplicacion\\dtos\\pagodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\obligatorios\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.logicaaplicacion\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|solutionrelative:laempresa.logicaaplicacion\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\obligatorios\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.logicaaplicacion\\dtos\\tipodegastodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|solutionrelative:laempresa.logicaaplicacion\\dtos\\tipodegastodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\obligatorios\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.logicaaplicacion\\dtos\\equipodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|solutionrelative:laempresa.logicaaplicacion\\dtos\\equipodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\obligatorios\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.logicanegocio\\entidades\\auditoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{088A21DC-7B57-4A0C-A129-F3FC1A45B818}|LaEmpresa.LogicaNegocio\\LaEmpresa.LogicaNegocio.csproj|solutionrelative:laempresa.logicanegocio\\entidades\\auditoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\laempresaobligatorio\\laempresa.logicaaplicacion\\mappers\\pagomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|solutionrelative:laempresa.logicaaplicacion\\mappers\\pagomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,76 +26,73 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UsuarioDTO.cs",
-              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\DTOs\\UsuarioDTO.cs",
-              "RelativeDocumentMoniker": "LaEmpresa.LogicaAplicacion\\DTOs\\UsuarioDTO.cs",
-              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\DTOs\\UsuarioDTO.cs",
-              "RelativeToolTip": "LaEmpresa.LogicaAplicacion\\DTOs\\UsuarioDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAQwCQAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T19:48:40.611Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TipoDeGastoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\DTOs\\TipoDeGastoDTO.cs",
-              "RelativeDocumentMoniker": "LaEmpresa.LogicaAplicacion\\DTOs\\TipoDeGastoDTO.cs",
-              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\DTOs\\TipoDeGastoDTO.cs",
-              "RelativeToolTip": "LaEmpresa.LogicaAplicacion\\DTOs\\TipoDeGastoDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T19:48:28.51Z",
-              "EditorCaption": ""
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PagoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\DTOs\\PagoDTO.cs",
-              "RelativeDocumentMoniker": "LaEmpresa.LogicaAplicacion\\DTOs\\PagoDTO.cs",
-              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\DTOs\\PagoDTO.cs",
-              "RelativeToolTip": "LaEmpresa.LogicaAplicacion\\DTOs\\PagoDTO.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAgwCgAAAAqAAAAAAAAAA==",
+              "Title": "IPagoRepositorio.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaNegocio\\InterfacesRepositorio\\IPagoRepositorio.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.LogicaNegocio\\InterfacesRepositorio\\IPagoRepositorio.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaNegocio\\InterfacesRepositorio\\IPagoRepositorio.cs",
+              "RelativeToolTip": "LaEmpresa.LogicaNegocio\\InterfacesRepositorio\\IPagoRepositorio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T19:48:08.183Z",
+              "WhenOpened": "2025-10-17T21:48:59.216Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AltaPagoCU.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\CasosDeUso\\PagoCU\\AltaPagoCU.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.LogicaAplicacion\\CasosDeUso\\PagoCU\\AltaPagoCU.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\CasosDeUso\\PagoCU\\AltaPagoCU.cs",
+              "RelativeToolTip": "LaEmpresa.LogicaAplicacion\\CasosDeUso\\PagoCU\\AltaPagoCU.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T21:43:54.236Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "EquipoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\DTOs\\EquipoDTO.cs",
-              "RelativeDocumentMoniker": "LaEmpresa.LogicaAplicacion\\DTOs\\EquipoDTO.cs",
-              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\DTOs\\EquipoDTO.cs",
-              "RelativeToolTip": "LaEmpresa.LogicaAplicacion\\DTOs\\EquipoDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Title": "PagoMapper.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\Mappers\\PagoMapper.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.LogicaAplicacion\\Mappers\\PagoMapper.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\Mappers\\PagoMapper.cs",
+              "RelativeToolTip": "LaEmpresa.LogicaAplicacion\\Mappers\\PagoMapper.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T19:47:52.512Z",
+              "WhenOpened": "2025-10-17T21:34:09.282Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Auditoria.cs",
-              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaNegocio\\Entidades\\Auditoria.cs",
-              "RelativeDocumentMoniker": "LaEmpresa.LogicaNegocio\\Entidades\\Auditoria.cs",
-              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaNegocio\\Entidades\\Auditoria.cs",
-              "RelativeToolTip": "LaEmpresa.LogicaNegocio\\Entidades\\Auditoria.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "PagoDTO.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\DTOs\\PagoDTO.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.LogicaAplicacion\\DTOs\\PagoDTO.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\DTOs\\PagoDTO.cs",
+              "RelativeToolTip": "LaEmpresa.LogicaAplicacion\\DTOs\\PagoDTO.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACgAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T19:47:26.116Z",
+              "WhenOpened": "2025-10-17T19:48:08.183Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1217,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             }
           ]
         }
