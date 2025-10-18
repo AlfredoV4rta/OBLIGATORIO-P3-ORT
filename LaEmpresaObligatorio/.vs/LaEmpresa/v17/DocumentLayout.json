@@ -55,8 +55,7 @@
               "RelativeToolTip": "LaEmpresa.LogicaAplicacion\\CasosDeUso\\PagoCU\\AltaPagoCU.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T21:43:54.236Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-17T21:43:54.236Z"
             },
             {
               "$type": "Document",
@@ -68,8 +67,7 @@
               "RelativeToolTip": "LaEmpresa.LogicaAplicacion\\Mappers\\PagoMapper.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T21:34:09.282Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-17T21:34:09.282Z"
             },
             {
               "$type": "Document",
@@ -81,8 +79,7 @@
               "RelativeToolTip": "LaEmpresa.LogicaAplicacion\\DTOs\\PagoDTO.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAAACgAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-17T19:48:08.183Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-17T19:48:08.183Z"
             }
           ]
         },
