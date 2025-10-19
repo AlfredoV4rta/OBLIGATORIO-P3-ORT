@@ -236,6 +236,18 @@ namespace LaEmpresa.WebApp.Controllers
                     return View();
                 }
 
+                if (mes < 0 || mes > 12)
+                {
+                    ViewBag.Error = "Mes invalido";
+                    return View();
+                }
+
+                if (anio < 1900 || anio > 3000)
+                {
+                    ViewBag.Error = "Año invalido";
+                    return View();
+                }
+
                 IEnumerable<PagoDTO> pagos = _obtenerPagosMensuales.ObtenerPagosMensuales(mes, anio).ToList();
 
                 if (pagos == null || pagos.Count() == 0)
