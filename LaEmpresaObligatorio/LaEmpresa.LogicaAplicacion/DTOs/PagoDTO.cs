@@ -44,5 +44,7 @@ namespace LaEmpresa.LogicaAplicacion.DTOs
 
         [Range(0, double.MaxValue, ErrorMessage = "El saldo pendiente no puede ser negativo")]
         public double SaldoPendiente { get; set; }
+        public TipoDeGastoDTO? TipoGasto { get; set; }
+        public UsuarioDTO? Usuario { get; set; }
     }
 }

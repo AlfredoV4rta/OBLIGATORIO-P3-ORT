@@ -158,9 +158,9 @@ namespace LaEmpresa.WebApp.Controllers
 
         public ActionResult Delete(int id)
         {
-            if (HttpContext.Session.GetInt32("rol") != null)
+            if (HttpContext.Session.GetInt32("usuario") != null)
             {
-                if (HttpContext.Session.GetInt32("rol") == 0)
+                if (HttpContext.Session.GetInt32("usuario") == 0)
                 {
                     try
                     {

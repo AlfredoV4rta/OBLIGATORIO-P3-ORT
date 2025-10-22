@@ -7,6 +7,10 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//Inicializar DBContext
+builder.Services.AddDbContext<LaEmpresaContext>(
+    options => options.UseSqlServer(builder.Configuration.GetConnectionString("LaEmpresa"))
+);
 // Add services to the container.
 
 builder.Services.AddControllers();
@@ -14,10 +18,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-//Inicializar DBContext
-builder.Services.AddDbContext<LaEmpresaContext>(
-    options => options.UseSqlServer(builder.Configuration.GetConnectionString("LaEmpresa"))
-);
+
 
 //Inicializar Repositorio
 builder.Services.AddScoped<IPagoRepositorio, RepositorioPagoEF>();

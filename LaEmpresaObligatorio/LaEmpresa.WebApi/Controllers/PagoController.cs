@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using LaEmpresa.LogicaAplicacion.InterfacesCU.CasosPago;
+using LaEmpresa.LogicaNegocio.Exceptions;
 
 namespace LaEmpresa.WebApi.Controllers
 {
@@ -18,18 +19,23 @@ namespace LaEmpresa.WebApi.Controllers
             _obtenerPagoPorId = obtenerPagoPorId;
         }
 
-        [HttpGet()]
-
-        public IEnumerable<PagoDTO> Get()
-        {
-            return _obtenerPagos.ObtenerPagos();
-        }
-
         [HttpGet("{id}")]
 
-        public PagoDTO Get(int id)
+        public IActionResult Get(int id)
         {
-            return _obtenerPagoPorId.ObtenerPagoPorId(id);
+            try
+            {
+                PagoDTO pago = _obtenerPagoPorId.ObtenerPagoPorId(id);
+                return Ok(pago);
+            }
+            catch (PagoException pe)
+            {
+                return BadRequest(new { error = pe.Message});
+            }
+            catch (Exception ex)
+            { 
+                return StatusCode(StatusCodes.Status500InternalServerError, new {error = ex.Message});
+            }
         }
     }
 }

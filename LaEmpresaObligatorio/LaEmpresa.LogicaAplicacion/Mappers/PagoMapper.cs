@@ -43,7 +43,7 @@ namespace LaEmpresa.LogicaAplicacion.Mappers
 
         public static PagoDTO ToDTO(Pago toDto)
         {
-            return new PagoDTO
+            PagoDTO pago = new PagoDTO
             {
                 Id = toDto.Id,
                 MetodoPago = toDto.MetodoDePago,
@@ -57,6 +57,20 @@ namespace LaEmpresa.LogicaAplicacion.Mappers
                 FechaDePago = toDto.ObtenerFechaDePago(),
                 NroRecibo = toDto.ObtenerNroRecibo()
             };
+
+            if (toDto.TipoGasto != null)
+            {
+                pago.TipoGasto = TipoDeGastoMapper.ToDTO(toDto.TipoGasto);
+            }
+
+            if(toDto.Usuario != null)
+            {
+                pago.Usuario = UsuarioMapper.ToDTO(toDto.Usuario);
+            }
+            
+   
+
+            return pago;
         }
     }
 }
