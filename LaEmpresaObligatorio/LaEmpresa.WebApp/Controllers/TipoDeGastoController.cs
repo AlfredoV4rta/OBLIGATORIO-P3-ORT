@@ -149,8 +149,14 @@ namespace LaEmpresa.WebApp.Controllers
                 _editarTipoDeGasto.EditarTipoDeGasto(aEditar, email);
                 return RedirectToAction(nameof(Index));
             }
-            catch
+            catch (TipoDeGastoException tg)
             {
+                ViewBag.Error = tg.Message;
+                return View();
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Error = "Error inesperado" + ex;
                 return View();
             }
         }

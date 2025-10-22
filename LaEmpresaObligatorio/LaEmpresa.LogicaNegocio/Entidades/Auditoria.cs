@@ -41,7 +41,13 @@ namespace LaEmpresa.LogicaNegocio.Entidades
 
         public void ValidarMail()
         {
-            throw new TipoDeGastoException("Email no debe estar vacio");
+            if (string.IsNullOrEmpty(this.Email))
+            {
+                throw new TipoDeGastoException("Email no debe estar vacio");
+            }
+            
+            
+            
         }
     }
 }
