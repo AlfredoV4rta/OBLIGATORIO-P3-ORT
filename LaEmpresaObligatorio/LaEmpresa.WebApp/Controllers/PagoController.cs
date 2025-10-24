@@ -230,31 +230,7 @@ namespace LaEmpresa.WebApp.Controllers
         {
             try
             {
-                if (mes == 0 || anio == 0)
-                {
-                    ViewBag.Error = "El mes y el año no deben ser vacios";
-                    return View();
-                }
-
-                if (mes < 0 || mes > 12)
-                {
-                    ViewBag.Error = "Mes invalido";
-                    return View();
-                }
-
-                if (anio < 1900 || anio > 3000)
-                {
-                    ViewBag.Error = "Año invalido";
-                    return View();
-                }
-
                 IEnumerable<PagoDTO> pagos = _obtenerPagosMensuales.ObtenerPagosMensuales(mes, anio).ToList();
-
-                if (pagos == null || pagos.Count() == 0)
-                {
-                    ViewBag.Error = "No hay pagos filtrados para esa fecha, ingrese otro mes y año para continuar";
-                    return View();
-                }
                 return View(pagos);
             }
             catch (PagoException pe)
@@ -301,20 +277,7 @@ namespace LaEmpresa.WebApp.Controllers
         {
             try
             {
-                if (monto <= 0)
-                {
-                    ViewBag.Error = "El monto debe ser mayor a cero";
-                    return View();
-                }
-
                 IEnumerable<UsuarioDTO> usuarios = _obtenerUsuariosMayorMonto.ObtenerUsuariosPagosMayoresMonto(monto);
-
-                if (usuarios == null || usuarios.Count() == 0)
-                {
-                    ViewBag.Error = "No hay usuarios que superen ese monto de pago";
-                    return View();
-                }
-
                 return View(usuarios);
             }
             catch (PagoException pe)

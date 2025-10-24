@@ -14,5 +14,42 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaEmpresa.WebApi.Controllers.PagoController",
+    "Method": "Get",
+    "RelativePath": "api/Pago/{mes}/{anio}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "mes",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "anio",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaEmpresa.WebApi.Controllers.PagoController",
+    "Method": "Get",
+    "RelativePath": "api/Pago/usuario/{monto}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "monto",
+        "Type": "System.Double",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

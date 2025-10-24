@@ -2,6 +2,7 @@
 using LaEmpresa.LogicaAplicacion.InterfacesCU.CasosPago;
 using LaEmpresa.LogicaAplicacion.Mappers;
 using LaEmpresa.LogicaNegocio.Entidades;
+using LaEmpresa.LogicaNegocio.Exceptions;
 using LaEmpresa.LogicaNegocio.InterfacesRepositorio;
 using System;
 using System.Collections.Generic;
@@ -21,7 +22,17 @@ namespace LaEmpresa.LogicaAplicacion.CasosDeUso.PagoCU
         }
         public IEnumerable<UsuarioDTO> ObtenerUsuariosPagosMayoresMonto(double monto)
         {
+            if (monto <= 0)
+            {
+                throw new PagoException ("El monto debe ser mayor a cero");
+            }
+
             IEnumerable<Usuario> toReturn = _repositorioPago.UsuarioMayorMonto(monto);
+
+            if (toReturn == null || toReturn.Count() == 0)
+            {
+                throw new PagoException ("No hay usuarios que superen ese monto de pago");
+            }
 
             return toReturn.Select(usuario => UsuarioMapper.ToDTO(usuario));
         }

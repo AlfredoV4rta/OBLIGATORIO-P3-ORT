@@ -12,11 +12,19 @@ namespace LaEmpresa.WebApi.Controllers
     {
         public IObtenerPagos _obtenerPagos;
         public IObtenerPagoPorId _obtenerPagoPorId;
+        public IObtenerPagosMensuales _obtenerPagosMensuales;
+        public IObtenerUsuariosMayorMonto _obtenerUsuariosMayorMonto;
 
-        public PagoController(IObtenerPagos obtenerPagos, IObtenerPagoPorId obtenerPagoPorId)
+        public PagoController(
+                IObtenerPagos obtenerPagos, 
+                IObtenerPagoPorId obtenerPagoPorId, 
+                IObtenerPagosMensuales obtenerPagosMensuales,
+                IObtenerUsuariosMayorMonto obtenerUsuariosMayorMonto)
         {
             _obtenerPagos = obtenerPagos;
             _obtenerPagoPorId = obtenerPagoPorId;
+            _obtenerPagosMensuales = obtenerPagosMensuales;
+            _obtenerUsuariosMayorMonto = obtenerUsuariosMayorMonto;
         }
 
         [HttpGet("{id}")]
@@ -35,6 +43,44 @@ namespace LaEmpresa.WebApi.Controllers
             catch (Exception ex)
             { 
                 return StatusCode(StatusCodes.Status500InternalServerError, new {error = ex.Message});
+            }
+        }
+
+        [HttpGet("{mes}/{anio}")]
+
+        public IActionResult Get(int mes, int anio)
+        {
+            try
+            {
+                IEnumerable<PagoDTO> pagos = _obtenerPagosMensuales.ObtenerPagosMensuales(mes, anio);
+                return Ok(pagos);
+            }
+            catch (PagoException pe)
+            {
+                return BadRequest(new { error = pe.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new { error = ex.Message });
+            }
+        }
+
+        [HttpGet("usuario/{monto}")]
+
+        public IActionResult Get(double monto)
+        {
+            try
+            {
+                IEnumerable<UsuarioDTO> usuarios = _obtenerUsuariosMayorMonto.ObtenerUsuariosPagosMayoresMonto(monto);
+                return Ok(usuarios);
+            }
+            catch (PagoException pe)
+            {
+                return BadRequest(new { error = pe.Message });
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new { error = ex.Message });
             }
         }
     }

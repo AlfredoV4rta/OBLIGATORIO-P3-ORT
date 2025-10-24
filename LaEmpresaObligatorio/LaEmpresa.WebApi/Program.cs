@@ -26,6 +26,8 @@ builder.Services.AddScoped<IPagoRepositorio, RepositorioPagoEF>();
 //Inicializar CU
 builder.Services.AddScoped<IObtenerPagos, ObtenerPagosCU>();
 builder.Services.AddScoped<IObtenerPagoPorId, ObtenerPagoPorIdCU>();
+builder.Services.AddScoped<IObtenerPagosMensuales, ObtenerPagosMensualesCU>();
+builder.Services.AddScoped<IObtenerUsuariosMayorMonto, ObtenerUsuariosMayorMontoCU>();
 
 var app = builder.Build();
 
