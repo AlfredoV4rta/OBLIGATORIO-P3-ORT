@@ -26,6 +26,7 @@ namespace LaEmpresa.LogicaNegocio.Entidades
 
         public void Validar()
         {
+            base.Validar();
             this.ValidarFechaDePago();
             this.ValidarNroRecibo();
         }

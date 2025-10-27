@@ -28,6 +28,7 @@ namespace LaEmpresa.LogicaNegocio.Entidades
 
         public void Validar()
         {
+            base.Validar();
             this.ValidarFechaDesde();
             this.ValidarFechaHasta();
         }
