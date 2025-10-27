@@ -59,8 +59,7 @@
               "RelativeToolTip": "LaEmpresa.LogicaNegocio\\Entidades\\Unico.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T13:28:18.666Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-27T13:28:18.666Z"
             },
             {
               "$type": "Document",
@@ -72,8 +71,7 @@
               "RelativeToolTip": "LaEmpresa.LogicaNegocio\\Entidades\\Recurrente.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwB4AAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T13:28:00.275Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-27T13:28:00.275Z"
             },
             {
               "$type": "Document",
@@ -85,8 +83,7 @@
               "RelativeToolTip": "LaEmpresa.LogicaNegocio\\Entidades\\Rol.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T13:27:57.697Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-27T13:27:57.697Z"
             },
             {
               "$type": "Document",
@@ -98,8 +95,7 @@
               "RelativeToolTip": "LaEmpresa.AccesoDatos\\EF\\RepositoriosEF\\RepositorioPagoEF.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T12:28:13.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-27T12:28:13.383Z"
             },
             {
               "$type": "Document",
@@ -111,8 +107,7 @@
               "RelativeToolTip": "LaEmpresa.WebApi\\Controllers\\PagoController.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAUwBUAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-27T11:20:18.86Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-27T11:20:18.86Z"
             }
           ]
         }
