@@ -42,7 +42,7 @@ namespace LaEmpresa.WebApi.Controllers
             }
             catch (Exception ex)
             { 
-                return StatusCode(StatusCodes.Status500InternalServerError, new {error = ex.Message});
+                return StatusCode(500, "Error");
             }
         }
 
@@ -61,7 +61,7 @@ namespace LaEmpresa.WebApi.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, new { error = ex.Message });
+                return StatusCode(500, "Error");
             }
         }
 
@@ -80,7 +80,7 @@ namespace LaEmpresa.WebApi.Controllers
             }
             catch (Exception ex)
             {
-                return StatusCode(StatusCodes.Status500InternalServerError, new { error = ex.Message });
+                return StatusCode(500, "Error");
             }
         }
     }
