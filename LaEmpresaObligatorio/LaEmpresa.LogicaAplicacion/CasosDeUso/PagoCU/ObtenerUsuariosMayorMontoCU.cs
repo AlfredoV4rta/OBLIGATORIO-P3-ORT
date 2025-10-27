@@ -22,10 +22,6 @@ namespace LaEmpresa.LogicaAplicacion.CasosDeUso.PagoCU
         }
         public IEnumerable<UsuarioDTO> ObtenerUsuariosPagosMayoresMonto(double monto)
         {
-            if (monto <= 0)
-            {
-                throw new PagoException ("El monto debe ser mayor a cero");
-            }
 
             IEnumerable<Usuario> toReturn = _repositorioPago.UsuarioMayorMonto(monto);
 

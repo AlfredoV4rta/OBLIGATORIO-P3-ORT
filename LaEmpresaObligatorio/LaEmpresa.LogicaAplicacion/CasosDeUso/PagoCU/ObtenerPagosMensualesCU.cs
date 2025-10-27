@@ -24,23 +24,8 @@ namespace LaEmpresa.LogicaAplicacion.CasosDeUso.PagoCU
 
         public IEnumerable<PagoDTO> ObtenerPagosMensuales(int mes, int anio)
         {
-            if (mes == 0 || anio == 0)
-            {
-                throw new PagoException ("El mes y el año no deben ser vacios");    
-            }
-
-            if (mes < 0 || mes > 12)
-            {
-                throw new PagoException ("Mes invalido");
-            }
-
-            if (anio < 1900 || anio > 3000)
-            {
-                 throw new PagoException ("Año invalido");
-            }
 
             IEnumerable<Pago> toReturn = _repositorioPago.GetByMonthYear(mes, anio);
-
 
             if (toReturn == null || toReturn.Count() == 0)
             {

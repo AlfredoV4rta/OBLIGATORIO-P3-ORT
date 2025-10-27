@@ -7,6 +7,7 @@ using LaEmpresa.LogicaAplicacion.DTOs;
 using LaEmpresa.LogicaAplicacion.InterfacesCU.CasosPago;
 using LaEmpresa.LogicaAplicacion.Mappers;
 using LaEmpresa.LogicaNegocio.Entidades;
+using LaEmpresa.LogicaNegocio.Exceptions;
 using LaEmpresa.LogicaNegocio.InterfacesRepositorio;
 
 namespace LaEmpresa.LogicaAplicacion.CasosDeUso.PagoCU
@@ -22,7 +23,14 @@ namespace LaEmpresa.LogicaAplicacion.CasosDeUso.PagoCU
 
         public PagoDTO ObtenerPagoPorId(int id)
         {
-            return PagoMapper.ToDTO(_repositorio.FindById(id));
+            PagoDTO pago = PagoMapper.ToDTO(_repositorio.FindById(id));
+
+            if(pago == null)
+            {
+                throw new PagoException("No hay pago para ese id");
+            }
+
+            return pago;
         }
     }
 }

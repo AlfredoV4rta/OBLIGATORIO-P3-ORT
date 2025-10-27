@@ -33,12 +33,16 @@ namespace LaEmpresa.WebApi.Controllers
         {
             try
             {
+                if (id <= 0)
+                {
+                    return BadRequest("El id debe ser mayor a cero");
+                }
                 PagoDTO pago = _obtenerPagoPorId.ObtenerPagoPorId(id);
                 return Ok(pago);
             }
             catch (PagoException pe)
             {
-                return BadRequest(new { error = pe.Message});
+                return NotFound(pe.Message);
             }
             catch (Exception ex)
             { 
@@ -52,12 +56,27 @@ namespace LaEmpresa.WebApi.Controllers
         {
             try
             {
+                if (mes == 0 || anio == 0)
+                {
+                    return BadRequest("El mes y el año no deben ser vacios");
+                }
+
+                if (mes < 0 || mes > 12)
+                {
+                    return BadRequest("Mes invalido");
+                }
+
+                if (anio < 1900 || anio > 3000)
+                {
+                    return BadRequest("Año invalido");
+                }
+
                 IEnumerable<PagoDTO> pagos = _obtenerPagosMensuales.ObtenerPagosMensuales(mes, anio);
                 return Ok(pagos);
             }
             catch (PagoException pe)
             {
-                return BadRequest(new { error = pe.Message });
+                return NotFound( pe.Message );
             }
             catch (Exception ex)
             {
@@ -71,12 +90,17 @@ namespace LaEmpresa.WebApi.Controllers
         {
             try
             {
+                if (monto <= 0)
+                {
+                    return BadRequest("El monto debe ser mayor a cero");
+                }
+
                 IEnumerable<UsuarioDTO> usuarios = _obtenerUsuariosMayorMonto.ObtenerUsuariosPagosMayoresMonto(monto);
                 return Ok(usuarios);
             }
             catch (PagoException pe)
             {
-                return BadRequest(new { error = pe.Message });
+                return NotFound(pe.Message);
             }
             catch (Exception ex)
             {
