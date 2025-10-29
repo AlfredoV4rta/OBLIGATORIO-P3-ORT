@@ -51,8 +51,7 @@
               "RelativeToolTip": "LaEmpresa.LogicaAplicacion\\CasosDeUso\\PagoCU\\ObtenerPagosCU.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T13:16:48.388Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T13:16:48.388Z"
             },
             {
               "$type": "Document",
@@ -64,8 +63,7 @@
               "RelativeToolTip": "LaEmpresa.LogicaAplicacion\\InterfacesCU\\CasosPago\\IObtenerPagos.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T13:16:33.927Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T13:16:33.927Z"
             },
             {
               "$type": "Document",
@@ -77,8 +75,7 @@
               "RelativeToolTip": "LaEmpresa.WebApi\\Controllers\\PagoController.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAQwCgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T12:25:38.354Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-29T12:25:38.354Z"
             }
           ]
         }
