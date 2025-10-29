@@ -27,6 +27,21 @@ namespace LaEmpresa.WebApi.Controllers
             _obtenerUsuariosMayorMonto = obtenerUsuariosMayorMonto;
         }
 
+        [HttpGet]
+        public IActionResult Get()
+        {
+            try
+            {
+                IEnumerable<PagoDTO> pagos= _obtenerPagos.ObtenerPagos();
+                return Ok(pagos);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error");
+            }
+        }
+
+
         [HttpGet("{id}")]
 
         public IActionResult Get(int id)
