@@ -34,5 +34,7 @@ namespace LaEmpresa.WebApp.DTOs
 
         [Required(ErrorMessage = "Debe asignar un rol")]
         public int Rol { get; set; }
+
+        public string Token { get; set; }
     }
 }

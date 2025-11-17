@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alumnoFI.FACULTADES\\Desktop\\OBLIGATORIO-P3-ORT\\LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj": {}
+    "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alumnoFI.FACULTADES\\Desktop\\OBLIGATORIO-P3-ORT\\LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj": {
+    "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alumnoFI.FACULTADES\\Desktop\\OBLIGATORIO-P3-ORT\\LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj",
+        "projectUniqueName": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj",
         "projectName": "LaEmpresa.WebApp",
-        "projectPath": "C:\\Users\\alumnoFI.FACULTADES\\Desktop\\OBLIGATORIO-P3-ORT\\LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj",
-        "packagesPath": "C:\\Users\\alumnoFI.FACULTADES\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alumnoFI.FACULTADES\\Desktop\\OBLIGATORIO-P3-ORT\\LaEmpresa.WebApp\\obj\\",
+        "projectPath": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj",
+        "packagesPath": "C:\\Users\\alumnoFI\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\alumnoFI.FACULTADES\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alumnoFI\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

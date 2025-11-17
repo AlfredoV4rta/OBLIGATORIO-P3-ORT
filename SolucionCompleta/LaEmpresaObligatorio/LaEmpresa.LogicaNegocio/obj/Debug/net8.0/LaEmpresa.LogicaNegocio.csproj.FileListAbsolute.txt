@@ -50,3 +50,16 @@ C:\Users\alumnoFI.FACULTADES\Desktop\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaE
 C:\Users\alumnoFI.FACULTADES\Desktop\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.LogicaNegocio\obj\Debug\net8.0\refint\LaEmpresa.LogicaNegocio.dll
 C:\Users\alumnoFI.FACULTADES\Desktop\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.LogicaNegocio\obj\Debug\net8.0\LaEmpresa.LogicaNegocio.pdb
 C:\Users\alumnoFI.FACULTADES\Desktop\OBLIGATORIO-P3-ORT\LaEmpresaObligatorio\LaEmpresa.LogicaNegocio\obj\Debug\net8.0\ref\LaEmpresa.LogicaNegocio.dll
+C:\Users\alumnoFI\Desktop\OBLIGATORIO-P3-ORT\SolucionCompleta\LaEmpresaObligatorio\LaEmpresa.LogicaNegocio\bin\Debug\net8.0\LaEmpresa.LogicaNegocio.deps.json
+C:\Users\alumnoFI\Desktop\OBLIGATORIO-P3-ORT\SolucionCompleta\LaEmpresaObligatorio\LaEmpresa.LogicaNegocio\bin\Debug\net8.0\LaEmpresa.LogicaNegocio.dll
+C:\Users\alumnoFI\Desktop\OBLIGATORIO-P3-ORT\SolucionCompleta\LaEmpresaObligatorio\LaEmpresa.LogicaNegocio\bin\Debug\net8.0\LaEmpresa.LogicaNegocio.pdb
+C:\Users\alumnoFI\Desktop\OBLIGATORIO-P3-ORT\SolucionCompleta\LaEmpresaObligatorio\LaEmpresa.LogicaNegocio\obj\Debug\net8.0\LaEmpresa.LogicaNegocio.csproj.AssemblyReference.cache
+C:\Users\alumnoFI\Desktop\OBLIGATORIO-P3-ORT\SolucionCompleta\LaEmpresaObligatorio\LaEmpresa.LogicaNegocio\obj\Debug\net8.0\LaEmpresa.LogicaNegocio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\alumnoFI\Desktop\OBLIGATORIO-P3-ORT\SolucionCompleta\LaEmpresaObligatorio\LaEmpresa.LogicaNegocio\obj\Debug\net8.0\LaEmpresa.LogicaNegocio.AssemblyInfoInputs.cache
+C:\Users\alumnoFI\Desktop\OBLIGATORIO-P3-ORT\SolucionCompleta\LaEmpresaObligatorio\LaEmpresa.LogicaNegocio\obj\Debug\net8.0\LaEmpresa.LogicaNegocio.AssemblyInfo.cs
+C:\Users\alumnoFI\Desktop\OBLIGATORIO-P3-ORT\SolucionCompleta\LaEmpresaObligatorio\LaEmpresa.LogicaNegocio\obj\Debug\net8.0\LaEmpresa.LogicaNegocio.csproj.CoreCompileInputs.cache
+C:\Users\alumnoFI\Desktop\OBLIGATORIO-P3-ORT\SolucionCompleta\LaEmpresaObligatorio\LaEmpresa.LogicaNegocio\obj\Debug\net8.0\LaEmpresa.LogicaNegocio.sourcelink.json
+C:\Users\alumnoFI\Desktop\OBLIGATORIO-P3-ORT\SolucionCompleta\LaEmpresaObligatorio\LaEmpresa.LogicaNegocio\obj\Debug\net8.0\LaEmpresa.LogicaNegocio.dll
+C:\Users\alumnoFI\Desktop\OBLIGATORIO-P3-ORT\SolucionCompleta\LaEmpresaObligatorio\LaEmpresa.LogicaNegocio\obj\Debug\net8.0\refint\LaEmpresa.LogicaNegocio.dll
+C:\Users\alumnoFI\Desktop\OBLIGATORIO-P3-ORT\SolucionCompleta\LaEmpresaObligatorio\LaEmpresa.LogicaNegocio\obj\Debug\net8.0\LaEmpresa.LogicaNegocio.pdb
+C:\Users\alumnoFI\Desktop\OBLIGATORIO-P3-ORT\SolucionCompleta\LaEmpresaObligatorio\LaEmpresa.LogicaNegocio\obj\Debug\net8.0\ref\LaEmpresa.LogicaNegocio.dll

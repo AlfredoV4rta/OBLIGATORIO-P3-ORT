@@ -5,11 +5,14 @@ using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pag
 using Newtonsoft.Json;
 using System.Text.Json;
 using JsonSerializer = System.Text.Json.JsonSerializer;
+using System.Net.Http.Headers;
 
 namespace LaEmpresa.WebApp.Controllers
 {
     public class PagoController : Controller
     {
+
+        private static string uriPago = "http://localhost:5140/api/Pago";
 
         // GET: PagoController
         public ActionResult Index()
@@ -19,27 +22,29 @@ namespace LaEmpresa.WebApp.Controllers
                 IEnumerable<PagoDTO> pagos = new List<PagoDTO>();
                 try
                 {
-                    ////Encabezado
-                    //HttpClient cliente = new HttpClient();
-                    //Uri uri = new Uri("http://localhost:5272/api/Pago");
-                    //HttpRequestMessage solicitud = new HttpRequestMessage(HttpMethod.Get, uri);
+                    //Encabezado
+                    HttpClient cliente = new HttpClient();
+                    Uri uri = new Uri(uriPago);
+                    cliente.DefaultRequestHeaders.Authorization = new
+                        AuthenticationHeaderValue("Bearer", "Aca va el token");
+                    HttpRequestMessage solicitud = new HttpRequestMessage(HttpMethod.Get, uri);
 
-                    ////Generar solicitud
-                    //Task<HttpResponseMessage> tarea = cliente.SendAsync(solicitud);
-                    //tarea.Wait();
+                    //Generar solicitud
+                    Task<HttpResponseMessage> tarea = cliente.SendAsync(solicitud);
+                    tarea.Wait();
 
-                    ////Procesar respuesta
-                    //HttpResponseMessage respuesta = tarea.Result;
-                    //if (respuesta.IsSuccessStatusCode)
-                    //{
-                    //    HttpContent contenido = respuesta.Content;
-                    //    Task<string> body = contenido.ReadAsStringAsync();
-                    //    body.Wait();
-                    //    string datos = body.Result;
-                    //    pagos = JsonSerializer.Deserialize<IEnumerable<PagoDTO>>(datos);
-                    //}
+                    //Procesar respuesta
+                    HttpResponseMessage respuesta = tarea.Result;
+                    if (respuesta.IsSuccessStatusCode)
+                    {
+                        HttpContent contenido = respuesta.Content;
+                        Task<string> body = contenido.ReadAsStringAsync();
+                        body.Wait();
+                        string datos = body.Result;
+                        pagos = JsonSerializer.Deserialize<IEnumerable<PagoDTO>>(datos);
+                    }
 
-                    //return View(pagos);
+                    return View(pagos);
                 }
                 catch (Exception ex)
                 {

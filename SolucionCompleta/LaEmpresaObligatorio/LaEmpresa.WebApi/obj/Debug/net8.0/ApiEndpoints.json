@@ -1,5 +1,31 @@
 [
   {
+    "ContainingType": "LaEmpresa.WebApi.Controllers.LoginController",
+    "Method": "Login",
+    "RelativePath": "api/Login/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "usuarioDto",
+        "Type": "LaEmpresa.LogicaAplicacion.DTOs.UsuarioDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "LaEmpresa.WebApi.Controllers.PagoController",
+    "Method": "Get",
+    "RelativePath": "api/Pago",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "LaEmpresa.WebApi.Controllers.PagoController",
     "Method": "Get",
     "RelativePath": "api/Pago/{id}",

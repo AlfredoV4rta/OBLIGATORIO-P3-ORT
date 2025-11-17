@@ -6,7 +6,7 @@ namespace LaEmpresa.WebApp.Controllers
 {
     public class HomeController : Controller
     {
-
+        private static string uriHome = "http://localhost:5140/api/Home";
         public ActionResult Index()
         {
             //if (HttpContext.Session.GetInt32("usuario") != null)
@@ -36,10 +36,9 @@ namespace LaEmpresa.WebApp.Controllers
         {
             try
             {
+                HttpClient cliente = new HttpClient();
+                Uri uri = new Uri(uriHome);
                 
-                //HttpContext.Session.SetInt32("usuario", (int)usuarioLogueado.Rol);
-                //HttpContext.Session.SetString("email", usuarioLogueado.Email);
-                //HttpContext.Session.SetInt32("idUsuario", usuarioLogueado.Id);
                 return RedirectToAction("Index");
             }
             catch (Exception e)

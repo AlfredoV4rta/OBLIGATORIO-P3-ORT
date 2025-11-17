@@ -1,14 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\alumnoFI.FACULTADES\\Desktop\\OBLIGATORIO-P3-ORT\\LaEmpresa.WebApp\\",
+  "WorkspaceRootPath": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|c:\\users\\alumnofi.facultades\\desktop\\obligatorio-p3-ort\\laempresa.webapp\\controllers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|solutionrelative:controllers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|c:\\users\\alumnofi\\desktop\\obligatorio-p3-ort\\solucioncompleta\\laempresa.webapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|c:\\users\\alumnofi.facultades\\desktop\\obligatorio-p3-ort\\laempresa.webapp\\views\\usuario\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|solutionrelative:views\\usuario\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|c:\\users\\alumnofi\\desktop\\obligatorio-p3-ort\\solucioncompleta\\laempresa.webapp\\dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|solutionrelative:dtos\\usuariodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|c:\\users\\alumnofi\\desktop\\obligatorio-p3-ort\\solucioncompleta\\laempresa.webapp\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|c:\\users\\alumnofi\\desktop\\obligatorio-p3-ort\\solucioncompleta\\laempresa.webapp\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|c:\\users\\alumnofi\\desktop\\obligatorio-p3-ort\\solucioncompleta\\laempresa.webapp\\controllers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|solutionrelative:controllers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PagoController.cs",
-              "DocumentMoniker": "C:\\Users\\alumnoFI.FACULTADES\\Desktop\\OBLIGATORIO-P3-ORT\\LaEmpresa.WebApp\\Controllers\\PagoController.cs",
-              "RelativeDocumentMoniker": "Controllers\\PagoController.cs",
-              "ToolTip": "C:\\Users\\alumnoFI.FACULTADES\\Desktop\\OBLIGATORIO-P3-ORT\\LaEmpresa.WebApp\\Controllers\\PagoController.cs",
-              "RelativeToolTip": "Controllers\\PagoController.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCIAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-29T12:44:05.595Z",
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-17T13:33:15.541Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-17T13:33:03.506Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\alumnoFI.FACULTADES\\Desktop\\OBLIGATORIO-P3-ORT\\LaEmpresa.WebApp\\Views\\Usuario\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Usuario\\Create.cshtml",
-              "ToolTip": "C:\\Users\\alumnoFI.FACULTADES\\Desktop\\OBLIGATORIO-P3-ORT\\LaEmpresa.WebApp\\Views\\Usuario\\Create.cshtml",
-              "RelativeToolTip": "Views\\Usuario\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-10-29T12:43:42.375Z",
+              "Title": "UsuarioDTO.cs",
+              "DocumentMoniker": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\DTOs\\UsuarioDTO.cs",
+              "RelativeDocumentMoniker": "DTOs\\UsuarioDTO.cs",
+              "ToolTip": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\DTOs\\UsuarioDTO.cs",
+              "RelativeToolTip": "DTOs\\UsuarioDTO.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T13:19:06.92Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-17T11:22:58.614Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "PagoController.cs",
+              "DocumentMoniker": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Controllers\\PagoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\PagoController.cs",
+              "ToolTip": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Controllers\\PagoController.cs",
+              "RelativeToolTip": "Controllers\\PagoController.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAxwA4AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T12:44:05.595Z",
               "EditorCaption": ""
             }
           ]
