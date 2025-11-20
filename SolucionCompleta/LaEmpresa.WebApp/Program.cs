@@ -35,7 +35,7 @@ namespace LaEmpresa.WebApp
 
             app.MapControllerRoute(
                 name: "default",
-                pattern: "{controller=Pago}/{action=Index}");
+                pattern: "{controller=Home}/{action=Login}");
 
             app.Run();
         }

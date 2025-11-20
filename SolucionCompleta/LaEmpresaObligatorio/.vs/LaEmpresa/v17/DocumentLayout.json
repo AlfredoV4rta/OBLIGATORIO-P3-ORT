@@ -1,21 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\",
+  "WorkspaceRootPath": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C8D3359A-C3D1-4D83-A88F-E828297461F9}|LaEmpresa.WebApi\\LaEmpresa.WebApi.csproj|c:\\users\\alumnofi\\desktop\\obligatorio-p3-ort\\solucioncompleta\\laempresaobligatorio\\laempresa.webapi\\controllers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C8D3359A-C3D1-4D83-A88F-E828297461F9}|LaEmpresa.WebApi\\LaEmpresa.WebApi.csproj|solutionrelative:laempresa.webapi\\controllers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8D3359A-C3D1-4D83-A88F-E828297461F9}|LaEmpresa.WebApi\\LaEmpresa.WebApi.csproj|c:\\users\\alumnofi\\desktop\\obligatorio-p3-ort\\solucioncompleta\\laempresaobligatorio\\laempresa.webapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C8D3359A-C3D1-4D83-A88F-E828297461F9}|LaEmpresa.WebApi\\LaEmpresa.WebApi.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\solucioncompleta\\laempresaobligatorio\\laempresa.webapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C8D3359A-C3D1-4D83-A88F-E828297461F9}|LaEmpresa.WebApi\\LaEmpresa.WebApi.csproj|solutionrelative:laempresa.webapi\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|c:\\users\\alumnofi\\desktop\\obligatorio-p3-ort\\solucioncompleta\\laempresaobligatorio\\laempresa.logicaaplicacion\\casosdeuso\\usuariocu\\logincu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|solutionrelative:laempresa.logicaaplicacion\\casosdeuso\\usuariocu\\logincu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C8D3359A-C3D1-4D83-A88F-E828297461F9}|LaEmpresa.WebApi\\LaEmpresa.WebApi.csproj|c:\\users\\alumnofi\\desktop\\obligatorio-p3-ort\\solucioncompleta\\laempresaobligatorio\\laempresa.webapi\\manejadorjwt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C8D3359A-C3D1-4D83-A88F-E828297461F9}|LaEmpresa.WebApi\\LaEmpresa.WebApi.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\solucioncompleta\\laempresaobligatorio\\laempresa.webapi\\manejadorjwt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C8D3359A-C3D1-4D83-A88F-E828297461F9}|LaEmpresa.WebApi\\LaEmpresa.WebApi.csproj|solutionrelative:laempresa.webapi\\manejadorjwt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -26,59 +18,51 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PagoController.cs",
-              "DocumentMoniker": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\LaEmpresa.WebApi\\Controllers\\PagoController.cs",
-              "RelativeDocumentMoniker": "LaEmpresa.WebApi\\Controllers\\PagoController.cs",
-              "ToolTip": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\LaEmpresa.WebApi\\Controllers\\PagoController.cs",
-              "RelativeToolTip": "LaEmpresa.WebApi\\Controllers\\PagoController.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T13:15:20.98Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoginCU.cs",
-              "DocumentMoniker": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\CasosDeUso\\UsuarioCU\\LoginCU.cs",
-              "RelativeDocumentMoniker": "LaEmpresa.LogicaAplicacion\\CasosDeUso\\UsuarioCU\\LoginCU.cs",
-              "ToolTip": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\CasosDeUso\\UsuarioCU\\LoginCU.cs",
-              "RelativeToolTip": "LaEmpresa.LogicaAplicacion\\CasosDeUso\\UsuarioCU\\LoginCU.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-17T12:16:02.464Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "LoginController.cs",
-              "DocumentMoniker": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\LaEmpresa.WebApi\\Controllers\\LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\LaEmpresa.WebApi\\Controllers\\LoginController.cs",
               "RelativeDocumentMoniker": "LaEmpresa.WebApi\\Controllers\\LoginController.cs",
-              "ToolTip": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\LaEmpresa.WebApi\\Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\LaEmpresa.WebApi\\Controllers\\LoginController.cs",
               "RelativeToolTip": "LaEmpresa.WebApi\\Controllers\\LoginController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAABLAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T12:11:25.785Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "ManejadorJWT.cs",
-              "DocumentMoniker": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\LaEmpresa.WebApi\\ManejadorJWT.cs",
+              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\LaEmpresa.WebApi\\ManejadorJWT.cs",
               "RelativeDocumentMoniker": "LaEmpresa.WebApi\\ManejadorJWT.cs",
-              "ToolTip": "C:\\Users\\alumnoFI\\Desktop\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\LaEmpresa.WebApi\\ManejadorJWT.cs",
+              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\LaEmpresa.WebApi\\ManejadorJWT.cs",
               "RelativeToolTip": "LaEmpresa.WebApi\\ManejadorJWT.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAwA4AAABkAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-17T12:10:53.164Z",
               "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 1217,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             }
           ]
         }

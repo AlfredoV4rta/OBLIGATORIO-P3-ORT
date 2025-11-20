@@ -8,8 +8,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "usuarioDto",
-        "Type": "LaEmpresa.LogicaAplicacion.DTOs.UsuarioDTO",
+        "Name": "loginRequestDTO",
+        "Type": "LaEmpresa.LogicaAplicacion.DTOs.LoginRequestDTO",
         "IsRequired": true
       }
     ],

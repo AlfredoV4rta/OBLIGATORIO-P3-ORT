@@ -3,6 +3,7 @@ using LaEmpresa.LogicaAplicacion.InterfacesCU.CasosUsuario;
 using LaEmpresa.LogicaNegocio.Exceptions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity.Data;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LaEmpresa.WebApi.Controllers
@@ -21,20 +22,32 @@ namespace LaEmpresa.WebApi.Controllers
         [HttpPost]
         [AllowAnonymous]
         [Route("login")]
-
-        public IActionResult Login([FromBody] UsuarioDTO usuarioDto)
+        [ProducesResponseType(typeof(UsuarioDTO), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public IActionResult Login([FromBody] LoginRequestDTO loginRequestDTO)
         {
             try
             {
-                UsuarioDTO logueado = _loginCU.Login(usuarioDto.Email, usuarioDto.Contrasenia);
+                if (string.IsNullOrEmpty(loginRequestDTO.Email) || string.IsNullOrEmpty(loginRequestDTO.Contrasenia))
+                {
+                    return BadRequest("Email y contraseña son requeridos");
+                }
+
+                UsuarioDTO logueado = _loginCU.Login(loginRequestDTO.Email, loginRequestDTO.Contrasenia);
                 var token = ManejadorJWT.GenerarToken(logueado);
                 logueado.Token = token.ToString();
-
+                
                 return Ok(logueado);
             }
             catch (UsuarioException uex)
             {
                 return Unauthorized(uex.Message);
+            }
+            catch
+            {
+                return StatusCode(500, "Ocurrió un error inesperado. Intente de nuevo más tarde.");
             }
         }
     }

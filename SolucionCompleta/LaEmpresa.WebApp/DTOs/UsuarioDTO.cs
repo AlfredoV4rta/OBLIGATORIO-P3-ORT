@@ -32,8 +32,8 @@ namespace LaEmpresa.WebApp.DTOs
         [StringLength(50, ErrorMessage = "El apellido no puede superar los 50 caracteres")]
         public string Apellido { get; set; }
 
-        [Required(ErrorMessage = "Debe asignar un rol")]
-        public int Rol { get; set; }
+        
+        public string Rol { get; set; }
 
         public string Token { get; set; }
     }

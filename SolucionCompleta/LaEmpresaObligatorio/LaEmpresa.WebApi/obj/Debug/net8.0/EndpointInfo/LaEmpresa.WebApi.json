@@ -14,17 +14,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioDTO"
+                "$ref": "#/components/schemas/LoginRequestDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioDTO"
+                "$ref": "#/components/schemas/LoginRequestDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UsuarioDTO"
+                "$ref": "#/components/schemas/LoginRequestDTO"
               }
             }
           }
@@ -129,59 +129,14 @@
   },
   "components": {
     "schemas": {
-      "Rol": {
-        "enum": [
-          0,
-          1,
-          2
-        ],
-        "type": "integer",
-        "format": "int32"
-      },
-      "UsuarioDTO": {
-        "required": [
-          "apellido",
-          "contrasenia",
-          "email",
-          "idEquipo",
-          "nombre",
-          "rol"
-        ],
+      "LoginRequestDTO": {
         "type": "object",
         "properties": {
-          "id": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "idEquipo": {
-            "type": "integer",
-            "format": "int32"
-          },
           "email": {
-            "maxLength": 100,
-            "minLength": 0,
             "type": "string",
-            "format": "email"
+            "nullable": true
           },
           "contrasenia": {
-            "maxLength": 100,
-            "minLength": 0,
-            "type": "string"
-          },
-          "nombre": {
-            "maxLength": 50,
-            "minLength": 0,
-            "type": "string"
-          },
-          "apellido": {
-            "maxLength": 50,
-            "minLength": 0,
-            "type": "string"
-          },
-          "rol": {
-            "$ref": "#/components/schemas/Rol"
-          },
-          "token": {
             "type": "string",
             "nullable": true
           }
