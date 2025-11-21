@@ -1,37 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\",
+  "WorkspaceRootPath": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\solucioncompleta\\laempresa.webapp\\dtos\\pagodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|solutionrelative:dtos\\pagodto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\solucioncompleta\\laempresa.webapp\\enums\\metodopago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|solutionrelative:enums\\metodopago.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\solucioncompleta\\laempresa.webapp\\views\\pago\\pagosdeusuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|solutionrelative:views\\pago\\pagosdeusuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\solucioncompleta\\laempresa.webapp\\views\\pago\\listarpagosmensuales.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|solutionrelative:views\\pago\\listarpagosmensuales.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\solucioncompleta\\laempresa.webapp\\controllers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\obligatorios\\obligatorio-p3-ort\\solucioncompleta\\laempresa.webapp\\controllers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|solutionrelative:controllers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\solucioncompleta\\laempresa.webapp\\auxiliares\\auxiliarhttpclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|solutionrelative:auxiliares\\auxiliarhttpclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\solucioncompleta\\laempresa.webapp\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\solucioncompleta\\laempresa.webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\obligatorios\\obligatorio-p3-ort\\solucioncompleta\\laempresa.webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
@@ -42,129 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MetodoPago.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Enums\\MetodoPago.cs",
-              "RelativeDocumentMoniker": "Enums\\MetodoPago.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Enums\\MetodoPago.cs",
-              "RelativeToolTip": "Enums\\MetodoPago.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T18:47:15.707Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PagoDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\DTOs\\PagoDTO.cs",
-              "RelativeDocumentMoniker": "DTOs\\PagoDTO.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\DTOs\\PagoDTO.cs",
-              "RelativeToolTip": "DTOs\\PagoDTO.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAIBAwBAAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T18:46:38.495Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PagosDeUsuario.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Views\\Pago\\PagosDeUsuario.cshtml",
-              "RelativeDocumentMoniker": "Views\\Pago\\PagosDeUsuario.cshtml",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Views\\Pago\\PagosDeUsuario.cshtml",
-              "RelativeToolTip": "Views\\Pago\\PagosDeUsuario.cshtml",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFEAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-21T18:44:00.475Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "AuxiliarHttpClient.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Auxiliares\\AuxiliarHttpClient.cs",
-              "RelativeDocumentMoniker": "Auxiliares\\AuxiliarHttpClient.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Auxiliares\\AuxiliarHttpClient.cs",
-              "RelativeToolTip": "Auxiliares\\AuxiliarHttpClient.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAowBAAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T18:23:19.23Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
               "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Views\\Shared\\_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAADMAAACFAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACgAAACDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-11-21T18:15:38.995Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ListarPagosMensuales.cshtml",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Views\\Pago\\ListarPagosMensuales.cshtml",
-              "RelativeDocumentMoniker": "Views\\Pago\\ListarPagosMensuales.cshtml",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Views\\Pago\\ListarPagosMensuales.cshtml",
-              "RelativeToolTip": "Views\\Pago\\ListarPagosMensuales.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-11-21T18:05:28.914Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "PagoController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Controllers\\PagoController.cs",
+              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Controllers\\PagoController.cs",
               "RelativeDocumentMoniker": "Controllers\\PagoController.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Controllers\\PagoController.cs",
+              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Controllers\\PagoController.cs",
               "RelativeToolTip": "Controllers\\PagoController.cs",
-              "ViewState": "AgIAAAsBAAAAAAAAAAAiwB0BAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAABkBAAAAAAAAAAAAwDsBAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-21T18:05:00.325Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "Controllers\\HomeController.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAywC0AAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-21T17:54:37.514Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 1217,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             }
           ]
         }

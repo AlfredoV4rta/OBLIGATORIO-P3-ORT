@@ -3,8 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C8D3359A-C3D1-4D83-A88F-E828297461F9}|LaEmpresa.WebApi\\LaEmpresa.WebApi.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\obligatorios\\obligatorio-p3-ort\\solucioncompleta\\laempresaobligatorio\\laempresa.webapi\\controllers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C8D3359A-C3D1-4D83-A88F-E828297461F9}|LaEmpresa.WebApi\\LaEmpresa.WebApi.csproj|solutionrelative:laempresa.webapi\\controllers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\obligatorios\\obligatorio-p3-ort\\solucioncompleta\\laempresaobligatorio\\laempresa.logicaaplicacion\\interfacescu\\casospago\\iobtenerequiposmayormonto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|solutionrelative:laempresa.logicaaplicacion\\interfacescu\\casospago\\iobtenerequiposmayormonto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\obligatorios\\obligatorio-p3-ort\\solucioncompleta\\laempresaobligatorio\\laempresa.logicaaplicacion\\casosdeuso\\pagocu\\obtenerequiposmayormontocu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -13,6 +13,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\obligatorios\\obligatorio-p3-ort\\solucioncompleta\\laempresaobligatorio\\laempresa.logicaaplicacion\\casosdeuso\\pagocu\\obtenerusuariosmayormontocu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|solutionrelative:laempresa.logicaaplicacion\\casosdeuso\\pagocu\\obtenerusuariosmayormontocu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C8D3359A-C3D1-4D83-A88F-E828297461F9}|LaEmpresa.WebApi\\LaEmpresa.WebApi.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\obligatorios\\obligatorio-p3-ort\\solucioncompleta\\laempresaobligatorio\\laempresa.webapi\\controllers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C8D3359A-C3D1-4D83-A88F-E828297461F9}|LaEmpresa.WebApi\\LaEmpresa.WebApi.csproj|solutionrelative:laempresa.webapi\\controllers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\obligatorios\\obligatorio-p3-ort\\solucioncompleta\\laempresaobligatorio\\laempresa.logicaaplicacion\\mappers\\equipomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|solutionrelative:laempresa.logicaaplicacion\\mappers\\equipomapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,11 +30,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IObtenerEquiposMayorMonto.cs",
+              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\InterfacesCU\\CasosPago\\IObtenerEquiposMayorMonto.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.LogicaAplicacion\\InterfacesCU\\CasosPago\\IObtenerEquiposMayorMonto.cs",
+              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\InterfacesCU\\CasosPago\\IObtenerEquiposMayorMonto.cs*",
+              "RelativeToolTip": "LaEmpresa.LogicaAplicacion\\InterfacesCU\\CasosPago\\IObtenerEquiposMayorMonto.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T22:03:04.12Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EquipoMapper.cs",
+              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\Mappers\\EquipoMapper.cs",
+              "RelativeDocumentMoniker": "LaEmpresa.LogicaAplicacion\\Mappers\\EquipoMapper.cs",
+              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\Mappers\\EquipoMapper.cs",
+              "RelativeToolTip": "LaEmpresa.LogicaAplicacion\\Mappers\\EquipoMapper.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABoAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-21T21:53:04.638Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -36,7 +70,7 @@
               "RelativeDocumentMoniker": "LaEmpresa.LogicaAplicacion\\CasosDeUso\\PagoCU\\ObtenerEquiposMayorMontoCU.cs",
               "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\CasosDeUso\\PagoCU\\ObtenerEquiposMayorMontoCU.cs",
               "RelativeToolTip": "LaEmpresa.LogicaAplicacion\\CasosDeUso\\PagoCU\\ObtenerEquiposMayorMontoCU.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAAB8AAABfAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAowA4AAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-21T20:50:41.949Z",
               "EditorCaption": ""
@@ -49,20 +83,20 @@
               "RelativeDocumentMoniker": "LaEmpresa.LogicaAplicacion\\CasosDeUso\\PagoCU\\ObtenerUsuariosMayorMontoCU.cs",
               "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\CasosDeUso\\PagoCU\\ObtenerUsuariosMayorMontoCU.cs",
               "RelativeToolTip": "LaEmpresa.LogicaAplicacion\\CasosDeUso\\PagoCU\\ObtenerUsuariosMayorMontoCU.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwBkAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-21T20:35:31.322Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "PagoController.cs",
               "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\LaEmpresa.WebApi\\Controllers\\PagoController.cs",
               "RelativeDocumentMoniker": "LaEmpresa.WebApi\\Controllers\\PagoController.cs",
               "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\LaEmpresa.WebApi\\Controllers\\PagoController.cs",
               "RelativeToolTip": "LaEmpresa.WebApi\\Controllers\\PagoController.cs",
-              "ViewState": "AgIAAKsAAAAAAAAAAAAuwJAAAABhAAAAAAAAAA==",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAcwL8AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-21T17:49:00.693Z",
               "EditorCaption": ""

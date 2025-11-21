@@ -93,6 +93,7 @@ namespace LaEmpresa.WebApi
             builder.Services.AddScoped<IObtenerUsuariosMayorMonto, ObtenerUsuariosMayorMontoCU>();
             builder.Services.AddScoped<IObtenerPagosDeUsuario, ObtenerPagosDeUsuarioCU>();
             builder.Services.AddScoped<ILogin, LoginCU>();
+            builder.Services.AddScoped<IObtenerEquiposMayorMonto, ObtenerEquiposMayorMontoCU>();
 
             builder.Services.AddAuthorization(
                 options =>

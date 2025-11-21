@@ -185,9 +185,9 @@ namespace LaEmpresa.WebApi.Controllers
                 IEnumerable<EquipoDTO> equipos= (IEnumerable<EquipoDTO>) _obtenerEquiposMayorMonto.ObtenerEquiposMayorMonto(monto);
                 return Ok(equipos);
             }
-            catch (PagoException pe)
+            catch (EquipoException ee)
             {
-                return NotFound(pe.Message);
+                return NotFound(ee.Message);
             }
             catch (Exception ex)
             {

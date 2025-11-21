@@ -15,7 +15,7 @@ namespace LaEmpresa.LogicaAplicacion.Mappers
             return new EquipoDTO
             {
                 Id = equipo.Id,
-                Nombre = equipo.Nombre,
+                Nombre = equipo.Nombre
             };
         }
 
@@ -24,7 +24,7 @@ namespace LaEmpresa.LogicaAplicacion.Mappers
             return new Equipo
             {
                 Id = equipoDTO.Id,
-                Nombre = equipoDTO.Nombre,
+                Nombre = equipoDTO.Nombre
             };
         }
     }

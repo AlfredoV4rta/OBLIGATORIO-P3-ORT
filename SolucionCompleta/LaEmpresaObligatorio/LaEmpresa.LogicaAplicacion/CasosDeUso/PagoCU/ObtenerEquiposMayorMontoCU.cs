@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using LaEmpresa.LogicaAplicacion.DTOs;
 using LaEmpresa.LogicaAplicacion.InterfacesCU.CasosPago;
 using LaEmpresa.LogicaAplicacion.Mappers;
 using LaEmpresa.LogicaNegocio.Entidades;
@@ -20,7 +21,7 @@ namespace LaEmpresa.LogicaAplicacion.CasosDeUso.PagoCU
         {
             _repositorioPago = repositorioPago;
         }
-        public IEnumerable<Equipo> ObtenerEquiposMayorMonto(double monto)
+        public IEnumerable<EquipoDTO> ObtenerEquiposMayorMonto(double monto)
         {
             if (monto == null || monto < 0)
             {
@@ -29,7 +30,12 @@ namespace LaEmpresa.LogicaAplicacion.CasosDeUso.PagoCU
 
             IEnumerable<Equipo> toReturn = _repositorioPago.EquiposMayorMonto(monto);
 
-            return (IEnumerable<Equipo>) toReturn.Select(equipo => EquipoMapper.toDTO(equipo));
+            if (toReturn == null || toReturn.Count() == 0)
+            {
+                throw new EquipoException("No hay equipos que superen ese monto de pago");
+            }
+
+            return toReturn.Select(equipo => EquipoMapper.toDTO(equipo));
         }
 
     }
