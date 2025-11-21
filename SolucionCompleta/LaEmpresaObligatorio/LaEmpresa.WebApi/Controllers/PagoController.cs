@@ -17,19 +17,22 @@ namespace LaEmpresa.WebApi.Controllers
         private IObtenerPagosMensuales _obtenerPagosMensuales;
         private IObtenerUsuariosMayorMonto _obtenerUsuariosMayorMonto;
         private IObtenerPagosDeUsuario _obtenerPagosDeUsuario;
+        private IObtenerEquiposMayorMonto _obtenerEquiposMayorMonto;
 
         public PagoController(
-                IObtenerPagos obtenerPagos, 
-                IObtenerPagoPorId obtenerPagoPorId, 
+                IObtenerPagos obtenerPagos,
+                IObtenerPagoPorId obtenerPagoPorId,
                 IObtenerPagosMensuales obtenerPagosMensuales,
                 IObtenerUsuariosMayorMonto obtenerUsuariosMayorMonto,
-                IObtenerPagosDeUsuario obtenerPagosDeUsuario)
+                IObtenerPagosDeUsuario obtenerPagosDeUsuario,
+                IObtenerEquiposMayorMonto obtenerEquiposMayorMonto)
         {
             _obtenerPagos = obtenerPagos;
             _obtenerPagoPorId = obtenerPagoPorId;
             _obtenerPagosMensuales = obtenerPagosMensuales;
             _obtenerUsuariosMayorMonto = obtenerUsuariosMayorMonto;
             _obtenerPagosDeUsuario = obtenerPagosDeUsuario;
+            _obtenerEquiposMayorMonto = obtenerEquiposMayorMonto;
         }
 
         [HttpGet]
@@ -37,7 +40,7 @@ namespace LaEmpresa.WebApi.Controllers
         {
             try
             {
-                IEnumerable<PagoDTO> pagos= _obtenerPagos.ObtenerPagos();
+                IEnumerable<PagoDTO> pagos = _obtenerPagos.ObtenerPagos();
                 return Ok(pagos);
             }
             catch (Exception ex)
@@ -65,7 +68,7 @@ namespace LaEmpresa.WebApi.Controllers
                 return NotFound(pe.Message);
             }
             catch (Exception ex)
-            { 
+            {
                 return StatusCode(500, "Error");
             }
         }
@@ -96,7 +99,7 @@ namespace LaEmpresa.WebApi.Controllers
             }
             catch (PagoException pe)
             {
-                return NotFound( pe.Message );
+                return NotFound(pe.Message);
             }
             catch (Exception ex)
             {
@@ -145,8 +148,8 @@ namespace LaEmpresa.WebApi.Controllers
                 {
                     return BadRequest("Id no valido");
                 }
-               
-                if(idUsuario != idUsuarioToken)
+
+                if (idUsuario != idUsuarioToken)
                 {
                     return Unauthorized("El id debe ser igual a tu propio id");
                 }
@@ -154,7 +157,35 @@ namespace LaEmpresa.WebApi.Controllers
                 IEnumerable<PagoDTO> pagos = _obtenerPagosDeUsuario.ObtenerPagosDeUsuario(idUsuario);
                 return Ok(pagos);
             }
-            catch(PagoException pe)
+            catch (PagoException pe)
+            {
+                return NotFound(pe.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error");
+            }
+        }
+
+        [HttpGet("pagos/equipo/{monto}")]
+        [ProducesResponseType(typeof(EquipoDTO), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [Authorize]
+        public IActionResult PagosMayorMontoEquipo(double monto)
+        {
+            try
+            {
+                if (monto <= 0)
+                {
+                    return BadRequest("El monto debe ser mayor a cero");
+                }
+                IEnumerable<EquipoDTO> equipos= (IEnumerable<EquipoDTO>) _obtenerEquiposMayorMonto.ObtenerEquiposMayorMonto(monto);
+                return Ok(equipos);
+            }
+            catch (PagoException pe)
             {
                 return NotFound(pe.Message);
             }

@@ -15,5 +15,7 @@ namespace LaEmpresa.LogicaNegocio.InterfacesRepositorio
         public IEnumerable<Usuario> UsuarioMayorMonto(double monto);
 
         public IEnumerable<Pago> PagosDeUsuario(int idUsuario);
+
+        public IEnumerable<Equipo> EquiposMayorMonto(double monto);
     }
 }

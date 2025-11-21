@@ -100,5 +100,18 @@ namespace LaEmpresa.AccesoDatos.EF.RepositoriosEF
 
             return pagosMonto;
         }
+
+        public IEnumerable<Equipo> EquiposMayorMonto(double monto)
+        {
+            List<Equipo> equiposMonto = _context.Pagos
+                .Include(pago => pago.Usuario)
+                .ThenInclude(usuario => usuario.EquipoUsuario)
+                .Where(pago => pago.Monto > monto)
+                .Select(pago => pago.Usuario.EquipoUsuario)
+                .Distinct()
+                .ToList();
+            return equiposMonto;
+        }
+
     }
 }
