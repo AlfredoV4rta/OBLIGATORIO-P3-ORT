@@ -1,4 +1,5 @@
 ﻿
+using LaEmpresa.WebApp.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -13,7 +14,7 @@ namespace LaEmpresa.WebApp.DTOs
         public int Id { get; set; }
 
         [Required(ErrorMessage = "Debe seleccionar un método de pago")]
-        public int MetodoPago { get; set; }
+        public MetodoPago MetodoPago { get; set; }
 
         [Required(ErrorMessage = "Debe seleccionar un tipo de gasto")]
         public int IdTipoDeGasto { get; set; }

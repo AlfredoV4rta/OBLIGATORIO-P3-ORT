@@ -11,19 +11,16 @@ namespace LaEmpresa.WebApi
         internal static object GenerarToken(UsuarioDTO logueado)
         {
             var tokenHandler = new JwtSecurityTokenHandler();
-
-            var clave = Encoding.ASCII.GetBytes("clave_SecretaDeLaEmpr_esaGoated_tieneQueSerMasLarga");
-
+            var clave = Encoding.UTF8.GetBytes("clave_SecretaDeLaEmpr_esaGoated_tieneQueSerMasLarga");
             var tokenDescriptor = new SecurityTokenDescriptor
             {
                 Subject = new ClaimsIdentity
                 (
                     new Claim[]
                     {
-                                        
                         new Claim(ClaimTypes.Email, logueado.Email),
                         new Claim(ClaimTypes.Role, logueado.Rol.ToString()),
-                        
+                        new Claim(ClaimTypes.NameIdentifier, logueado.Id.ToString()),
                     }
                 ),
                 Expires = DateTime.UtcNow.AddMonths(1),
@@ -32,10 +29,8 @@ namespace LaEmpresa.WebApi
                         SecurityAlgorithms.HmacSha256Signature
                 )
             };
-
             var token = tokenHandler.CreateToken(tokenDescriptor);
             return tokenHandler.WriteToken(token);
-
         }
     }
 }

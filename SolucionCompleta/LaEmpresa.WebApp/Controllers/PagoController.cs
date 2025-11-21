@@ -30,7 +30,7 @@ namespace LaEmpresa.WebApp.Controllers
                 {
                     //Encabezado
                     HttpClient cliente = new HttpClient();
-                    Uri uri = new Uri(uriPago);
+                    Uri uri = new Uri(UriPago);
                     cliente.DefaultRequestHeaders.Authorization = new
                         AuthenticationHeaderValue("Bearer", "Aca va el token");
                     HttpRequestMessage solicitud = new HttpRequestMessage(HttpMethod.Get, uri);
@@ -288,8 +288,10 @@ namespace LaEmpresa.WebApp.Controllers
             try
             {
                 string token = HttpContext.Session.GetString("token");
-                
-                HttpResponseMessage respuesta = AuxiliarHttpClient.EnviarSolicitud(UriPago, "GET", idUsuario, token);
+
+                string url = $"{UriPago}/pagos/usuario/{idUsuario}";
+
+                HttpResponseMessage respuesta = AuxiliarHttpClient.EnviarSolicitud(url, "GET", null, token);
                 
                 string body = AuxiliarHttpClient.ObtenerBody(respuesta);
 

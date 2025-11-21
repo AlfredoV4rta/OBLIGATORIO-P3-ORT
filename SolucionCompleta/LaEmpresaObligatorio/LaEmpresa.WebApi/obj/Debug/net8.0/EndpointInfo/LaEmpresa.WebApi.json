@@ -135,7 +135,7 @@
         }
       }
     },
-    "/api/Pago/{mes}/{anio}": {
+    "/api/Pago/pagos/mensuales/{mes}/{anio}": {
       "get": {
         "tags": [
           "Pago"
@@ -190,7 +190,7 @@
         }
       }
     },
-    "/api/Pago/pagos/usuario{idUsuario}": {
+    "/api/Pago/pagos/usuario/{idUsuario}": {
       "get": {
         "tags": [
           "Pago"
@@ -229,6 +229,26 @@
           },
           "401": {
             "description": "Unauthorized",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "Not Found",
             "content": {
               "text/plain": {
                 "schema": {

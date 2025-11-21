@@ -25,12 +25,12 @@
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="TipoDeGasto" asp-action="Index">Ver tipos de gastos</a>
                             </li>
-                            
+
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Usuario" asp-action="Create">Agregar usuario</a>
                             </li>
                         }
-                        
+
                         @if (Context.Session.GetString("rol") != null && Context.Session.GetString("rol") == "Gerente")
                         {
                             <li class="nav-item">
@@ -44,6 +44,12 @@
 
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Usuario" asp-action="Create">Agregar usuario</a>
+                            </li>
+                        }
+                        @if (Context.Session.GetString("rol") != null && (Context.Session.GetString("rol") == "Gerente" || Context.Session.GetString("rol") == "Empleado"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Pago" asp-action="PagosDeUsuario">Pagos de usuario</a>
                             </li>
                         }
 

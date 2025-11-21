@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using LaEmpresa.LogicaAplicacion.InterfacesCU.CasosPago;
 using LaEmpresa.LogicaNegocio.Exceptions;
 using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 namespace LaEmpresa.WebApi.Controllers
 {
@@ -69,7 +70,7 @@ namespace LaEmpresa.WebApi.Controllers
             }
         }
 
-        [HttpGet("{mes}/{anio}")]
+        [HttpGet("pagos/mensuales/{mes}/{anio}")]
 
         public IActionResult PagosMensuales(int mes, int anio)
         {
@@ -127,9 +128,10 @@ namespace LaEmpresa.WebApi.Controllers
             }
         }
 
-        [HttpGet("pagos/usuario{idUsuario}")]
+        [HttpGet("pagos/usuario/{idUsuario}")]
         [ProducesResponseType(typeof(PagoDTO), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [Authorize]
@@ -137,11 +139,17 @@ namespace LaEmpresa.WebApi.Controllers
         {
             try
             {
+                int idUsuarioToken = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)!.Value);
+
                 if (idUsuario <= 0)
                 {
                     return BadRequest("Id no valido");
                 }
                
+                if(idUsuario != idUsuarioToken)
+                {
+                    return Unauthorized("El id debe ser igual a tu propio id");
+                }
 
                 IEnumerable<PagoDTO> pagos = _obtenerPagosDeUsuario.ObtenerPagosDeUsuario(idUsuario);
                 return Ok(pagos);
