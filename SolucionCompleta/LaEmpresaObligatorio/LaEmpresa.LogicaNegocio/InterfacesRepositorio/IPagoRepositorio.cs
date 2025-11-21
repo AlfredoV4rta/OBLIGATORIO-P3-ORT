@@ -13,5 +13,7 @@ namespace LaEmpresa.LogicaNegocio.InterfacesRepositorio
         public IEnumerable<Pago> GetByMonthYear(int month, int year);
 
         public IEnumerable<Usuario> UsuarioMayorMonto(double monto);
+
+        public IEnumerable<Pago> PagosDeUsuario(int idUsuario);
     }
 }

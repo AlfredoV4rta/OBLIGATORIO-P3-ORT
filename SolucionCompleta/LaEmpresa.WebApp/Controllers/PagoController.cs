@@ -6,13 +6,19 @@ using Newtonsoft.Json;
 using System.Text.Json;
 using JsonSerializer = System.Text.Json.JsonSerializer;
 using System.Net.Http.Headers;
+using LaEmpresa.WebApp.Auxiliares;
 
 namespace LaEmpresa.WebApp.Controllers
 {
     public class PagoController : Controller
     {
 
-        private static string uriPago = "http://localhost:5140/api/Pago";
+        public string UriPago { get; set; }
+
+        public PagoController(IConfiguration configuration)
+        {
+            UriPago = configuration.GetValue<string>("UriPago");
+        }
 
         // GET: PagoController
         public ActionResult Index()
@@ -249,6 +255,60 @@ namespace LaEmpresa.WebApp.Controllers
             catch (Exception ex)
             {
                 ViewBag.Error = "Error inesperado" + ex.Message;
+                return View();
+            }
+        }
+
+        public IActionResult PagosDeUsuario() 
+        {
+            if (HttpContext.Session.GetString("rol") != null)
+            {
+                if (HttpContext.Session.GetString("rol") == "Gerente")
+                {
+                    try
+                    {
+                        return View();
+                    }
+                    catch (Exception ex)
+                    {
+                        ViewBag.Error = "Error inesperado" + ex;
+                        return View();
+                    }
+                }
+                return RedirectToAction("Index", "Home");
+            }
+            return RedirectToAction("Login", "Home");
+        }
+
+        [HttpPost]
+
+        public IActionResult PagosDeUsuario(int idUsuario)
+        {
+  
+            try
+            {
+                string token = HttpContext.Session.GetString("token");
+                
+                HttpResponseMessage respuesta = AuxiliarHttpClient.EnviarSolicitud(UriPago, "GET", idUsuario, token);
+                
+                string body = AuxiliarHttpClient.ObtenerBody(respuesta);
+
+                if (respuesta.IsSuccessStatusCode)
+                {
+                    IEnumerable<PagoDTO> pagos = JsonConvert.DeserializeObject<IEnumerable<PagoDTO>>(body);
+                    
+                    return View(pagos);
+                }
+                else
+                {
+                    ViewBag.Error = body;
+                    return View();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Error = "Error inesperado" + ex;
                 return View();
             }
         }

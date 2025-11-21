@@ -8,8 +8,6 @@ namespace LaEmpresa.WebApp.Controllers
 {
     public class HomeController : Controller
     {
-        private static string uriHome = "http://localhost:5140/api/Home";
-
         public string UriApiLogin { get; set; }
 
         public HomeController(IConfiguration configuration) 
@@ -19,7 +17,7 @@ namespace LaEmpresa.WebApp.Controllers
 
         public ActionResult Index()
         {
-            //if (HttpContext.Session.GetInt32("usuario") != null)
+            if (HttpContext.Session.GetString("rol") != null)
             {
                 try
                 {

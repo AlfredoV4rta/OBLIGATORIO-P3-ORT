@@ -63,6 +63,7 @@ builder.Services.AddScoped<IObtenerPagos, ObtenerPagosCU>();
 builder.Services.AddScoped<IObtenerPagoPorId, ObtenerPagoPorIdCU>();
 builder.Services.AddScoped<IObtenerPagosMensuales, ObtenerPagosMensualesCU>();
 builder.Services.AddScoped<IObtenerUsuariosMayorMonto, ObtenerUsuariosMayorMontoCU>();
+builder.Services.AddScoped<IObtenerPagosDeUsuario, ObtenerPagosDeUsuarioCU>();  
 builder.Services.AddScoped<ILogin, LoginCU>();
 
 builder.Services.AddAuthorization(

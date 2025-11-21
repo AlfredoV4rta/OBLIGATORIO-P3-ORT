@@ -7,7 +7,7 @@ namespace LaEmpresa.WebApp.Auxiliares
         public static HttpResponseMessage EnviarSolicitud(string url, string verbo, object obj = null, string token = null)
         {
             HttpClient cliente = new HttpClient();
-            cliente.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
+            cliente.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer ", token);
             Task<HttpResponseMessage> tarea = null;
 
             if (verbo == "GET")

@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using LaEmpresa.LogicaAplicacion.InterfacesCU.CasosPago;
 using LaEmpresa.LogicaNegocio.Exceptions;
+using Microsoft.AspNetCore.Authorization;
 
 namespace LaEmpresa.WebApi.Controllers
 {
@@ -10,25 +11,28 @@ namespace LaEmpresa.WebApi.Controllers
     [ApiController]
     public class PagoController : ControllerBase
     {
-        public IObtenerPagos _obtenerPagos;
-        public IObtenerPagoPorId _obtenerPagoPorId;
-        public IObtenerPagosMensuales _obtenerPagosMensuales;
-        public IObtenerUsuariosMayorMonto _obtenerUsuariosMayorMonto;
+        private IObtenerPagos _obtenerPagos;
+        private IObtenerPagoPorId _obtenerPagoPorId;
+        private IObtenerPagosMensuales _obtenerPagosMensuales;
+        private IObtenerUsuariosMayorMonto _obtenerUsuariosMayorMonto;
+        private IObtenerPagosDeUsuario _obtenerPagosDeUsuario;
 
         public PagoController(
                 IObtenerPagos obtenerPagos, 
                 IObtenerPagoPorId obtenerPagoPorId, 
                 IObtenerPagosMensuales obtenerPagosMensuales,
-                IObtenerUsuariosMayorMonto obtenerUsuariosMayorMonto)
+                IObtenerUsuariosMayorMonto obtenerUsuariosMayorMonto,
+                IObtenerPagosDeUsuario obtenerPagosDeUsuario)
         {
             _obtenerPagos = obtenerPagos;
             _obtenerPagoPorId = obtenerPagoPorId;
             _obtenerPagosMensuales = obtenerPagosMensuales;
             _obtenerUsuariosMayorMonto = obtenerUsuariosMayorMonto;
+            _obtenerPagosDeUsuario = obtenerPagosDeUsuario;
         }
 
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult ObtenerPagos()
         {
             try
             {
@@ -44,7 +48,7 @@ namespace LaEmpresa.WebApi.Controllers
 
         [HttpGet("{id}")]
 
-        public IActionResult Get(int id)
+        public IActionResult PagosPorID(int id)
         {
             try
             {
@@ -67,7 +71,7 @@ namespace LaEmpresa.WebApi.Controllers
 
         [HttpGet("{mes}/{anio}")]
 
-        public IActionResult Get(int mes, int anio)
+        public IActionResult PagosMensuales(int mes, int anio)
         {
             try
             {
@@ -101,7 +105,7 @@ namespace LaEmpresa.WebApi.Controllers
 
         [HttpGet("usuario/{monto}")]
 
-        public IActionResult Get(double monto)
+        public IActionResult PagosMayorMonto(double monto)
         {
             try
             {
@@ -114,6 +118,35 @@ namespace LaEmpresa.WebApi.Controllers
                 return Ok(usuarios);
             }
             catch (PagoException pe)
+            {
+                return NotFound(pe.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error");
+            }
+        }
+
+        [HttpGet("pagos/usuario{idUsuario}")]
+        [ProducesResponseType(typeof(PagoDTO), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [Authorize]
+        public IActionResult PagosDeUsuario(int idUsuario)
+        {
+            try
+            {
+                if (idUsuario <= 0)
+                {
+                    return BadRequest("Id no valido");
+                }
+               
+
+                IEnumerable<PagoDTO> pagos = _obtenerPagosDeUsuario.ObtenerPagosDeUsuario(idUsuario);
+                return Ok(pagos);
+            }
+            catch(PagoException pe)
             {
                 return NotFound(pe.Message);
             }

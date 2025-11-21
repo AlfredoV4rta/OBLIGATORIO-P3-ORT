@@ -61,6 +61,23 @@ namespace LaEmpresa.AccesoDatos.EF.RepositoriosEF
             return pagos;
         }
 
+        public IEnumerable<Pago> PagosDeUsuario(int idUsuario)
+        {
+            IEnumerable<Pago> pagos = _context.Pagos
+                                        .Include(p => p.TipoGasto)
+                                        .Include(p => p.Usuario)
+                                        .Where(u => u.IdUsuario == idUsuario)
+                                        .ToList();
+
+            if (pagos == null)
+            {
+                throw new Exception("No hay pagos asociados a este id");
+            }
+
+            return pagos;
+
+        }
+
         public void Remove(int id)
         {
             throw new NotImplementedException();

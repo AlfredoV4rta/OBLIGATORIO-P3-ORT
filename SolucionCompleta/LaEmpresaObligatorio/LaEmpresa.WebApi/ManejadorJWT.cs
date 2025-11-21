@@ -22,7 +22,8 @@ namespace LaEmpresa.WebApi
                     {
                                         
                         new Claim(ClaimTypes.Email, logueado.Email),
-                        new Claim(ClaimTypes.Role, ((int)logueado.Rol).ToString())
+                        new Claim(ClaimTypes.Role, logueado.Rol.ToString()),
+                        
                     }
                 ),
                 Expires = DateTime.UtcNow.AddMonths(1),

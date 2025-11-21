@@ -1,4 +1,5 @@
 ﻿
+using LaEmpresa.WebApp.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
@@ -33,7 +34,7 @@ namespace LaEmpresa.WebApp.DTOs
         public string Apellido { get; set; }
 
         
-        public string Rol { get; set; }
+        public Rol Rol { get; set; }
 
         public string Token { get; set; }
     }

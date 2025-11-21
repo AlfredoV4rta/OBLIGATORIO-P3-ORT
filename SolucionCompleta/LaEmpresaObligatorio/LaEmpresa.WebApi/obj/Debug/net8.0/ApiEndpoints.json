@@ -13,11 +13,44 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
+    "ReturnTypes": [
+      {
+        "Type": "LaEmpresa.LogicaAplicacion.DTOs.UsuarioDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
   },
   {
     "ContainingType": "LaEmpresa.WebApi.Controllers.PagoController",
-    "Method": "Get",
+    "Method": "ObtenerPagos",
     "RelativePath": "api/Pago",
     "HttpMethod": "GET",
     "IsController": true,
@@ -27,7 +60,7 @@
   },
   {
     "ContainingType": "LaEmpresa.WebApi.Controllers.PagoController",
-    "Method": "Get",
+    "Method": "PagosPorID",
     "RelativePath": "api/Pago/{id}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -43,7 +76,7 @@
   },
   {
     "ContainingType": "LaEmpresa.WebApi.Controllers.PagoController",
-    "Method": "Get",
+    "Method": "PagosMensuales",
     "RelativePath": "api/Pago/{mes}/{anio}",
     "HttpMethod": "GET",
     "IsController": true,
@@ -64,7 +97,56 @@
   },
   {
     "ContainingType": "LaEmpresa.WebApi.Controllers.PagoController",
-    "Method": "Get",
+    "Method": "PagosDeUsuario",
+    "RelativePath": "api/Pago/pagos/usuario{idUsuario}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idUsuario",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "LaEmpresa.LogicaAplicacion.DTOs.PagoDTO",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "LaEmpresa.WebApi.Controllers.PagoController",
+    "Method": "PagosMayorMonto",
     "RelativePath": "api/Pago/usuario/{monto}",
     "HttpMethod": "GET",
     "IsController": true,
