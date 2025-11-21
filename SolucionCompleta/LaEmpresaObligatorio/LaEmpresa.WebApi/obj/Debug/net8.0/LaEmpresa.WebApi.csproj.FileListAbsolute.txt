@@ -858,3 +858,6 @@ C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\Soluc
 C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\SolucionCompleta\LaEmpresaObligatorio\LaEmpresa.WebApi\obj\Debug\net8.0\LaEmpresa.WebApi.pdb
 C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\SolucionCompleta\LaEmpresaObligatorio\LaEmpresa.WebApi\obj\Debug\net8.0\LaEmpresa.WebApi.genruntimeconfig.cache
 C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\SolucionCompleta\LaEmpresaObligatorio\LaEmpresa.WebApi\obj\Debug\net8.0\ref\LaEmpresa.WebApi.dll
+C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\SolucionCompleta\LaEmpresaObligatorio\LaEmpresa.WebApi\bin\Debug\net8.0\Scrutor.dll
+C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\SolucionCompleta\LaEmpresaObligatorio\LaEmpresa.WebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\Lenovo\OneDrive\Escritorio\Facultad\Semestre-3\OBLIGATORIO-P3-ORT\SolucionCompleta\LaEmpresaObligatorio\LaEmpresa.WebApi\bin\Debug\net8.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll

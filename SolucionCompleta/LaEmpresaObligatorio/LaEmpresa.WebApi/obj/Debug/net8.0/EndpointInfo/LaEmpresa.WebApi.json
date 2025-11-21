@@ -1,8 +1,12 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "LaEmpresa.WebApi",
-    "version": "1.0"
+    "title": "Documentación de LaEmpresa.Api",
+    "description": "Aqui se encuentran todos los endpoint activos para utilizar los servicios del proyecto LaEmpresa",
+    "contact": {
+      "email": "fede.oteiza@gmail.com | alfredo.vartabedian@gmail.com"
+    },
+    "version": "v1"
   },
   "paths": {
     "/api/Login/login": {
@@ -265,8 +269,16 @@
           },
           "500": {
             "description": "Internal Server Error"
+          },
+          "403": {
+            "description": "Forbidden"
           }
-        }
+        },
+        "security": [
+          {
+            "oauth2": [ ]
+          }
+        ]
       }
     }
   },
@@ -473,6 +485,14 @@
           }
         },
         "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "oauth2": {
+        "type": "apiKey",
+        "description": "Autorización estándar mediante esquema Bearer",
+        "name": "Authorization",
+        "in": "header"
       }
     }
   }
