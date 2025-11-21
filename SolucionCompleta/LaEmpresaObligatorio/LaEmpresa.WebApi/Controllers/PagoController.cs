@@ -142,6 +142,13 @@ namespace LaEmpresa.WebApi.Controllers
         {
             try
             {
+                Claim rolClaim = User.FindFirst(ClaimTypes.Role);
+
+                if (rolClaim == null || rolClaim.Value != "Gerente" || rolClaim.Value != "Empleado")
+                {
+                    return Unauthorized("Solo los gerentes o empleados pueden acceder a este recurso");
+                }
+
                 int idUsuarioToken = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier)!.Value);
 
                 if (idUsuario <= 0)
@@ -178,11 +185,19 @@ namespace LaEmpresa.WebApi.Controllers
         {
             try
             {
+                Claim rolClaim = User.FindFirst(ClaimTypes.Role);
+
+                if (rolClaim == null || rolClaim.Value != "Gerente")
+                {
+                    return Unauthorized("Solo los gerentes pueden acceder a este recurso");
+                }
+
                 if (monto <= 0)
                 {
                     return BadRequest("El monto debe ser mayor a cero");
                 }
-                IEnumerable<EquipoDTO> equipos= (IEnumerable<EquipoDTO>) _obtenerEquiposMayorMonto.ObtenerEquiposMayorMonto(monto);
+
+                IEnumerable<EquipoDTO> equipos = _obtenerEquiposMayorMonto.ObtenerEquiposMayorMonto(monto);
                 return Ok(equipos);
             }
             catch (EquipoException ee)

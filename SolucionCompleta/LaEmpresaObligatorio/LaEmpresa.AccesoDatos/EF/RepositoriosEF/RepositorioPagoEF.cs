@@ -108,6 +108,7 @@ namespace LaEmpresa.AccesoDatos.EF.RepositoriosEF
                 .ThenInclude(usuario => usuario.EquipoUsuario)
                 .Where(pago => pago.Monto > monto)
                 .Select(pago => pago.Usuario.EquipoUsuario)
+                .OrderByDescending(equipo => equipo.Nombre)
                 .Distinct()
                 .ToList();
             return equiposMonto;

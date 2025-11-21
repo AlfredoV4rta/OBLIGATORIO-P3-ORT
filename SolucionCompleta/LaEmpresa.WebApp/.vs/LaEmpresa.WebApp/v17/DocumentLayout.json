@@ -7,8 +7,20 @@
       "RelativeMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|solutionrelative:controllers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\obligatorios\\obligatorio-p3-ort\\solucioncompleta\\laempresa.webapp\\views\\pago\\listarequiposmayormonto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|solutionrelative:views\\pago\\listarequiposmayormonto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\obligatorios\\obligatorio-p3-ort\\solucioncompleta\\laempresa.webapp\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\obligatorios\\obligatorio-p3-ort\\solucioncompleta\\laempresa.webapp\\views\\pago\\listarusuariospagomonto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|solutionrelative:views\\pago\\listarusuariospagomonto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|c:\\users\\59892\\onedrive\\desktop\\3er semestre\\obligatorios\\obligatorio-p3-ort\\solucioncompleta\\laempresa.webapp\\views\\pago\\listarpagosmensuales.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{187EB4F0-0C70-5185-190D-CA17F75D2CCF}|LaEmpresa.WebApp.csproj|solutionrelative:views\\pago\\listarpagosmensuales.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,7 +38,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ListarPagosMensuales.cshtml",
+              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Views\\Pago\\ListarPagosMensuales.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pago\\ListarPagosMensuales.cshtml",
+              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Views\\Pago\\ListarPagosMensuales.cshtml",
+              "RelativeToolTip": "Views\\Pago\\ListarPagosMensuales.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAAEUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T22:52:43.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ListarUsuariosPagoMonto.cshtml",
+              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Views\\Pago\\ListarUsuariosPagoMonto.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pago\\ListarUsuariosPagoMonto.cshtml",
+              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Views\\Pago\\ListarUsuariosPagoMonto.cshtml",
+              "RelativeToolTip": "Views\\Pago\\ListarUsuariosPagoMonto.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAC0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T22:52:17.301Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "ListarEquiposMayorMonto.cshtml",
+              "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Views\\Pago\\ListarEquiposMayorMonto.cshtml",
+              "RelativeDocumentMoniker": "Views\\Pago\\ListarEquiposMayorMonto.cshtml",
+              "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Views\\Pago\\ListarEquiposMayorMonto.cshtml",
+              "RelativeToolTip": "Views\\Pago\\ListarEquiposMayorMonto.cshtml",
+              "ViewState": "AgIAACEAAAAAAAAAAAAAACoAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-11-21T22:52:03.232Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -45,7 +96,7 @@
               "RelativeDocumentMoniker": "Controllers\\PagoController.cs",
               "ToolTip": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\Controllers\\PagoController.cs",
               "RelativeToolTip": "Controllers\\PagoController.cs",
-              "ViewState": "AgIAABkBAAAAAAAAAAAAwDsBAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAGABAAAAAAAAAAAhwHMBAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-21T18:05:00.325Z",
               "EditorCaption": ""

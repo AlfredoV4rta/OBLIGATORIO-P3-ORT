@@ -74,7 +74,7 @@ namespace LaEmpresa.WebApp.Controllers
             {
                 try
                 {
-                    
+
                     return View();
                 }
                 catch (Exception ex)
@@ -97,7 +97,8 @@ namespace LaEmpresa.WebApp.Controllers
                 //pagoDto.IdUsuario = (int)HttpContext.Session.GetInt32("idUsuario");
 
                 return RedirectToAction(nameof(Index));
-            }catch(Exception ex)
+            }
+            catch (Exception ex)
             {
                 ViewBag.Error = "Error inesperado" + ex;
                 return View();
@@ -225,7 +226,7 @@ namespace LaEmpresa.WebApp.Controllers
         public IActionResult ListarUsuariosPagoMonto()
         {
             if (HttpContext.Session.GetInt32("usuario") != null)
-            {   
+            {
                 if (HttpContext.Session.GetInt32("usuario") == 2)
                 {
                     try
@@ -259,7 +260,63 @@ namespace LaEmpresa.WebApp.Controllers
             }
         }
 
-        public IActionResult PagosDeUsuario() 
+        public IActionResult PagosDeUsuario()
+        {
+            if (HttpContext.Session.GetString("rol") != null)
+            {
+                if (HttpContext.Session.GetString("rol") == "Gerente" || HttpContext.Session.GetString("rol") == "Empleado")
+                {
+                    try
+                    {
+                        return View();
+                    }
+                    catch (Exception ex)
+                    {
+                        ViewBag.Error = "Error inesperado" + ex;
+                        return View();
+                    }
+                }
+                return RedirectToAction("Index", "Home");
+            }
+            return RedirectToAction("Login", "Home");
+        }
+
+        [HttpPost]
+
+        public IActionResult PagosDeUsuario(int idUsuario)
+        {
+
+            try
+            {
+                string token = HttpContext.Session.GetString("token");
+
+                string url = $"{UriPago}/pagos/usuario/{idUsuario}";
+
+                HttpResponseMessage respuesta = AuxiliarHttpClient.EnviarSolicitud(url, "GET", null, token);
+
+                string body = AuxiliarHttpClient.ObtenerBody(respuesta);
+
+                if (respuesta.IsSuccessStatusCode)
+                {
+                    IEnumerable<PagoDTO> pagos = JsonConvert.DeserializeObject<IEnumerable<PagoDTO>>(body);
+
+                    return View(pagos);
+                }
+                else
+                {
+                    ViewBag.Error = body;
+                    return View();
+                }
+
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Error = "Error inesperado" + ex;
+                return View();
+            }
+        }
+
+        public IActionResult ListarEquiposMayorMonto()
         {
             if (HttpContext.Session.GetString("rol") != null)
             {
@@ -282,35 +339,33 @@ namespace LaEmpresa.WebApp.Controllers
 
         [HttpPost]
 
-        public IActionResult PagosDeUsuario(int idUsuario)
+        public IActionResult ListarEquiposMayorMonto(int monto)
         {
-  
             try
             {
                 string token = HttpContext.Session.GetString("token");
 
-                string url = $"{UriPago}/pagos/usuario/{idUsuario}";
+                string url = $"{UriPago}/pagos/equipo/{monto}";
 
                 HttpResponseMessage respuesta = AuxiliarHttpClient.EnviarSolicitud(url, "GET", null, token);
-                
+
                 string body = AuxiliarHttpClient.ObtenerBody(respuesta);
 
                 if (respuesta.IsSuccessStatusCode)
                 {
-                    IEnumerable<PagoDTO> pagos = JsonConvert.DeserializeObject<IEnumerable<PagoDTO>>(body);
-                    
-                    return View(pagos);
+                    IEnumerable<EquipoDTO> equipos = JsonConvert.DeserializeObject<IEnumerable<EquipoDTO>>(body);
+
+                    return View(equipos);
                 }
                 else
                 {
                     ViewBag.Error = body;
                     return View();
                 }
-
             }
             catch (Exception ex)
             {
-                ViewBag.Error = "Error inesperado" + ex;
+                ViewBag.Error = "Error inesperado" + ex.Message;
                 return View();
             }
         }
