@@ -17,7 +17,8 @@ namespace LaEmpresa.LogicaAplicacion.Mappers
                 Id = auditoria.Id,
                 Email = auditoria.Email,
                 Accion = auditoria.Accion,
-                IdTipoDeGasto = auditoria.IdTipoDeGasto
+                IdTipoDeGasto = auditoria.IdTipoDeGasto,
+                Fecha = auditoria.Fecha,
             };
         }
 
@@ -28,7 +29,8 @@ namespace LaEmpresa.LogicaAplicacion.Mappers
                 Id = auditoriaDTO.Id,
                 Email = auditoriaDTO.Email,
                 Accion = auditoriaDTO.Accion,
-                IdTipoDeGasto = auditoriaDTO.IdTipoDeGasto
+                IdTipoDeGasto = auditoriaDTO.IdTipoDeGasto,
+                Fecha = auditoriaDTO.Fecha
             };
         }
     }
