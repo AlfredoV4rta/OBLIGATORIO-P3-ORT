@@ -32,7 +32,7 @@ namespace LaEmpresa.LogicaAplicacion.CasosDeUso.TipoDeGastoCU
             }
 
             _repositorio.Remove(id);
-            _auditoriaRepositorio.Add(new Auditoria(email, "Borrar"));
+            _auditoriaRepositorio.Add(new Auditoria(email, "Borrar", id));
 
         }
     }

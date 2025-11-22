@@ -31,9 +31,9 @@ namespace LaEmpresa.WebApp.Controllers
  
         public ActionResult Details(int id)
         {
-            if (HttpContext.Session.GetInt32("usuario") != null)
+            if (HttpContext.Session.GetString("rol") != null)
             {
-                if (HttpContext.Session.GetInt32("usuario") == 0)
+                if (HttpContext.Session.GetString("rol") == "Administrador")
                 {
                     try
                     {
@@ -52,9 +52,9 @@ namespace LaEmpresa.WebApp.Controllers
 
         public ActionResult Create()
         {
-            if (HttpContext.Session.GetInt32("usuario") != null)
+            if (HttpContext.Session.GetString("rol") != null)
             {
-                if (HttpContext.Session.GetInt32("usuario") == 0)
+                if (HttpContext.Session.GetString("rol") == "Administrador")
                 {
                     return View();
                 }
@@ -83,9 +83,9 @@ namespace LaEmpresa.WebApp.Controllers
 
         public ActionResult Edit(int id)
         {
-            if (HttpContext.Session.GetInt32("usuario") != null)
+            if (HttpContext.Session.GetString("rol") != null)
             {
-                if (HttpContext.Session.GetInt32("usuario") == 0)
+                if (HttpContext.Session.GetString("rol") == "Administrador")
                 {
                     try
                     {
@@ -121,9 +121,9 @@ namespace LaEmpresa.WebApp.Controllers
 
         public ActionResult Delete(int id)
         {
-            if (HttpContext.Session.GetInt32("usuario") != null)
+            if (HttpContext.Session.GetString("rol") != null)
             {
-                if (HttpContext.Session.GetInt32("usuario") == 0)
+                if (HttpContext.Session.GetString("rol") == "Administrador")
                 {
                     try
                     {

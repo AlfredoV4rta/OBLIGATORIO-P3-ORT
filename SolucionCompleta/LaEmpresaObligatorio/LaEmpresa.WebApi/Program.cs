@@ -11,6 +11,8 @@ using LaEmpresa.LogicaAplicacion.InterfacesCU.CasosUsuario;
 using LaEmpresa.LogicaAplicacion.CasosDeUso.UsuarioCU;
 using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
+using LaEmpresa.LogicaAplicacion.InterfacesCU.CasosTipoDeGasto;
+using LaEmpresa.LogicaAplicacion.CasosDeUso.TipoDeGastoCU;
 
 namespace LaEmpresa.WebApi
 {
@@ -55,6 +57,7 @@ namespace LaEmpresa.WebApi
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen(opciones =>
             {
+
                 opciones.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme()
                 {
                     Description = "Autorización estándar mediante esquema Bearer",
@@ -85,15 +88,32 @@ namespace LaEmpresa.WebApi
             //Inicializar Repositorio
             builder.Services.AddScoped<IPagoRepositorio, RepositorioPagoEF>();
             builder.Services.AddScoped<IUsuarioRepositorio, RepositorioUsuarioEF>();
+            builder.Services.AddScoped<ITipoDeGastoRepositorio, RepositorioTipoDeGastoEF>();
+            builder.Services.AddScoped<IAuditoriaRepositorio, RepositorioAuditoriaEF>();
 
             //Inicializar CU
+            
+            //PagoCU
             builder.Services.AddScoped<IObtenerPagos, ObtenerPagosCU>();
             builder.Services.AddScoped<IObtenerPagoPorId, ObtenerPagoPorIdCU>();
             builder.Services.AddScoped<IObtenerPagosMensuales, ObtenerPagosMensualesCU>();
             builder.Services.AddScoped<IObtenerUsuariosMayorMonto, ObtenerUsuariosMayorMontoCU>();
             builder.Services.AddScoped<IObtenerPagosDeUsuario, ObtenerPagosDeUsuarioCU>();
+            
+            //UsuarioCU
             builder.Services.AddScoped<ILogin, LoginCU>();
+
+            //TipoDeGastoCU
             builder.Services.AddScoped<IObtenerEquiposMayorMonto, ObtenerEquiposMayorMontoCU>();
+            builder.Services.AddScoped<IObtenerTipoDeGasto, ObtenerTipoDeGastoCU>();
+            builder.Services.AddScoped<IObtenerTipoDeGastoPorId, ObtenerTipoDeGastoPorIdCU>();
+            builder.Services.AddScoped<IEditarTipoDeGasto, EditarTipoDeGastoCU>();
+            builder.Services.AddScoped<IBorrarTipoDeGasto, BorrarTipoDeGastoCU>();
+            builder.Services.AddScoped<IAltaTipoDeGasto, AltaTipoDeGastoCU>();
+
+            //AuditoriaCU
+            
+
 
             builder.Services.AddAuthorization(
                 options =>

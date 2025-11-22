@@ -23,8 +23,11 @@ namespace LaEmpresa.LogicaAplicacion.CasosDeUso.TipoDeGastoCU
         }
         public void AgregarTipoDeGasto(TipoDeGastoDTO nuevoTipoGasto, string email)
         {
-            _repositorio.Add(TipoDeGastoMapper.FromDTO(nuevoTipoGasto));
-            _auditoriaRepositorio.Add(new Auditoria(email, "Alta"));
+            TipoDeGasto tipoDeGasto = TipoDeGastoMapper.FromDTO(nuevoTipoGasto);
+
+            _repositorio.Add(tipoDeGasto);
+
+            _auditoriaRepositorio.Add(new Auditoria(email, "Alta", tipoDeGasto.Id));
         }
     }
 }

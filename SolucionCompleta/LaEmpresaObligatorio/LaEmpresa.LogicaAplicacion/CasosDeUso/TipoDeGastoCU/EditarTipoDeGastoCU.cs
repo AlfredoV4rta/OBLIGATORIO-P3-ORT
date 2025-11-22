@@ -25,7 +25,7 @@ namespace LaEmpresa.LogicaAplicacion.CasosDeUso.TipoDeGastoCU
         public void EditarTipoDeGasto(TipoDeGastoDTO tipoDeGastoDTO, string email)
         {
            _repositorio.Update(TipoDeGastoMapper.FromDTO(tipoDeGastoDTO));
-            _auditoriaRepositorio.Add(new Auditoria(email, "Editar"));
+            _auditoriaRepositorio.Add(new Auditoria(email, "Editar", tipoDeGastoDTO.Id));
         }
     }
 }

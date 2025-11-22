@@ -24,12 +24,17 @@ namespace LaEmpresa.LogicaNegocio.Entidades
         [Required]
         public string Accion {  get; set; }
 
-        public Auditoria(string email, string accion)
+
+        [Required]
+        public int IdTipoDeGasto { get; set; }
+
+        public Auditoria(string email, string accion, int idTipoDeGasto)
         {
 
             Fecha = DateTime.Now;
             Email = email;
             Accion = accion;
+            IdTipoDeGasto = idTipoDeGasto;
         }
 
         public Auditoria() { }
@@ -45,9 +50,12 @@ namespace LaEmpresa.LogicaNegocio.Entidades
             {
                 throw new TipoDeGastoException("Email no debe estar vacio");
             }
-            
-            
-            
+
+            if (IdTipoDeGasto <= 0)
+            {
+                throw new TipoDeGastoException("Id invalido");
+            }
+
         }
     }
 }

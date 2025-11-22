@@ -17,7 +17,7 @@ namespace LaEmpresa.AccesoDatos.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.19")
+                .HasAnnotation("ProductVersion", "8.0.21")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -40,6 +40,9 @@ namespace LaEmpresa.AccesoDatos.Migrations
 
                     b.Property<DateTime>("Fecha")
                         .HasColumnType("datetime2");
+
+                    b.Property<int>("IdTipoDeGasto")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

@@ -27,7 +27,14 @@ namespace LaEmpresa.AccesoDatos.EF.RepositoriosEF
 
         public IEnumerable<TipoDeGasto> FindAll()
         {
-            return _context.TipoDeGastos;
+            IEnumerable<TipoDeGasto> tipos = _context.TipoDeGastos;
+
+            if (tipos == null)
+            {
+                throw new TipoDeGastoException("No hay tipos de gasto");
+            }
+
+            return tipos;
         }
 
         public TipoDeGasto FindById(int id)
@@ -45,7 +52,13 @@ namespace LaEmpresa.AccesoDatos.EF.RepositoriosEF
 
         public void Remove(int id)
         {
-            TipoDeGasto aBorrar = new TipoDeGasto { Id = id};
+            TipoDeGasto aBorrar = FindById(id);
+
+            if(aBorrar == null)
+            {
+                throw new TipoDeGastoException("No hay tipo de gasto con ese id");
+            }
+
             _context.TipoDeGastos.Remove(aBorrar);
             _context.SaveChanges();
         }
