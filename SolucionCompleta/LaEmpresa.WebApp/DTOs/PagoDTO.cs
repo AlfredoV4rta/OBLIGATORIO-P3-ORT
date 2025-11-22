@@ -26,16 +26,12 @@ namespace LaEmpresa.WebApp.DTOs
         [StringLength(200, ErrorMessage = "La descripción no puede superar los 200 caracteres")]
         public string Descripcion { get; set; }
 
-        [Required(ErrorMessage = "La fecha desde es obligatoria")]
         public DateTime FechaDesde { get; set; }
 
-        [Required(ErrorMessage = "La fecha hasta es obligatoria")]
         public DateTime FechaHasta { get; set; }
 
-        [Required(ErrorMessage = "La fecha de pago es obligatoria")]
         public DateTime FechaDePago { get; set; }
 
-        [Required(ErrorMessage = "El numero de recibo es obligatorio")]
         [StringLength(30, ErrorMessage = "El número de recibo no puede superar los 30 caracteres")]
         public string NroRecibo { get; set; }
 

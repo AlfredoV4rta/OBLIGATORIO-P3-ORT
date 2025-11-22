@@ -18,6 +18,7 @@ namespace LaEmpresa.WebApi.Controllers
         private IObtenerUsuariosMayorMonto _obtenerUsuariosMayorMonto;
         private IObtenerPagosDeUsuario _obtenerPagosDeUsuario;
         private IObtenerEquiposMayorMonto _obtenerEquiposMayorMonto;
+        private IAltaPago _altaPago;
 
         public PagoController(
                 IObtenerPagos obtenerPagos,
@@ -25,7 +26,8 @@ namespace LaEmpresa.WebApi.Controllers
                 IObtenerPagosMensuales obtenerPagosMensuales,
                 IObtenerUsuariosMayorMonto obtenerUsuariosMayorMonto,
                 IObtenerPagosDeUsuario obtenerPagosDeUsuario,
-                IObtenerEquiposMayorMonto obtenerEquiposMayorMonto)
+                IObtenerEquiposMayorMonto obtenerEquiposMayorMonto,
+                IAltaPago altaPago)
         {
             _obtenerPagos = obtenerPagos;
             _obtenerPagoPorId = obtenerPagoPorId;
@@ -33,6 +35,7 @@ namespace LaEmpresa.WebApi.Controllers
             _obtenerUsuariosMayorMonto = obtenerUsuariosMayorMonto;
             _obtenerPagosDeUsuario = obtenerPagosDeUsuario;
             _obtenerEquiposMayorMonto = obtenerEquiposMayorMonto;
+            _altaPago = altaPago;
         }
 
         [HttpGet]
@@ -203,6 +206,61 @@ namespace LaEmpresa.WebApi.Controllers
             catch (EquipoException ee)
             {
                 return NotFound(ee.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error");
+            }
+        }
+
+        [HttpPost("pagos/alta/unico")]
+        [ProducesResponseType(typeof(EquipoDTO), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [Authorize]
+
+        public IActionResult AltaPagoUnico([FromBody] PagoDTO pagoDTO)
+        {
+            try
+            {
+                if (pagoDTO == null)
+                {
+                    return BadRequest("No se creo el pago");
+                }
+                _altaPago.AltaPago(pagoDTO);
+                return Ok("Pago registrado con exito");
+            }
+            catch (PagoException pe)
+            {
+                return BadRequest(pe.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error");
+            }
+        }
+
+        [HttpPost("pagos/alta/recurrente")]
+        [ProducesResponseType(typeof(EquipoDTO), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [Authorize]
+        public IActionResult AltaPagoRecurrente([FromBody] PagoDTO pagoDTO)
+        {
+            try
+            {
+                if (pagoDTO == null)
+                {
+                    return BadRequest("No se creo el pago");
+                }
+                _altaPago.AltaPago(pagoDTO);
+                return Ok("Pago registrado con exito");
+            }
+            catch (PagoException pe)
+            {
+                return BadRequest(pe.Message);
             }
             catch (Exception ex)
             {

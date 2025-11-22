@@ -44,7 +44,7 @@ namespace LaEmpresa.WebApi.Controllers
             {
                 Claim rolClaim = User.FindFirst(ClaimTypes.Role);
 
-                if (rolClaim == null || rolClaim.Value != "Administrador")
+                if (rolClaim == null)
                 {
                     return Unauthorized("Solo los administradores pueden acceder a este recurso");
                 }

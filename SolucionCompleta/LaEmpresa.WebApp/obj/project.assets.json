@@ -6506,23 +6506,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Lenovo\\.nuget\\packages\\": {},
+    "C:\\Users\\59892\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj",
+      "projectUniqueName": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj",
       "projectName": "LaEmpresa.WebApp",
-      "projectPath": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj",
-      "packagesPath": "C:\\Users\\Lenovo\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\obj\\",
+      "projectPath": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\LaEmpresa.WebApp.csproj",
+      "packagesPath": "C:\\Users\\59892\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\59892\\OneDrive\\Desktop\\3er Semestre\\Obligatorios\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresa.WebApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\59892\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -6593,7 +6593,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

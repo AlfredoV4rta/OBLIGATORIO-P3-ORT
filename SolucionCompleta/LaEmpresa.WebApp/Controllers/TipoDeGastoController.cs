@@ -105,8 +105,6 @@ namespace LaEmpresa.WebApp.Controllers
                 return RedirectToAction("Index", "Home");
             }
             return RedirectToAction("Login", "Home");
-
-            
         }
 
  
@@ -135,8 +133,9 @@ namespace LaEmpresa.WebApp.Controllers
                 }
                
             }
-            catch
+            catch (Exception ex)
             {
+                ViewBag.Error = "Error inesperado" + ex;
                 return View();
             }
         }

@@ -14,13 +14,14 @@ namespace LaEmpresa.WebApp.Controllers
     {
 
         public string UriPago { get; set; }
+        public string UriTipoDeGasto { get; set; }
 
         public PagoController(IConfiguration configuration)
         {
             UriPago = configuration.GetValue<string>("UriPago");
+            UriTipoDeGasto = configuration.GetValue<string>("UriTipoDeGasto");
         }
 
-        // GET: PagoController
         public ActionResult Index()
         {
             //if(HttpContext.Session.GetInt32("usuario") != null)
@@ -70,12 +71,28 @@ namespace LaEmpresa.WebApp.Controllers
         // GET: PagoController/Create
         public ActionResult Create()
         {
-            if (HttpContext.Session.GetInt32("usuario") != null)
+            if (HttpContext.Session.GetString("rol") != null)
             {
                 try
                 {
+                    string token = HttpContext.Session.GetString("token");
 
-                    return View();
+                    HttpResponseMessage respuesta = AuxiliarHttpClient.EnviarSolicitud(UriTipoDeGasto, "GET", null, token);
+
+                    string body = AuxiliarHttpClient.ObtenerBody(respuesta);
+
+                    if (respuesta.IsSuccessStatusCode)
+                    {
+                        IEnumerable<TipoDeGastoDTO> tiposDeGasto = JsonConvert.DeserializeObject<IEnumerable<TipoDeGastoDTO>>(body);
+
+                        ViewBag.TipoDeGasto = tiposDeGasto;
+                        return View();
+                    }
+                    else
+                    {
+                        ViewBag.Error = body;
+                        return View();
+                    }
                 }
                 catch (Exception ex)
                 {
@@ -95,8 +112,31 @@ namespace LaEmpresa.WebApp.Controllers
             {
 
                 //pagoDto.IdUsuario = (int)HttpContext.Session.GetInt32("idUsuario");
+                string token = HttpContext.Session.GetString("token");
 
-                return RedirectToAction(nameof(Index));
+                string url = $"{UriPago}/pagos/alta/recurrente";
+
+                pagoDto.IdUsuario = (int)HttpContext.Session.GetInt32("usuarioId");
+                pagoDto.FechaDePago = DateTime.MinValue;
+                pagoDto.NroRecibo = "";
+                pagoDto.SaldoPendiente = 0;
+
+                HttpResponseMessage respuesta = AuxiliarHttpClient.EnviarSolicitud(url, "POST", pagoDto, token);
+
+                string body = AuxiliarHttpClient.ObtenerBody(respuesta);
+
+                if (respuesta.IsSuccessStatusCode)
+                {
+
+                    PagoDTO pago = JsonConvert.DeserializeObject<PagoDTO>(body);
+
+                    return RedirectToAction("Index", "Home");
+                }
+                else
+                {
+                    ViewBag.Error = body;
+                    return View();
+                }
             }
             catch (Exception ex)
             {
@@ -109,11 +149,27 @@ namespace LaEmpresa.WebApp.Controllers
         public ActionResult CreateUnico()
         {
 
-            if (HttpContext.Session.GetInt32("usuario") != null)
+            if (HttpContext.Session.GetString("rol") != null)
             {
                 try
                 {
-                    return View();
+                    string token = HttpContext.Session.GetString("token");
+
+                    HttpResponseMessage respuesta = AuxiliarHttpClient.EnviarSolicitud(UriTipoDeGasto, "GET", null, token);
+
+                    string body = AuxiliarHttpClient.ObtenerBody(respuesta);
+
+                    if (respuesta.IsSuccessStatusCode)
+                    {
+                        IEnumerable<TipoDeGastoDTO> tiposDeGasto = JsonConvert.DeserializeObject<IEnumerable<TipoDeGastoDTO>>(body);
+
+                        return View(tiposDeGasto);
+                    }
+                    else
+                    {
+                        ViewBag.Error = body;
+                        return View();
+                    }
                 }
                 catch (Exception ex)
                 {
@@ -131,10 +187,27 @@ namespace LaEmpresa.WebApp.Controllers
         {
             try
             {
+                string token = HttpContext.Session.GetString("token");
 
-                pagoDto.IdUsuario = (int)HttpContext.Session.GetInt32("idUsuario");
+                string url = $"{UriPago}/pagos/alta/unico";
 
-                return RedirectToAction(nameof(Index));
+                HttpResponseMessage respuesta = AuxiliarHttpClient.EnviarSolicitud(url, "POST", pagoDto, token);
+
+                string body = AuxiliarHttpClient.ObtenerBody(respuesta);
+
+                if (respuesta.IsSuccessStatusCode)
+                {
+                    pagoDto.IdUsuario = (int)HttpContext.Session.GetInt32("c");
+
+                    PagoDTO pago = JsonConvert.DeserializeObject<PagoDTO>(body);
+
+                    return RedirectToAction("Index", "Home");
+                }
+                else
+                {
+                    ViewBag.Error = body;
+                    return View();
+                }
             }
             catch (Exception ex)
             {
@@ -158,7 +231,7 @@ namespace LaEmpresa.WebApp.Controllers
         {
             try
             {
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index", "Home");
             }
             catch
             {
@@ -179,7 +252,7 @@ namespace LaEmpresa.WebApp.Controllers
         {
             try
             {
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction("Index", "Home");
             }
             catch
             {
@@ -189,7 +262,7 @@ namespace LaEmpresa.WebApp.Controllers
 
         public IActionResult ListarPagosMensuales()
         {
-            if (HttpContext.Session.GetInt32("usuario") != null)
+            if (HttpContext.Session.GetString("rol") != null)
             {
                 if (HttpContext.Session.GetInt32("usuario") == 2)
                 {

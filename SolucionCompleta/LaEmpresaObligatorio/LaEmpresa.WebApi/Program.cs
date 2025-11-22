@@ -99,7 +99,8 @@ namespace LaEmpresa.WebApi
             builder.Services.AddScoped<IObtenerPagosMensuales, ObtenerPagosMensualesCU>();
             builder.Services.AddScoped<IObtenerUsuariosMayorMonto, ObtenerUsuariosMayorMontoCU>();
             builder.Services.AddScoped<IObtenerPagosDeUsuario, ObtenerPagosDeUsuarioCU>();
-            
+            builder.Services.AddScoped<IAltaPago, AltaPagoCU>();
+
             //UsuarioCU
             builder.Services.AddScoped<ILogin, LoginCU>();
 
