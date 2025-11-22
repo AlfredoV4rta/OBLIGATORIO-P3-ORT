@@ -34,7 +34,7 @@
             <div class="form-group">
                 <label asp-for="IdTipoDeGasto" class="control-label">Ingrese el tipo de gasto</label>
                 <select asp-for="IdTipoDeGasto" class="form-control">
-                    @foreach (TipoDeGastoDTO tipoDeGasto in ViewBag.TiposDeGasto)
+                    @foreach (TipoDeGastoDTO tipoDeGasto in ViewBag.TipoDeGasto)
                     {
                         <option value="@tipoDeGasto.Id">@tipoDeGasto.Nombre</option>
                     }

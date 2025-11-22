@@ -103,7 +103,7 @@ namespace LaEmpresa.WebApp.Controllers
             return RedirectToAction("Login", "Home");
         }
 
-        // POST: PagoController/Create
+      
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Create(IFormCollection collection, PagoDTO pagoDto)
@@ -111,32 +111,44 @@ namespace LaEmpresa.WebApp.Controllers
             try
             {
 
-                //pagoDto.IdUsuario = (int)HttpContext.Session.GetInt32("idUsuario");
                 string token = HttpContext.Session.GetString("token");
 
                 string url = $"{UriPago}/pagos/alta/recurrente";
 
                 pagoDto.IdUsuario = (int)HttpContext.Session.GetInt32("usuarioId");
-                pagoDto.FechaDePago = DateTime.MinValue;
-                pagoDto.NroRecibo = "";
-                pagoDto.SaldoPendiente = 0;
 
                 HttpResponseMessage respuesta = AuxiliarHttpClient.EnviarSolicitud(url, "POST", pagoDto, token);
 
                 string body = AuxiliarHttpClient.ObtenerBody(respuesta);
 
+                HttpResponseMessage respuestaTipos = AuxiliarHttpClient.EnviarSolicitud(UriTipoDeGasto, "GET", null, token);
+                string bodyTipos = AuxiliarHttpClient.ObtenerBody(respuestaTipos);
+
+                if (respuestaTipos.IsSuccessStatusCode)
+                {
+                    IEnumerable<TipoDeGastoDTO> tiposDeGasto = JsonConvert.DeserializeObject<IEnumerable<TipoDeGastoDTO>>(bodyTipos);
+
+                    ViewBag.TipoDeGasto = tiposDeGasto;
+                }
+                else
+                {
+                    ViewBag.TipoDeGasto = new List<TipoDeGastoDTO>(); 
+                }
+
+
                 if (respuesta.IsSuccessStatusCode)
                 {
 
-                    PagoDTO pago = JsonConvert.DeserializeObject<PagoDTO>(body);
-
                     return RedirectToAction("Index", "Home");
+
                 }
                 else
                 {
                     ViewBag.Error = body;
-                    return View();
+                    return View(pagoDto);
                 }
+
+
             }
             catch (Exception ex)
             {
@@ -145,7 +157,7 @@ namespace LaEmpresa.WebApp.Controllers
             }
         }
 
-        // GET: PagoController/Create
+
         public ActionResult CreateUnico()
         {
 
@@ -163,7 +175,8 @@ namespace LaEmpresa.WebApp.Controllers
                     {
                         IEnumerable<TipoDeGastoDTO> tiposDeGasto = JsonConvert.DeserializeObject<IEnumerable<TipoDeGastoDTO>>(body);
 
-                        return View(tiposDeGasto);
+                        ViewBag.TipoDeGasto = tiposDeGasto;
+                        return View();
                     }
                     else
                     {
@@ -191,23 +204,39 @@ namespace LaEmpresa.WebApp.Controllers
 
                 string url = $"{UriPago}/pagos/alta/unico";
 
+                pagoDto.IdUsuario = (int)HttpContext.Session.GetInt32("usuarioId");
+
                 HttpResponseMessage respuesta = AuxiliarHttpClient.EnviarSolicitud(url, "POST", pagoDto, token);
 
                 string body = AuxiliarHttpClient.ObtenerBody(respuesta);
 
+                HttpResponseMessage respuestaTipos = AuxiliarHttpClient.EnviarSolicitud(UriTipoDeGasto, "GET", null, token);
+                string bodyTipos = AuxiliarHttpClient.ObtenerBody(respuestaTipos);
+
+                if (respuestaTipos.IsSuccessStatusCode)
+                {
+                    IEnumerable<TipoDeGastoDTO> tiposDeGasto = JsonConvert.DeserializeObject<IEnumerable<TipoDeGastoDTO>>(bodyTipos);
+
+                    ViewBag.TipoDeGasto = tiposDeGasto;
+                }
+                else
+                {
+                    ViewBag.TipoDeGasto = new List<TipoDeGastoDTO>();
+                }
+
+
                 if (respuesta.IsSuccessStatusCode)
                 {
-                    pagoDto.IdUsuario = (int)HttpContext.Session.GetInt32("c");
-
-                    PagoDTO pago = JsonConvert.DeserializeObject<PagoDTO>(body);
 
                     return RedirectToAction("Index", "Home");
+
                 }
                 else
                 {
                     ViewBag.Error = body;
-                    return View();
+                    return View(pagoDto);
                 }
+
             }
             catch (Exception ex)
             {

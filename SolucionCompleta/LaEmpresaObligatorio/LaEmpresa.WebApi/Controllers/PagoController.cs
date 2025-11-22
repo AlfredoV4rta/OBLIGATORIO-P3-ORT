@@ -214,7 +214,7 @@ namespace LaEmpresa.WebApi.Controllers
         }
 
         [HttpPost("pagos/alta/unico")]
-        [ProducesResponseType(typeof(EquipoDTO), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(PagoDTO), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
@@ -229,7 +229,7 @@ namespace LaEmpresa.WebApi.Controllers
                     return BadRequest("No se creo el pago");
                 }
                 _altaPago.AltaPago(pagoDTO);
-                return Ok("Pago registrado con exito");
+                return Ok();
             }
             catch (PagoException pe)
             {
@@ -242,7 +242,7 @@ namespace LaEmpresa.WebApi.Controllers
         }
 
         [HttpPost("pagos/alta/recurrente")]
-        [ProducesResponseType(typeof(EquipoDTO), StatusCodes.Status200OK)]
+        [ProducesResponseType(typeof(PagoDTO), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
@@ -256,7 +256,7 @@ namespace LaEmpresa.WebApi.Controllers
                     return BadRequest("No se creo el pago");
                 }
                 _altaPago.AltaPago(pagoDTO);
-                return Ok("Pago registrado con exito");
+                return Ok();
             }
             catch (PagoException pe)
             {

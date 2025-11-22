@@ -90,7 +90,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "LaEmpresa.LogicaAplicacion.DTOs.EquipoDTO",
+        "Type": "LaEmpresa.LogicaAplicacion.DTOs.PagoDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -139,7 +139,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "LaEmpresa.LogicaAplicacion.DTOs.EquipoDTO",
+        "Type": "LaEmpresa.LogicaAplicacion.DTOs.PagoDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
