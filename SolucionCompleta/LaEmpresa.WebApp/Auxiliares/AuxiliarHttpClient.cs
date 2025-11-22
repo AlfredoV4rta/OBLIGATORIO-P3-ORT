@@ -30,7 +30,7 @@ namespace LaEmpresa.WebApp.Auxiliares
             }
             else if (verbo == "PUT")
             {
-                cliente.PutAsJsonAsync(url, obj);
+                tarea = cliente.PutAsJsonAsync(url, obj);
             }
 
             tarea.Wait();

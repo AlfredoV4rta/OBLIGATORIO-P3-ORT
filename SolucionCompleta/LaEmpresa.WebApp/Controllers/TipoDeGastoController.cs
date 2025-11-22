@@ -1,21 +1,47 @@
-﻿using LaEmpresa.WebApp.DTOs;
+﻿using LaEmpresa.WebApp.Auxiliares;
+using LaEmpresa.WebApp.DTOs;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using System.Security.Policy;
 
 namespace LaEmpresa.WebApp.Controllers
 {
     public class TipoDeGastoController : Controller
     {
 
+        public string UriTipoDeGasto { get; set; }
+
+        public TipoDeGastoController(IConfiguration configuration)
+        {
+            UriTipoDeGasto = configuration.GetValue<string>("UriTipoDeGasto");
+        }
+
         public ActionResult Index()
         {
-            if (HttpContext.Session.GetInt32("usuario") != null)
+            if (HttpContext.Session.GetString("rol") != null)
             {
-                if (HttpContext.Session.GetInt32("usuario") == 0)
-                { 
+                if (HttpContext.Session.GetString("rol") == "Administrador")
+                {
                     try
                     {
-                        return View();
+                        string token = HttpContext.Session.GetString("token");
+
+                        HttpResponseMessage respuesta = AuxiliarHttpClient.EnviarSolicitud(UriTipoDeGasto, "GET", null, token);
+
+                        string body = AuxiliarHttpClient.ObtenerBody(respuesta);
+
+                        if (respuesta.IsSuccessStatusCode)
+                        {
+                            IEnumerable<TipoDeGastoDTO> tiposDeGasto = JsonConvert.DeserializeObject<IEnumerable<TipoDeGastoDTO>>(body);
+
+                            return View(tiposDeGasto);
+                        }
+                        else
+                        {
+                            ViewBag.Error = body;
+                            return View();
+                        }
                     }
                     catch (Exception ex)
                     {
@@ -37,7 +63,25 @@ namespace LaEmpresa.WebApp.Controllers
                 {
                     try
                     {
-                        return View();
+                        string token = HttpContext.Session.GetString("token");
+
+                        string url = $"{UriTipoDeGasto}/{id}"; 
+
+                        HttpResponseMessage respuesta = AuxiliarHttpClient.EnviarSolicitud(url, "GET", null, token);
+
+                        string body = AuxiliarHttpClient.ObtenerBody(respuesta);
+
+                        if (respuesta.IsSuccessStatusCode)
+                        {
+                            TipoDeGastoDTO tipoDeGasto = JsonConvert.DeserializeObject<TipoDeGastoDTO>(body);
+
+                            return View(tipoDeGasto);
+                        }
+                        else
+                        {
+                            ViewBag.Error = body;
+                            return View();
+                        }
                     }
                     catch (Exception ex)
                     {
@@ -68,12 +112,28 @@ namespace LaEmpresa.WebApp.Controllers
  
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(TipoDeGastoDTO tipoDeGastoDTO)
+        public ActionResult Create(TipoDeGastoCreateDTO tipoDeGastoDTO)
         {
             try
             {
-                string email = HttpContext.Session.GetString("email");
-                return RedirectToAction(nameof(Index));
+                string token = HttpContext.Session.GetString("token");
+
+                HttpResponseMessage respuesta = AuxiliarHttpClient.EnviarSolicitud(UriTipoDeGasto, "POST", tipoDeGastoDTO, token);
+
+                string body = AuxiliarHttpClient.ObtenerBody(respuesta);
+
+                if (respuesta.IsSuccessStatusCode)
+                {
+                    TipoDeGastoDTO tdg = JsonConvert.DeserializeObject<TipoDeGastoDTO>(body);
+
+                    return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    ViewBag.Error = body;
+                    return View();
+                }
+               
             }
             catch
             {
@@ -89,7 +149,25 @@ namespace LaEmpresa.WebApp.Controllers
                 {
                     try
                     {
-                        return View(id);
+                        string token = HttpContext.Session.GetString("token");
+
+                        string url = $"{UriTipoDeGasto}/{id}";
+
+                        HttpResponseMessage respuesta = AuxiliarHttpClient.EnviarSolicitud(url, "GET", null, token);
+
+                        string body = AuxiliarHttpClient.ObtenerBody(respuesta);
+
+                        if (respuesta.IsSuccessStatusCode)
+                        {
+                            TipoDeGastoDTO tipoDeGasto = JsonConvert.DeserializeObject<TipoDeGastoDTO>(body);
+
+                            return View(tipoDeGasto);
+                        }
+                        else
+                        {
+                            ViewBag.Error = body;
+                            return View();
+                        }
                     }
                     catch (Exception ex)
                     {
@@ -108,8 +186,25 @@ namespace LaEmpresa.WebApp.Controllers
         {
             try
             {
-                string email = HttpContext.Session.GetString("email");
-                return RedirectToAction(nameof(Index));
+                string token = HttpContext.Session.GetString("token");
+
+                string url = $"{UriTipoDeGasto}/{aEditar.Id}";
+
+                HttpResponseMessage respuesta = AuxiliarHttpClient.EnviarSolicitud(url, "PUT", aEditar, token);
+
+                string body = AuxiliarHttpClient.ObtenerBody(respuesta);
+
+                if (respuesta.IsSuccessStatusCode)
+                {
+                    TipoDeGastoDTO tipoDeGasto = JsonConvert.DeserializeObject<TipoDeGastoDTO>(body);
+
+                    return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    ViewBag.Error = body;
+                    return View();
+                }
             }
             catch (Exception ex)
             {
@@ -127,7 +222,25 @@ namespace LaEmpresa.WebApp.Controllers
                 {
                     try
                     {
-                        return View(id);
+                        string token = HttpContext.Session.GetString("token");
+
+                        string url = $"{UriTipoDeGasto}/{id}";
+
+                        HttpResponseMessage respuesta = AuxiliarHttpClient.EnviarSolicitud(url, "GET", null, token);
+
+                        string body = AuxiliarHttpClient.ObtenerBody(respuesta);
+
+                        if (respuesta.IsSuccessStatusCode)
+                        {
+                            TipoDeGastoDTO tipoDeGasto = JsonConvert.DeserializeObject<TipoDeGastoDTO>(body);
+
+                            return View(tipoDeGasto);
+                        }
+                        else
+                        {
+                            ViewBag.Error = body;
+                            return View();
+                        }
                     }
                     catch (Exception ex)
                     {
@@ -143,12 +256,30 @@ namespace LaEmpresa.WebApp.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult Delete(int idTipoDeGasto, IFormCollection collection)
         {
             try
             {
-                string email = HttpContext.Session.GetString("email");
-                return RedirectToAction(nameof(Index));
+                string token = HttpContext.Session.GetString("token");
+
+                string url = $"{UriTipoDeGasto}/delete/{idTipoDeGasto}";
+
+                HttpResponseMessage respuesta = AuxiliarHttpClient.EnviarSolicitud(url, "DELETE", null, token);
+
+                string body = AuxiliarHttpClient.ObtenerBody(respuesta);
+
+                if (respuesta.IsSuccessStatusCode)
+                {
+                    TipoDeGastoDTO tipoDeGasto = JsonConvert.DeserializeObject<TipoDeGastoDTO>(body);
+
+                    return RedirectToAction(nameof(Index));
+                }
+                else
+                {
+                    ViewBag.Error = body;
+                    return View();
+                }
+             
             }
             catch (Exception ex)
             {

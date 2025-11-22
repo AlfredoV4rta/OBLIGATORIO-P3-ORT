@@ -272,6 +272,51 @@
   },
   {
     "ContainingType": "LaEmpresa.WebApi.Controllers.TipoDeGastoController",
+    "Method": "AltaTipoDeGasto",
+    "RelativePath": "api/TipoDeGasto",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "tipoDeGastoCreateDto",
+        "Type": "LaEmpresa.LogicaAplicacion.DTOs.TipoDeGastoCreateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 400
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 401
+      },
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 500
+      }
+    ]
+  },
+  {
+    "ContainingType": "LaEmpresa.WebApi.Controllers.TipoDeGastoController",
     "Method": "ObtenerTipoDeGastoPorId",
     "RelativePath": "api/TipoDeGasto/{idTipoDeGasto}",
     "HttpMethod": "GET",
@@ -379,51 +424,6 @@
           "text/json"
         ],
         "StatusCode": 404
-      },
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 500
-      }
-    ]
-  },
-  {
-    "ContainingType": "LaEmpresa.WebApi.Controllers.TipoDeGastoController",
-    "Method": "AltaTipoDeGasto",
-    "RelativePath": "api/TipoDeGasto/create",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "tipoDeGastoCreateDto",
-        "Type": "LaEmpresa.LogicaAplicacion.DTOs.TipoDeGastoCreateDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Void",
-        "MediaTypes": [],
-        "StatusCode": 201
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 400
-      },
-      {
-        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 401
       },
       {
         "Type": "System.Void",

@@ -5,14 +5,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C8D3359A-C3D1-4D83-A88F-E828297461F9}|LaEmpresa.WebApi\\LaEmpresa.WebApi.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\solucioncompleta\\laempresaobligatorio\\laempresa.webapi\\controllers\\tipodegastocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C8D3359A-C3D1-4D83-A88F-E828297461F9}|LaEmpresa.WebApi\\LaEmpresa.WebApi.csproj|solutionrelative:laempresa.webapi\\controllers\\tipodegastocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\solucioncompleta\\laempresaobligatorio\\laempresa.logicaaplicacion\\casosdeuso\\tipodegastocu\\altatipodegastocu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|solutionrelative:laempresa.logicaaplicacion\\casosdeuso\\tipodegastocu\\altatipodegastocu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|c:\\users\\lenovo\\onedrive\\escritorio\\facultad\\semestre-3\\obligatorio-p3-ort\\solucioncompleta\\laempresaobligatorio\\laempresa.logicaaplicacion\\dtos\\tipodegastocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{062727E4-9A0A-4495-9651-3C1D55BA2113}|LaEmpresa.LogicaAplicacion\\LaEmpresa.LogicaAplicacion.csproj|solutionrelative:laempresa.logicaaplicacion\\dtos\\tipodegastocreatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -34,41 +26,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "AltaTipoDeGastoCU.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\CasosDeUso\\TipoDeGastoCU\\AltaTipoDeGastoCU.cs",
-              "RelativeDocumentMoniker": "LaEmpresa.LogicaAplicacion\\CasosDeUso\\TipoDeGastoCU\\AltaTipoDeGastoCU.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\CasosDeUso\\TipoDeGastoCU\\AltaTipoDeGastoCU.cs",
-              "RelativeToolTip": "LaEmpresa.LogicaAplicacion\\CasosDeUso\\TipoDeGastoCU\\AltaTipoDeGastoCU.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAB4AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-22T15:25:54.273Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "TipoDeGastoCreateDTO.cs",
-              "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\DTOs\\TipoDeGastoCreateDTO.cs",
-              "RelativeDocumentMoniker": "LaEmpresa.LogicaAplicacion\\DTOs\\TipoDeGastoCreateDTO.cs",
-              "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\LaEmpresa.LogicaAplicacion\\DTOs\\TipoDeGastoCreateDTO.cs",
-              "RelativeToolTip": "LaEmpresa.LogicaAplicacion\\DTOs\\TipoDeGastoCreateDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-22T15:18:50.789Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "TipoDeGastoController.cs",
               "DocumentMoniker": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\LaEmpresa.WebApi\\Controllers\\TipoDeGastoController.cs",
               "RelativeDocumentMoniker": "LaEmpresa.WebApi\\Controllers\\TipoDeGastoController.cs",
               "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\LaEmpresa.WebApi\\Controllers\\TipoDeGastoController.cs",
               "RelativeToolTip": "LaEmpresa.WebApi\\Controllers\\TipoDeGastoController.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAcwGYAAAA8AAAAAAAAAA==",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAswLMAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-22T13:54:26.982Z",
+              "WhenOpened": "2025-11-22T16:02:40.29Z",
               "EditorCaption": ""
             }
           ]
