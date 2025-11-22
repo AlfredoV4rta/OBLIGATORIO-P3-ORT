@@ -35,6 +35,15 @@ namespace LaEmpresa.AccesoDatos.EF.RepositoriosEF
             throw new NotImplementedException();
         }
 
+        public IEnumerable<Auditoria> ObtenerAuditoriasTipoDeGasto(int idTipoDeGasto)
+        {
+            IEnumerable<Auditoria> auditorias = _context.Auditorias
+                                                .Where(a => a.IdTipoDeGasto == idTipoDeGasto)
+                                                .ToList();
+
+            return auditorias;
+        }
+
         public void Remove(int id)
         {
             throw new NotImplementedException();

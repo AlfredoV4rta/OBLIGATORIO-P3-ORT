@@ -13,6 +13,8 @@ using Microsoft.OpenApi.Models;
 using Swashbuckle.AspNetCore.Filters;
 using LaEmpresa.LogicaAplicacion.InterfacesCU.CasosTipoDeGasto;
 using LaEmpresa.LogicaAplicacion.CasosDeUso.TipoDeGastoCU;
+using LaEmpresa.LogicaAplicacion.InterfacesCU.CasosAuditoria;
+using LaEmpresa.LogicaAplicacion.CasosDeUso.AuditoriaCU;
 
 namespace LaEmpresa.WebApi
 {
@@ -113,7 +115,7 @@ namespace LaEmpresa.WebApi
             builder.Services.AddScoped<IAltaTipoDeGasto, AltaTipoDeGastoCU>();
 
             //AuditoriaCU
-            
+            builder.Services.AddScoped<IObtenerAuditoriasTipoDeGasto, ObtenerAuditoriasTipoDeGastoIdCU>();
 
 
             builder.Services.AddAuthorization(

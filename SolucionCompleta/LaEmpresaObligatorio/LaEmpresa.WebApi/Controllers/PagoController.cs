@@ -39,6 +39,8 @@ namespace LaEmpresa.WebApi.Controllers
         }
 
         [HttpGet]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         public IActionResult ObtenerPagos()
         {
             try
@@ -54,7 +56,10 @@ namespace LaEmpresa.WebApi.Controllers
 
 
         [HttpGet("{id}")]
-
+        [ProducesResponseType(typeof(PagoDTO),StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public IActionResult PagosPorID(int id)
         {
             try

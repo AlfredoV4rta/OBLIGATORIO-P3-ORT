@@ -9,5 +9,6 @@ namespace LaEmpresa.LogicaNegocio.InterfacesRepositorio
 {
     public interface IAuditoriaRepositorio : IRepositorio<Auditoria>
     {
+        public IEnumerable<Auditoria> ObtenerAuditoriasTipoDeGasto(int idTipoDeGasto);
     }
 }
