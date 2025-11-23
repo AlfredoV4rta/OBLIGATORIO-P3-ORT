@@ -12,5 +12,7 @@ namespace LaEmpresa.LogicaNegocio.InterfacesRepositorio
         Usuario FindbyEmail(string email);
 
         public Usuario Login(string email, string password);
+
+        public string ActualizarContraseniaDeUsuario(int id, string contrasenia);
     }
 }

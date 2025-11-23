@@ -18,6 +18,20 @@ namespace LaEmpresa.AccesoDatos.EF.RepositoriosEF
             _context = context;
         }
 
+        public string ActualizarContraseniaDeUsuario(int id, string contrasenia)
+        {
+            Usuario usuario = FindById(id);
+
+            if (usuario == null)
+            {
+                throw new UsuarioException("No hay usuario con ese id");
+            }
+
+            usuario.Contrasenia = contrasenia;
+            Update(usuario);
+            return contrasenia;
+        }
+
         public void Add(Usuario obj)
         {
             obj.Validar();
@@ -38,7 +52,14 @@ namespace LaEmpresa.AccesoDatos.EF.RepositoriosEF
 
         public Usuario FindById(int id)
         {
-            throw new NotImplementedException();
+            Usuario usuario = _context.Usuarios.Where(u => u.Id == id).FirstOrDefault();
+
+            if (usuario == null)
+            {
+                throw new UsuarioException("No hay usuario con ese id");
+            }
+
+            return usuario;
         }
 
         public Usuario Login(string email, string contrasenia)
@@ -62,7 +83,9 @@ namespace LaEmpresa.AccesoDatos.EF.RepositoriosEF
 
         public void Update(Usuario obj)
         {
-            throw new NotImplementedException();
+            obj.Validar();
+            _context.Usuarios.Update(obj);
+            _context.SaveChanges();
         }
     }
 }

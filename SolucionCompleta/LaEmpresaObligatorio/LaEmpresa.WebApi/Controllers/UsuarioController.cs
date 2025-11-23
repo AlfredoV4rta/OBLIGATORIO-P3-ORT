@@ -1,5 +1,6 @@
 ﻿using LaEmpresa.LogicaAplicacion.DTOs;
-using LaEmpresa.LogicaAplicacion.InterfacesCU.CasosAuditoria;
+using LaEmpresa.LogicaAplicacion.InterfacesCU.CasosUsuario;
+using LaEmpresa.LogicaNegocio.Entidades;
 using LaEmpresa.LogicaNegocio.Exceptions;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -9,28 +10,27 @@ namespace LaEmpresa.WebApi.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class AuditoriaController: ControllerBase
+    public class UsuarioController : ControllerBase
     {
-        private IObtenerAuditoriasTipoDeGasto _obtenerAuditoriaTipoDeGasto;
+        private IActualizarContrasenia _actualizarContrasenia;
 
-        public AuditoriaController(IObtenerAuditoriasTipoDeGasto obtenerAuditoriaTipoDeGasto)
+        public UsuarioController(IActualizarContrasenia actualizarContrasenia)
         {
-            _obtenerAuditoriaTipoDeGasto = obtenerAuditoriaTipoDeGasto;
+            _actualizarContrasenia = actualizarContrasenia;
         }
 
-        [HttpGet("tipoDeGasto/{idTipoDeGasto}")]
-        [ProducesResponseType(typeof(IEnumerable<AuditoriaDTO>), StatusCodes.Status200OK)]
+        [HttpPut("{idUsuario}")]
+        [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [Authorize]
-
-        public IActionResult ObtenerPorIdTipoDeGasto(int idTipoDeGasto)
+        public IActionResult ActualizarContrasenia(int idUsuario)
         {
             try
             {
-                if (idTipoDeGasto <= 0)
+                if (idUsuario <= 0)
                 {
                     return BadRequest("Id tiene que ser mayor a 0");
                 }
@@ -42,10 +42,10 @@ namespace LaEmpresa.WebApi.Controllers
                     return Unauthorized("Solo los administradores pueden acceder a este recurso");
                 }
 
-                IEnumerable<AuditoriaDTO> auditorias = _obtenerAuditoriaTipoDeGasto.ObtenerAuditoriasIdTipoGasto(idTipoDeGasto);
-                return Ok(auditorias);
+                string nuevaContrasenia = _actualizarContrasenia.ActualizarContrasenia(idUsuario);
+                return Ok($"La nueva contrasenia es: {nuevaContrasenia}");
             }
-            catch (AuditoriaException pe)
+            catch(UsuarioException pe)
             {
                 return NotFound(pe.Message);
             }
