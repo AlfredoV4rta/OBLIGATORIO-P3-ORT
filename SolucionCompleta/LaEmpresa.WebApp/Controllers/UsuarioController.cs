@@ -1,12 +1,19 @@
-﻿using LaEmpresa.WebApp.DTOs;
+﻿using LaEmpresa.WebApp.Auxiliares;
+using LaEmpresa.WebApp.DTOs;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace LaEmpresa.WebApp.Controllers
 {
     public class UsuarioController : Controller
     {
+        public string UriUsuario { get; set; }
 
+        public UsuarioController(IConfiguration configuration)
+        {
+            UriUsuario = configuration.GetValue<string>("UriUsuario");
+        }
         // GET: UsuarioController
         public ActionResult Index()
         {
@@ -53,7 +60,7 @@ namespace LaEmpresa.WebApp.Controllers
 
                 ViewBag.Mensaje = "Usuario creado con exito";
                 return View();
-                
+
             }
             catch (Exception ex)
             {
@@ -100,6 +107,92 @@ namespace LaEmpresa.WebApp.Controllers
             }
             catch
             {
+                return View();
+            }
+        }
+
+        public IActionResult ActualizarContrasenia()
+        {
+            if (HttpContext.Session.GetString("rol") != null)
+            {
+                if (HttpContext.Session.GetString("rol") == "Administrador")
+                {
+                    try
+                    {
+                        string token = HttpContext.Session.GetString("token");
+
+                        HttpResponseMessage respuesta = AuxiliarHttpClient.EnviarSolicitud(UriUsuario, "GET", null, token);
+
+                        string body = AuxiliarHttpClient.ObtenerBody(respuesta);
+
+                        if (respuesta.IsSuccessStatusCode)
+                        {
+                            IEnumerable<UsuarioDTO> usuarios = JsonConvert.DeserializeObject<IEnumerable<UsuarioDTO>>(body);
+
+                            ViewBag.Usuarios = usuarios;
+                            return View();
+                        }
+                        else
+                        {
+                            ViewBag.Error = body;
+                            return View();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        ViewBag.Error = "Error inesperado" + ex;
+                        return View();
+                    }
+                }
+                return RedirectToAction("Index", "Home");
+            }
+            return RedirectToAction("Login", "Home");
+        }
+
+        [HttpPost]
+
+        public IActionResult ActualizarContrasenia(int idUsuario)
+        {
+            try
+            {
+                string token = HttpContext.Session.GetString("token");
+
+                UsuarioDTO usuarioDto= new UsuarioDTO { Id = idUsuario };
+
+                string url = $"{UriUsuario}/{idUsuario}";
+
+                HttpResponseMessage respuesta = AuxiliarHttpClient.EnviarSolicitud(url, "PUT", usuarioDto, token);
+
+                string body = AuxiliarHttpClient.ObtenerBody(respuesta);
+
+                HttpResponseMessage respuestaUsaurios = AuxiliarHttpClient.EnviarSolicitud(UriUsuario, "GET", null, token);
+                string bodyUsuarios = AuxiliarHttpClient.ObtenerBody(respuestaUsaurios);
+
+                if (respuestaUsaurios.IsSuccessStatusCode)
+                {
+                    IEnumerable<UsuarioDTO> usuarios = JsonConvert.DeserializeObject<IEnumerable<UsuarioDTO>>(bodyUsuarios);
+                    ViewBag.Usuarios = usuarios;
+                }
+                else
+                {
+                    ViewBag.Usuarios = new List<UsuarioDTO>();
+                }
+
+                if(respuesta.IsSuccessStatusCode)
+                {
+                    string nuevaPass = JsonConvert.DeserializeObject<string>(body);
+                    ViewBag.Mensaje = nuevaPass;
+                    return View();
+                }
+                else
+                {
+                    ViewBag.Error = body;
+                    return View();
+                }
+            }
+            catch (Exception ex)
+            {
+                ViewBag.Error = "Error inesperado" + ex;
                 return View();
             }
         }

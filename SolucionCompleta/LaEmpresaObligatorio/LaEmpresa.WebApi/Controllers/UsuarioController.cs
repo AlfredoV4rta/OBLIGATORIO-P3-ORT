@@ -13,10 +13,12 @@ namespace LaEmpresa.WebApi.Controllers
     public class UsuarioController : ControllerBase
     {
         private IActualizarContrasenia _actualizarContrasenia;
+        private IObtenerUsuarios _obtenerUsuarios;
 
-        public UsuarioController(IActualizarContrasenia actualizarContrasenia)
+        public UsuarioController(IActualizarContrasenia actualizarContrasenia, IObtenerUsuarios obtenerUsuarios)
         {
             _actualizarContrasenia = actualizarContrasenia;
+            _obtenerUsuarios = obtenerUsuarios;
         }
         /// <summary>
         /// Actuliza la contraseña de un usuario, mediante su id. Devuelve la contraseña nueva.
@@ -50,6 +52,37 @@ namespace LaEmpresa.WebApi.Controllers
                 return Ok($"La nueva contrasenia es: {nuevaContrasenia}");
             }
             catch(UsuarioException pe)
+            {
+                return NotFound(pe.Message);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, "Error");
+            }
+        }
+
+        [HttpGet]
+        [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status401Unauthorized)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [Authorize]
+        public IActionResult ObtenerUsuarios()
+        {
+            try
+            {
+                Claim rolClaim = User.FindFirst(ClaimTypes.Role);
+
+                if (rolClaim == null || rolClaim.Value != "Administrador")
+                {
+                    return Unauthorized("Solo los administradores pueden acceder a este recurso");
+                }
+
+                IEnumerable<UsuarioDTO> usuarios = _obtenerUsuarios.ObtenerUsuarios();
+                return Ok(usuarios);
+            }
+            catch (UsuarioException pe)
             {
                 return NotFound(pe.Message);
             }

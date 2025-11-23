@@ -41,7 +41,7 @@ namespace LaEmpresa.AccesoDatos.EF.RepositoriosEF
 
         public IEnumerable<Usuario> FindAll()
         {
-            return _context.Usuarios.OrderBy(user => user.NombreCompleto.Nombre);
+            return _context.Usuarios.OrderBy(user => user.NombreCompleto.Nombre).ToList();
         }
 
         public Usuario FindbyEmail(string email)

@@ -2,6 +2,7 @@
 using LaEmpresa.LogicaAplicacion.InterfacesCU.CasosUsuario;
 using LaEmpresa.LogicaAplicacion.Mappers;
 using LaEmpresa.LogicaNegocio.Entidades;
+using LaEmpresa.LogicaNegocio.Exceptions;
 using LaEmpresa.LogicaNegocio.InterfacesRepositorio;
 using System;
 using System.Collections.Generic;
@@ -23,6 +24,11 @@ namespace LaEmpresa.LogicaAplicacion.CasosDeUso.UsuarioCU
         public IEnumerable<UsuarioDTO> ObtenerUsuarios()
         {
             IEnumerable<Usuario> usuarios = _repositorio.FindAll();
+
+            if (usuarios.Count() == 0)
+            {
+                throw new UsuarioException("No hay usuarios en el sistema");
+            }
 
             return usuarios.Select(
                 user => UsuarioMapper.ToDTO(user)

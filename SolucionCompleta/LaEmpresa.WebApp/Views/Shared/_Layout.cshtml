@@ -33,6 +33,10 @@
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-area="" asp-controller="Auditoria" asp-action="AuditoriasPorIdTipoDeGasto">Auditorias de tipo de gasto</a>
                             </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Usuario" asp-action="ActualizarContrasenia">Actualizar Contrasenia</a>
+                            </li>
                         }
 
                         @if (Context.Session.GetString("rol") != null && Context.Session.GetString("rol") == "Gerente")
