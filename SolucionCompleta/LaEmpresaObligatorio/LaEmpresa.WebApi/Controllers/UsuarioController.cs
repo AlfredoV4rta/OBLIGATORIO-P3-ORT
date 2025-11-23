@@ -18,7 +18,11 @@ namespace LaEmpresa.WebApi.Controllers
         {
             _actualizarContrasenia = actualizarContrasenia;
         }
-
+        /// <summary>
+        /// Actuliza la contraseña de un usuario, mediante su id. Devuelve la contraseña nueva.
+        /// </summary>
+        /// <param name="idUsuario"></param>
+        /// <returns></returns>
         [HttpPut("{idUsuario}")]
         [ProducesResponseType(typeof(string), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]

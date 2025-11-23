@@ -17,7 +17,11 @@ namespace LaEmpresa.WebApi.Controllers
         {
             _obtenerAuditoriaTipoDeGasto = obtenerAuditoriaTipoDeGasto;
         }
-
+        /// <summary>
+        /// Obtiene las auditorias de un tipo de gasto determinado
+        /// </summary>
+        /// <param name="idTipoDeGasto"></param>
+        /// <returns></returns>
         [HttpGet("tipoDeGasto/{idTipoDeGasto}")]
         [ProducesResponseType(typeof(IEnumerable<AuditoriaDTO>), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]

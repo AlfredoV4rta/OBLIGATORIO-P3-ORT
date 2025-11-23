@@ -31,13 +31,16 @@ namespace LaEmpresa.WebApi.Controllers
             _obtenerTipoDeGasto = obtenerTipoDeGasto;
         }
 
+        /// <summary>
+        /// Devuelve todos los tipos de gasto
+        /// </summary>
+        /// <returns></returns>
         [HttpGet]
         [ProducesResponseType(typeof(TipoDeGastoDTO), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
         [Authorize]
-
         public IActionResult ObtenerTiposDeGasto()
         {
             try
@@ -62,6 +65,11 @@ namespace LaEmpresa.WebApi.Controllers
                 return StatusCode(500, "Error");
             }    
         }
+        /// <summary>
+        /// Dado un id devuelve el tipo de gasto correspondiente
+        /// </summary>
+        /// <param name="idTipoDeGasto"></param>
+        /// <returns></returns>
 
         [HttpGet("{idTipoDeGasto}")]
         [ProducesResponseType(typeof(TipoDeGastoDTO), StatusCodes.Status200OK)]
@@ -98,7 +106,11 @@ namespace LaEmpresa.WebApi.Controllers
                 return StatusCode(500, "Error");
             }
         }
-
+        /// <summary>
+        /// Agrega un tipo de gasto
+        /// </summary>
+        /// <param name="tipoDeGastoCreateDto"></param>
+        /// <returns></returns>
         [HttpPost]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -144,7 +156,11 @@ namespace LaEmpresa.WebApi.Controllers
                 return StatusCode(500, "Error");
             }
         }
-
+        /// <summary>
+        /// Mediante un id dado, elimina el tipo de gasto asociado.
+        /// </summary>
+        /// <param name="idTipoDeGasto"></param>
+        /// <returns></returns>
         [HttpDelete("delete/{idTipoDeGasto}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
@@ -185,6 +201,12 @@ namespace LaEmpresa.WebApi.Controllers
             }
         }
 
+        /// <summary>
+        /// Edita el tipo de gasto del id indicado
+        /// </summary>
+        /// <param name="tipoDeGastoDto"></param>
+        /// <param name="idTipoDeGasto"></param>
+        /// <returns></returns>
         [HttpPut("{idTipoDeGasto}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]

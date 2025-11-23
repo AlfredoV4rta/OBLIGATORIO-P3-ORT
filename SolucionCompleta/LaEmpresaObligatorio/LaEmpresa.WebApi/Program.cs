@@ -70,6 +70,10 @@ namespace LaEmpresa.WebApi
 
                 opciones.OperationFilter<SecurityRequirementsOperationFilter>();
 
+                var xmlFile = $"{System.Reflection.Assembly.GetExecutingAssembly().GetName().Name}.xml";
+                var xmlPath = Path.Combine(AppContext.BaseDirectory, xmlFile);
+                opciones.IncludeXmlComments(xmlPath, includeControllerXmlComments: true);
+
                 opciones.SwaggerDoc("v1", new OpenApiInfo
                 {
                     Title = "Documentación de LaEmpresa.Api",

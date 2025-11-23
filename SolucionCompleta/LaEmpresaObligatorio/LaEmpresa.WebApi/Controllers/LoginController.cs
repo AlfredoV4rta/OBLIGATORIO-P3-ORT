@@ -19,13 +19,18 @@ namespace LaEmpresa.WebApi.Controllers
             _loginCU = loginCU;
         }
 
-        [HttpPost]
+        /// <summary>
+        /// Permite iniciar sesion, se le asigan token al usuario
+        /// </summary>
+        /// <param name="loginRequestDTO"></param>
+        /// <returns></returns>
         [AllowAnonymous]
         [Route("login")]
         [ProducesResponseType(typeof(UsuarioDTO), StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status401Unauthorized)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [HttpPost]
         public IActionResult Login([FromBody] LoginRequestDTO loginRequestDTO)
         {
             try

@@ -14,10 +14,12 @@
         "tags": [
           "Auditoria"
         ],
+        "summary": "Obtiene las auditorias de un tipo de gasto determinado",
         "parameters": [
           {
             "name": "idTipoDeGasto",
             "in": "path",
+            "description": "",
             "required": true,
             "schema": {
               "type": "integer",
@@ -134,7 +136,9 @@
         "tags": [
           "Login"
         ],
+        "summary": "Permite iniciar sesion, se le asigan token al usuario",
         "requestBody": {
+          "description": "",
           "content": {
             "application/json": {
               "schema": {
@@ -220,168 +224,17 @@
         }
       }
     },
-    "/api/Pago": {
-      "get": {
-        "tags": [
-          "Pago"
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          },
-          "500": {
-            "description": "Internal Server Error"
-          }
-        }
-      }
-    },
-    "/api/Pago/{id}": {
-      "get": {
-        "tags": [
-          "Pago"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/PagoDTO"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/PagoDTO"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/PagoDTO"
-                }
-              }
-            }
-          },
-          "500": {
-            "description": "Internal Server Error"
-          },
-          "404": {
-            "description": "Not Found",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/ProblemDetails"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ProblemDetails"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ProblemDetails"
-                }
-              }
-            }
-          },
-          "400": {
-            "description": "Bad Request",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "$ref": "#/components/schemas/ProblemDetails"
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ProblemDetails"
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ProblemDetails"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
-    "/api/Pago/pagos/mensuales/{mes}/{anio}": {
-      "get": {
-        "tags": [
-          "Pago"
-        ],
-        "parameters": [
-          {
-            "name": "mes",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          },
-          {
-            "name": "anio",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
-    "/api/Pago/usuario/{monto}": {
-      "get": {
-        "tags": [
-          "Pago"
-        ],
-        "parameters": [
-          {
-            "name": "monto",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "number",
-              "format": "double"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      }
-    },
     "/api/Pago/pagos/usuario/{idUsuario}": {
       "get": {
         "tags": [
           "Pago"
         ],
+        "summary": "Dado un id de usuario devuelve los pagos del mismo, solo funciona con el id el usuario logueado",
         "parameters": [
           {
             "name": "idUsuario",
             "in": "path",
+            "description": "",
             "required": true,
             "schema": {
               "type": "integer",
@@ -489,10 +342,12 @@
         "tags": [
           "Pago"
         ],
+        "summary": "Devuelve los equipos, en los cuales algun usuario hizo un pago mayor a un monto determinado",
         "parameters": [
           {
             "name": "monto",
             "in": "path",
+            "description": "",
             "required": true,
             "schema": {
               "type": "number",
@@ -600,7 +455,9 @@
         "tags": [
           "Pago"
         ],
+        "summary": "Agrega un pago unico",
         "requestBody": {
+          "description": "",
           "content": {
             "application/json": {
               "schema": {
@@ -699,7 +556,9 @@
         "tags": [
           "Pago"
         ],
+        "summary": "Agrega un pago recurrente",
         "requestBody": {
+          "description": "",
           "content": {
             "application/json": {
               "schema": {
@@ -798,6 +657,7 @@
         "tags": [
           "TipoDeGasto"
         ],
+        "summary": "Devuelve todos los tipos de gasto",
         "responses": {
           "200": {
             "description": "OK",
@@ -876,7 +736,9 @@
         "tags": [
           "TipoDeGasto"
         ],
+        "summary": "Agrega un tipo de gasto",
         "requestBody": {
+          "description": "",
           "content": {
             "application/json": {
               "schema": {
@@ -958,10 +820,12 @@
         "tags": [
           "TipoDeGasto"
         ],
+        "summary": "Dado un id devuelve el tipo de gasto correspondiente",
         "parameters": [
           {
             "name": "idTipoDeGasto",
             "in": "path",
+            "description": "",
             "required": true,
             "schema": {
               "type": "integer",
@@ -1067,10 +931,12 @@
         "tags": [
           "TipoDeGasto"
         ],
+        "summary": "Edita el tipo de gasto del id indicado",
         "parameters": [
           {
             "name": "idTipoDeGasto",
             "in": "path",
+            "description": "",
             "required": true,
             "schema": {
               "type": "integer",
@@ -1079,6 +945,7 @@
           }
         ],
         "requestBody": {
+          "description": "",
           "content": {
             "application/json": {
               "schema": {
@@ -1180,10 +1047,12 @@
         "tags": [
           "TipoDeGasto"
         ],
+        "summary": "Mediante un id dado, elimina el tipo de gasto asociado.",
         "parameters": [
           {
             "name": "idTipoDeGasto",
             "in": "path",
+            "description": "",
             "required": true,
             "schema": {
               "type": "integer",
@@ -1274,10 +1143,12 @@
         "tags": [
           "Usuario"
         ],
+        "summary": "Actuliza la contraseña de un usuario, mediante su id. Devuelve la contraseña nueva.",
         "parameters": [
           {
             "name": "idUsuario",
             "in": "path",
+            "description": "",
             "required": true,
             "schema": {
               "type": "integer",
