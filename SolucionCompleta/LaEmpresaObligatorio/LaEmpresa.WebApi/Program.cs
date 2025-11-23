@@ -110,6 +110,7 @@ namespace LaEmpresa.WebApi
             //UsuarioCU
             builder.Services.AddScoped<ILogin, LoginCU>();
             builder.Services.AddScoped<IActualizarContrasenia, ActualizarContraseniaCU>();
+            builder.Services.AddScoped<IObtenerUsuarios, ObtenerUsuariosCU>();
 
             //TipoDeGastoCU
             builder.Services.AddScoped<IObtenerEquiposMayorMonto, ObtenerEquiposMayorMontoCU>();

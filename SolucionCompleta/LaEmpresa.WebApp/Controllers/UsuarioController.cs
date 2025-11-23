@@ -151,15 +151,15 @@ namespace LaEmpresa.WebApp.Controllers
 
         [HttpPost]
 
-        public IActionResult ActualizarContrasenia(int idUsuario)
+        public IActionResult ActualizarContrasenia(int Id)
         {
             try
             {
                 string token = HttpContext.Session.GetString("token");
 
-                UsuarioDTO usuarioDto= new UsuarioDTO { Id = idUsuario };
+                UsuarioDTO usuarioDto= new UsuarioDTO { Id = Id };
 
-                string url = $"{UriUsuario}/{idUsuario}";
+                string url = $"{UriUsuario}/{Id}";
 
                 HttpResponseMessage respuesta = AuxiliarHttpClient.EnviarSolicitud(url, "PUT", usuarioDto, token);
 
@@ -180,7 +180,7 @@ namespace LaEmpresa.WebApp.Controllers
 
                 if(respuesta.IsSuccessStatusCode)
                 {
-                    string nuevaPass = JsonConvert.DeserializeObject<string>(body);
+                    string nuevaPass = body;
                     ViewBag.Mensaje = nuevaPass;
                     return View();
                 }
