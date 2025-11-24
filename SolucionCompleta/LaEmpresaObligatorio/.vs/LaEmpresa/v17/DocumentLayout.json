@@ -50,8 +50,7 @@
               "RelativeToolTip": "LaEmpresa.LogicaNegocio\\InterfacesRepositorio\\IUsuarioRepositorio.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T23:22:38.88Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-23T23:22:38.88Z"
             },
             {
               "$type": "Document",
@@ -63,8 +62,7 @@
               "RelativeToolTip": "LaEmpresa.LogicaAplicacion\\CasosDeUso\\UsuarioCU\\ObtenerUsuariosCU.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAA+wCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T22:16:12.512Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-23T22:16:12.512Z"
             },
             {
               "$type": "Document",
@@ -76,8 +74,7 @@
               "RelativeToolTip": "LaEmpresa.AccesoDatos\\EF\\RepositoriosEF\\RepositorioUsuarioEF.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAkwC4AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-23T22:15:52.828Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-23T22:15:52.828Z"
             },
             {
               "$type": "Document",
@@ -99,7 +96,7 @@
               "RelativeDocumentMoniker": "LaEmpresa.WebApi\\Controllers\\UsuarioController.cs",
               "ToolTip": "C:\\Users\\Lenovo\\OneDrive\\Escritorio\\Facultad\\Semestre-3\\OBLIGATORIO-P3-ORT\\SolucionCompleta\\LaEmpresaObligatorio\\LaEmpresa.WebApi\\Controllers\\UsuarioController.cs",
               "RelativeToolTip": "LaEmpresa.WebApi\\Controllers\\UsuarioController.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAmwF8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAACMAAAAAAAAAAAAmwD0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-23T15:20:24.285Z",
               "EditorCaption": ""
