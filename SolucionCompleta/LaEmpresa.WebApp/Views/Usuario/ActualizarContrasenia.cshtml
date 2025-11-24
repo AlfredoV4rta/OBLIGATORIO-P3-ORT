@@ -12,6 +12,13 @@
     </div>
 }
 
+@if (!string.IsNullOrEmpty(ViewBag.Error))
+{
+    <div class="alert alert-danger">
+        @ViewBag.Error
+    </div>
+}
+
 <h1>Actualizar Contraseña</h1>
 
 <div class="row">

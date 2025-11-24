@@ -1469,7 +1469,7 @@
             "nullable": true
           },
           "monto": {
-            "minimum": 0,01,
+            "minimum": 0.01,
             "type": "number",
             "format": "double"
           },
